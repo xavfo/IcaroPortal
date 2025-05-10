@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/j2ee/icaro/!svn/ver/571/IcaroPortal/src/com/iportal/cart/ctrl/system/cart
+END
+OrderForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/com/iportal/cart/ctrl/system/cart/OrderForm.java
+END
+CustomerAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/j2ee/icaro/!svn/ver/514/IcaroPortal/src/com/iportal/cart/ctrl/system/cart/CustomerAction.java
+END
+PaymentTypeForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/cart/ctrl/system/cart/PaymentTypeForm.java
+END
+OrderStatusForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/com/iportal/cart/ctrl/system/cart/OrderStatusForm.java
+END
+PaymentStatusForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/com/iportal/cart/ctrl/system/cart/PaymentStatusForm.java
+END
+OrderAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/j2ee/icaro/!svn/ver/571/IcaroPortal/src/com/iportal/cart/ctrl/system/cart/OrderAction.java
+END
+PaymentTypeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/cart/ctrl/system/cart/PaymentTypeAction.java
+END
+OrderStatusAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/cart/ctrl/system/cart/OrderStatusAction.java
+END
+PaymentStatusAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/cart/ctrl/system/cart/PaymentStatusAction.java
+END
+TaxForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/cart/ctrl/system/cart/TaxForm.java
+END
+TaxTypeForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/cart/ctrl/system/cart/TaxTypeForm.java
+END
+CustomerForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/j2ee/icaro/!svn/ver/202/IcaroPortal/src/com/iportal/cart/ctrl/system/cart/CustomerForm.java
+END
+TaxAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/cart/ctrl/system/cart/TaxAction.java
+END
+TaxTypeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/cart/ctrl/system/cart/TaxTypeAction.java
+END
+DeliveryAgencyForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/com/iportal/cart/ctrl/system/cart/DeliveryAgencyForm.java
+END

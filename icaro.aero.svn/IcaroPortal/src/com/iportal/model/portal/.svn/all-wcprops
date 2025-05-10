@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/j2ee/icaro/!svn/ver/57/IcaroPortal/src/com/iportal/model/portal
+END
+LayoutLanguage.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/portal/LayoutLanguage.java
+END
+MenuItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/j2ee/icaro/!svn/ver/57/IcaroPortal/src/com/iportal/model/portal/MenuItem.java
+END
+Menu.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/portal/Menu.java
+END
+AccessMenu.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/j2ee/icaro/!svn/ver/57/IcaroPortal/src/com/iportal/model/portal/AccessMenu.java
+END
+PortalModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/portal/PortalModule.java
+END
+MenuLanguage.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/portal/MenuLanguage.java
+END
+AccessLevel.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/portal/AccessLevel.java
+END
+Content.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/portal/Content.java
+END
+DisplayMode.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/portal/DisplayMode.java
+END
+RelatedContent.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/portal/RelatedContent.java
+END
+Layout.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/portal/Layout.java
+END

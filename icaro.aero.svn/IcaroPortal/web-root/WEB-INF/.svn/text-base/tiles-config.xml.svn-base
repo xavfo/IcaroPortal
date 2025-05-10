@@ -1,0 +1,1588 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+                                   "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+<tiles-definitions>
+
+    <!-- ======================================================= -->
+    <!-- Portal Base Definitions                                 -->
+    <!-- ======================================================= -->
+    <definition name="portal" path="/jsp/layout/portal.jsp" controllerUrl="/tiles/mainMenu.do">
+        <put name="header" value="/jsp/layout/header.jsp" />
+        <put name="body" />
+        <put name="footer" value="/jsp/layout/footer.jsp" />
+    </definition>
+
+
+    <definition name="body" path="/jsp/layout/body.jsp">
+        <put name="content"        value="catalogue.home" />
+        <put name="leftNavigation" value="portal.navigation" />
+    </definition>
+
+    <definition name="baseCatalog" path="/jsp/layout/baseCatalog.jsp">
+        <put name="baseCatalog.leftNavigation" value="portal.navigation.catalog" />
+        <put name="baseCatalog.location"       value="portal.navigationTree" />
+        <put name="baseCatalog.mainContent" />
+        <put name="baseCatalog.featured"       value="portal.catalog.featuredCategories" />
+    </definition>
+
+    <definition name="portal.home" path="/jsp/layout/home/generalHome.jsp" controllerUrl="/tiles/mainMenu.do">
+	  		<put name="header" 		value="/jsp/layout/home/header.jsp" />
+			<put name="body" 		value="/jsp/layout/home/home.jsp"/>
+			<put name="footer" 		value="/jsp/layout/footer.jsp" />				
+		</definition>
+
+    <definition name="cart" extends="portal">
+       <put name="header"  value="cart.header" />
+        <put name="body"   value="cart.body" />
+
+    </definition>
+	
+	<definition name="register" extends="portal">
+       <put name="header" 		value="/jsp/layout/home/header.jsp" />
+        <put name="body"   value="register.body" />
+		<put name="footer" 		value="/jsp/layout/footer.jsp" />
+    </definition>
+
+    <definition name="popupPortal" path="/jsp/layout/popup.jsp">
+        <put name="header" value="header.popup" />
+        <put name="body" />
+        <put name="footer" value="footer.popup" />
+    </definition>
+
+    <definition name="portal.legal" path="/jsp/common/legal.jsp" controllerUrl="/tiles/content.do"/>
+	
+	<definition name="portal.reset" path="/jsp/account/resetPassword.jsp">
+    </definition>
+    
+
+    <!-- ======================================================= -->
+    <!-- Portal Components                                       -->
+    <!-- ======================================================= -->
+
+    <definition name="footer.portal" path="/jsp/layout/footer.jsp" />
+        <!--put name="menuBar" value="portal.menu.footer" />
+    </definition-->
+
+    <definition name="footer.popup" extends="footer.portal" >
+        <put name="menuBar" value="portal.menu.footer.popup" />
+    </definition>
+
+    
+
+    <definition name="header.popup" path="/jsp/layout/headerPopup.jsp"/>
+
+    <definition name="header.mail" path="/jsp/common/mail/header.jsp" />
+
+	<definition name="footer.mail" path="/jsp/common/mail/footer.jsp" />
+
+    <definition name="portal.navigation" path="/jsp/layout/navigation.jsp">
+        <put name="portal.navigation.header"  value="/jsp/layout/blank.jsp" />
+        <put name="portal.navigation.menu"    value="portal.menu.navigation" />
+        <put name="portal.navigation.center"  value="/jsp/layout/blank.jsp" />
+        <!-- parametro que indica parte del nombre de imagenes del layout. por defecto es para cargar imagenes b1_br.gif y b1_tr.gif-->
+        <put name="imageColor" value="1"  /><!-- parameter -->
+    </definition>	
+
+    <definition name="portal.navigation.catalog" extends="portal.navigation">
+        <put name="portal.navigation.header"  value="/jsp/layout/navigationHearder.jsp" />
+        <put name="portal.navigation.center"  value="portal.menu.centerLeft" />
+        <put name="imageColor" value="1"  /><!-- parameter -->
+    </definition>
+
+    <definition name="catalogue.home" path="/jsp/layout/catalogue.jsp">
+        <put name="catalogue.home.main"      value="portal.catalog.featuredCategories" />
+        <put name="catalogue.home.menuRight" value="catalogue.home.menuRight" />
+    </definition>
+
+    <definition name="catalogue.home.menuRight" path="/jsp/layout/right.jsp">
+        <put name="catalogue.home.menu.right"    value="portal.menu.right" />
+        <put name="catalogue.home.menu.interest" value="portal.menu.interest" />
+    </definition>
+
+    <definition name="portal.catalog.home" extends="portal">
+        <put name="body" value="baseCatalog.catalog" />
+    </definition>
+
+    <definition name="baseCatalog.catalog" extends="baseCatalog">
+        <put name="baseCatalog.mainContent" value="/jsp/layout/catalog/homeCatalog.jsp" />
+    </definition>
+
+    <definition name="portal.catalog.category" extends="portal">
+        <put name="body" value="baseCatalog.category" />
+    </definition>
+
+    <definition name="baseCatalog.category" extends="baseCatalog">
+        <put name="baseCatalog.mainContent" value="/jsp/layout/catalog/category.jsp" />
+        <put name="baseCatalog.featured"    value="portal.catalog.featuredSubCategories" />
+    </definition>
+
+  <!--    <definition name="portal.catalog.sale" extends="portal">
+        <put name="body" value="baseCatalog.sale" />
+    </definition>
+
+    <definition name="baseCatalog.sale" extends="baseCatalog">
+        <put name="baseCatalog.mainContent" value="/jsp/layout/catalog/sale.jsp" />
+        <put name="baseCatalog.featured" value="portal.catalog.featuredProducts" />
+    </definition>-->
+
+    <definition name="portal.catalog.subCategory" extends="portal">
+        <put name="body" value="baseCatalog.subCategory" />
+    </definition>
+
+    <definition name="baseCatalog.subCategory" extends="baseCatalog.category">
+        <put name="baseCatalog.featured" value="portal.catalog.featuredProducts" />
+    </definition>
+
+    <definition name="portal.catalog.featuredCategories" path="/jsp/catalogue/categoriesFeatured.jsp" controllerUrl="/tiles/catalogue/categoriesFeatured.do">
+        <put name="maxResults" /><!-- parameter -->
+        <put name="parentCode" /><!-- parameter -->
+    </definition>
+
+    <definition name="portal.catalog.featuredSubCategories" extends="portal.catalog.featuredCategories">
+        <put name="narrow" value="true" /><!-- parameter -->
+    </definition>
+
+    <definition name="portal.catalog.featuredProducts" path="/jsp/catalogue/productsFeatured.jsp" />
+
+    <definition name="portal.catalog.productInfo" extends="portal">
+        <put name="body" value="body.productInfo" />
+    </definition>
+
+    <definition name="body.productInfo" extends="body">
+        <put name="content"         value="/jsp/layout/catalog/productInfo.jsp"/>
+        <put name="leftNavigation" value="portal.navigation.catalog" />
+    </definition>
+    
+    <!--  Comparacion de productos -->
+    <definition name="portal.catalog.products" extends="portal">
+        <put name="body" value="baseCatalog.productsCompare" />
+    </definition>
+
+    <definition name="baseCatalog.productsCompare" extends="baseCatalog">
+        <put name="baseCatalog.mainContent" value="/jsp/layout/blank.jsp" />
+        <put name="baseCatalog.featured"    value="/jsp/catalogue/productsCompare.jsp" />
+    </definition>
+    
+
+    <definition name="portal.catalog.sellerList" extends="portal">
+        <put name="body" value="contentSeller.sellerList"/>
+    </definition>
+
+    <definition name="contentSeller" path="/jsp/layout/contentSeller.jsp">
+        <put name="contentSeller.leftNavigation"  value="portal.navigation.catalog" />
+        <put name="contentSeller.mainContent" />
+        <put name="contentSeller.featured"        value="portal.menu.rightBanner" />
+    </definition>
+
+    <definition name="contentSeller.sellerList" extends="contentSeller">
+        <put name="contentSeller.mainContent"         value="/jsp/layout/catalog/sellerList.jsp"/>
+    </definition>
+
+    <!--definition name="portal.catalog.seller" extends="portal">
+        <put name="body" value="contentSeller.seller"/>
+    </definition>
+
+    <definition name="contentSeller.seller" extends="contentSeller">
+        <put name="contentSeller.mainContent"     value="/jsp/layout/catalog/seller.jsp"/>        
+    </definition-->
+	
+	<definition name="portal.flight.itinerary" extends="portal">
+        <put name="body" value="body.flight.itinerary"/>
+    </definition>
+
+    <definition name="body.flight.itinerary" extends="body">
+        <put name="content"     value="/jsp/layout/flight/itinerary.jsp"/>        
+    </definition>
+
+	<definition name="portal.establishment" extends="portal">
+        <put name="body" value="body.establishment"/>
+    </definition>
+
+    <definition name="body.establishment" extends="body">
+        <put name="content"     value="/jsp/layout/establishment/establishments.jsp"/>        
+    </definition>
+	
+	<definition name="portal.office" extends="portal">
+        <put name="body" value="body.office"/>
+    </definition>
+
+    <definition name="body.office" extends="body">
+        <put name="content"     value="/jsp/layout/office/offices.jsp"/>        
+    </definition>
+	
+	<!--Socios -->	
+	
+	<definition name="portal.partners.viajero.login" extends="portal">
+        <put name="body" value="body.partners.viajero.login"/>
+    </definition>
+
+    <definition name="body.partners.viajero.login" extends="body">
+        <put name="content"     value="/jsp/layout/partner/skies/viajeroFrecuenteLogin.jsp"/>        
+    </definition>	
+
+	<definition name="portal.partners.loyalty.login" extends="portal">
+        <put name="body" value="body.partners.loyalty.login"/>
+    </definition>
+
+    <definition name="body.partners.loyalty.login" extends="body">
+        <put name="content"     value="/jsp/layout/partner/agency/loyaltyLogin.jsp"/>        
+    </definition>	
+	
+	<definition name="portal.partners.icaroclub.login" extends="portal">
+        <put name="body" value="body.partners.icaroclub.login"/>
+    </definition>
+
+    <definition name="body.partners.icaroclub.login" extends="body">
+        <put name="content"     value="/jsp/layout/partner/corp/icaroClubLogin.jsp"/>        
+    </definition>
+	<!--Socio Skies-->
+	<definition name="portal.partners.skies.principal" extends="portal" controllerUrl="/tiles/content.do">
+        <put name="body" value="body.partners.skies.principal"/>
+    </definition>
+
+    <definition name="body.partners.skies.principal" extends="body">
+        <put name="content"     value="/jsp/layout/partner/skies/principal.jsp"/>        
+    </definition>
+	
+	<definition name="portal.partners.skies.account" extends="portal">
+        <put name="body" value="body.partners.skies.account"/>
+    </definition>
+
+    <definition name="body.partners.skies.account" extends="body">
+        <put name="content"     value="/jsp/layout/partner/skies/account.jsp"/>        
+    </definition>
+	
+	<!--Socio Corp-->	
+	<definition name="portal.partners.corp.principal" extends="portal" controllerUrl="/tiles/content.do">
+        <put name="body" value="body.partners.corp.principal"/>
+    </definition>
+
+    <definition name="body.partners.corp.principal" extends="body">
+        <put name="content"     value="/jsp/layout/partner/corp/principal.jsp"/>        
+    </definition>	
+	
+	<definition name="portal.partners.corp.account" extends="portal">
+        <put name="body" value="body.partners.corp.account"/>
+    </definition>
+
+    <definition name="body.partners.corp.account" extends="body">
+        <put name="content"     value="/jsp/layout/partner/corp/account.jsp"/>        
+    </definition>
+		<!--Socio Agency-->
+	<definition name="portal.partners.agency.principal" extends="portal" controllerUrl="/tiles/content.do">
+        <put name="body" value="body.partners.agency.principal"/>
+    </definition>
+
+    <definition name="body.partners.agency.principal" extends="body">
+        <put name="content"     value="/jsp/layout/partner/agency/principal.jsp"/>        
+    </definition>
+			
+    <definition name="portal.partners.agency.account" extends="portal">
+        <put name="body" value="body.partners.agency.account"/>
+    </definition>
+
+    <definition name="body.partners.agency.account" extends="body">
+        <put name="content"     value="/jsp/layout/partner/agency/account.jsp"/>        
+    </definition>
+	
+	<!--Icaro Cargo -->
+	<definition name="portal.icaro.cargo" path="/jsp/cargo/icaroCargo.jsp"/>
+	
+	<!--Noticias y Eventos -->	
+	
+	<definition name="portal.news.list" extends="portal">
+        <put name="body" value="body.news.list"/>
+    </definition>
+
+    <definition name="body.news.list" extends="body">
+        <put name="content"     value="/jsp/layout/news/newsList.jsp"/>        
+    </definition>
+	
+	<definition name="portal.news.info" extends="portal">
+        <put name="body" value="body.news.info"/>
+    </definition>
+
+    <definition name="body.news.info" extends="body">
+        <put name="content"     value="/jsp/layout/news/newsDetail.jsp"/>        
+    </definition>
+	
+    <!--definition name="portal.catalog.brandList" extends="portal">
+        <put name="body" value="contentSeller.brandList"/>
+    </definition>
+
+    <definition name="contentSeller.brandList" extends="contentSeller">
+        <put name="contentSeller.mainContent"         value="/jsp/layout/catalog/brandList.jsp"/>
+    </definition>
+
+    <definition name="portal.catalog.brand" extends="portal">
+        <put name="body" value="contentSeller.brand"/>
+    </definition>
+
+    <definition name="contentSeller.brand" extends="contentSeller">
+        <put name="contentSeller.mainContent"     value="/jsp/layout/catalog/brand.jsp"/>        
+    </definition-->
+
+
+    <definition name="cart.header" path="/jsp/layout/headerCart.jsp" controllerUrl="/tiles/cart/headerFlow.do" >
+        <put name="flowNavigation"          value="/jsp/layout/menus/flow.jsp"/>
+    </definition>
+
+    <definition name="cart.body" path="/jsp/layout/cart.jsp"  controllerUrl="/tiles/cart/flow.do">
+	    <put name="leftNavigation"          value="portal.menu.principalLeft" />
+        <put name="cartContent"             value="cart.searchFlight" />
+    </definition>
+	
+
+    <definition name="cart.catalogue.prices" path="/jsp/common/priceDetail.jsp" />
+
+    <definition name="cart.searchFlight"   path="/jsp/cart/searchFlight.jsp" controllerUrl="/tiles/flight.do" />
+    <definition name="cart.selection"      path="/jsp/cart/selection.jsp" />
+    <definition name="cart.powerSelection" path="/jsp/cart/powerSelection.jsp" />
+    <definition name="cart.registerLogin"  path="/jsp/cart/registerLogin.jsp" controllerUrl="/tiles/cart/register.do" />
+	<definition name="cart.passenger"     path="/jsp/cart/passenger.jsp"    controllerUrl="/tiles/passenger.do" />
+    <definition name="cart.passwordReset" path="/jsp/cart/passwordChange.jsp" controllerUrl="/tiles/cart/register.do" />
+    <definition name="cart.summary"        path="/jsp/cart/summary.jsp" />
+    <definition name="cart.result"         path="/jsp/cart/result.jsp" />
+    <definition name="cart.payment"       path="/jsp/cart/payment.jsp"        controllerUrl="/tiles/cart/payment.do" />
+    <definition name="cart.send"           path="/jsp/cart/send.jsp" />
+    <definition name="cart.paymentSuccess" path="/jsp/cart/paymentSuccess.jsp" />
+    <definition name="cart.paymentFailed"  path="/jsp/cart/paymentFailed.jsp" />
+	
+	<definition name="portal.search.flight"    path="/jsp/layout/search/searchFlightForm.jsp"  controllerUrl="/tiles/flight.do" />
+	
+
+
+    <!-- PORTAL ACCOUNT -->
+    <definition name="portal.content.account" extends="portal">
+        <put name="body" value="content.accountHome"/>
+    </definition>
+	
+	<definition name="content.accountHome" extends="body">
+        <put name="content"  value="/jsp/account/home.jsp"/>
+    </definition>
+
+    <definition name="portal.content.accountLogin" extends="portal" controllerUrl="/tiles/cart/register.do">
+        <put name="body" value="content.accountRegister"/>
+    </definition>
+	
+	<definition name="content.accountRegister" extends="body">
+        <put name="content"  value="/jsp/account/register.jsp"/>
+    </definition>
+	
+	<definition name="portal.account.successRegister" extends="portal">
+        <put name="body" value="content.accountSuccessRegister"/>
+    </definition>
+
+	<definition name="content.accountSuccessRegister" extends="body">
+		<put name="content" value="/jsp/account/welcome.jsp"/>
+    </definition>
+
+	<definition name="portal.account.passwordReset" extends="portal" controllerUrl="/tiles/cart/register.do">
+		<put name="body" value="content.accountPasswordReset"/>
+    </definition>
+	
+	<definition name="content.accountPasswordReset" extends="body">
+        <put name="content" value="/jsp/account/passwordChange.jsp"/>
+    </definition>
+	
+	<definition name="portal.account.successUpdate" extends="portal">
+        <put name="body" value="content.accountSuccessUpdate"/>
+    </definition>
+
+	<definition name="content.accountSuccessUpdate" extends="body">
+		<put name="content" value="/jsp/account/successUpdate.jsp"/>
+    </definition>
+	
+    <definition name="portal.content.accountSub" extends="portal" controllerUrl="/tiles/cart/register.do">
+        <put name="body" value="content.accountSub"/>
+    </definition>
+
+    <definition name="content.accountSub" extends="body">
+        <put name="content" value="/jsp/account/account.jsp"/>
+    </definition>
+	
+	<definition name="portal.content.accountPurchases" extends="portal" controllerUrl="/tiles/cart/purchases.do">
+        <put name="body" value="content.accountPurchases"/>
+    </definition>
+
+    <definition name="content.accountPurchases" extends="body">
+        <put name="content" value="/jsp/account/purchases.jsp"/>
+    </definition>
+	
+	<definition name="portal.content.accountPNR" extends="portal" controllerUrl="/tiles/cart/purchases.do">
+        <put name="body" value="content.accountPNR"/>
+    </definition>
+
+    <definition name="content.accountPNR" extends="body">
+        <put name="content" value="/jsp/account/bookList.jsp"/>
+    </definition>
+
+	
+	
+	<definition name="portal.content.accountPurchaseDetailReserve"  path="/jsp/account/purchaseDetailReserve.jsp"/>
+
+	
+	<definition name="portal.content.accountPurchaseDetail" path="/jsp/account/purchaseDetail.jsp"/>
+
+	
+	
+    <!-- definition name="contentAccount.myCart" path="/jsp/account/cart.jsp"/-->
+    <definition name="contentAccount.home"      path="/jsp/account/home.jsp"/>
+    <definition name="contentAccount.history"   path="/jsp/account/history.jsp" />
+    <definition name="contentAccount.account"   path="/jsp/account/account.jsp" controllerUrl="/tiles/cart/register.do"/>
+    <definition name="contentAccount.recommend" path="/jsp/account/recommend.jsp"/>
+
+	
+    <definition name="content" path="/jsp/layout/content.jsp" controllerUrl="/tiles/content.do">
+        <put name="content.leftNavigation"   value="portal.navigation.catalog" />
+        <put name="content.mainContent" />
+        <put name="content.featured" />
+    </definition>
+
+    
+
+	
+
+
+    <definition name="portal.pager" path="/jsp/common/pager.jsp" controllerUrl="/tiles/system/pager.do">
+        <put name="formIndex" value="0" /><!-- parameter -->
+        <put name="styleClass" value="" /><!-- parameter -->
+        <put name="selectedClass" value="" /><!-- parameter -->
+        <put name="totalPages" /><!-- parameter -->
+        <put name="currentPage" /><!-- parameter -->
+    </definition>
+
+
+    <definition name="system.navBar" path="/system/common/systemNavBar.jsp" controllerUrl="/tiles/system/navBar.do">
+        <put name="formIndex" value="0" /><!-- parameter -->
+        <put name="add"     value="false" /><!-- parameter -->
+        <put name="edit"    value="false" /><!-- parameter -->
+        <put name="delete"  value="false" /><!-- parameter -->
+        <put name="save"    value="false" /><!-- parameter -->
+        <put name="apply"   value="false" /><!-- parameter -->
+        <put name="reset"   value="false" /><!-- parameter -->
+        <put name="preview" value="false" /><!-- parameter -->
+        <put name="cancel"  value="false" /><!-- parameter -->
+    </definition>
+
+    <definition name="system.pager" path="/system/common/pager.jsp" controllerUrl="/tiles/system/pager.do">
+        <put name="formIndex" value="0" /><!-- parameter -->
+        <put name="styleClass" value="" /><!-- parameter -->
+        <put name="selectedClass" value="" /><!-- parameter -->
+        <put name="totalPages" /><!-- parameter -->
+        <put name="currentPage" /><!-- parameter -->
+    </definition>
+
+    <!-- ======================================================= -->
+    <!-- Portal Errors                                           -->
+    <!-- ======================================================= -->
+
+    <definition name="portal.error.badRequest" extends="portal">
+        <put name="body" value="body.error.badRequest" />
+    </definition>
+
+    <definition name="body.error.badRequest" extends="body">
+        <put name="content" value="/jsp/common/badRequest.jsp" />
+    </definition>
+
+    <definition name="portal.error.sessionFailure" extends="portal">
+        <put name="body" value="body.error.sessionFailure" />
+    </definition>
+
+    <definition name="body.error.sessionFailure" extends="body">
+        <put name="content" value="/jsp/common/sessionFailure.jsp" />
+    </definition>
+
+
+    <!-- ======================================================= -->
+    <!-- Portal Definitions                                       -->
+    <!-- ======================================================= -->
+
+    <definition name="portal.navigationTree" path="/jsp/common/navigationTree.jsp" controllerUrl="/tiles/navigationTree.do" />
+	
+    <definition name="portal.services" path="/jsp/layout/services.jsp" />
+
+    <definition name="portal.services.form" path="/jsp/layout/servicesForm.jsp" controllerUrl="/tiles/menuItems.do" />
+
+    <definition name="portal.services.menu" path="/jsp/layout/servicesMenu.jsp" controllerUrl="/tiles/menuItems.do" />
+
+    <definition name="portal.menu.header"   path="/jsp/layout/menus/header.jsp" controllerUrl="/tiles/accessItems.do" />
+	
+	<definition name="portal.menu.principalLeft"   path="/jsp/layout/menus/principalLeft.jsp" controllerUrl="/tiles/accessItems.do" />
+	
+	<definition name="portal.menu.banner.home.footer"   path="/jsp/layout/menus/bannerHomeFooter.jsp" controllerUrl="/tiles/accessItems.do" />
+	
+	<definition name="portal.menu.banner.home.right"   path="/jsp/layout/menus/bannerHomeRight.jsp" controllerUrl="/tiles/accessItems.do" />
+	
+	<definition name="portal.menu.banner.right"   path="/jsp/layout/menus/bannerRight.jsp" controllerUrl="/tiles/accessItems.do" />
+	
+	<definition name="portal.icaro.cargo.acceso"   path="/jsp/cargo/acceso.jsp" controllerUrl="/tiles/cargo.do" />
+
+    <definition name="portal.menu.flash"    path="/jsp/layout/menus/flash.jsp"  controllerUrl="/tiles/accessItems.do" />
+
+    <definition name="portal.menu.banner"   path="/jsp/layout/menus/banner.jsp" controllerUrl="/tiles/accessItems.do" />
+
+    <definition name="portal.menu.topBanner" path="/jsp/layout/menus/topBanner.jsp" controllerUrl="/tiles/accessItems.do" />
+
+    <definition name="portal.menu.footer"         path="/jsp/layout/menus/footer.jsp" controllerUrl="/tiles/accessItems.do" />
+    
+    <definition name="portal.menu.footer.popup"   path="/jsp/layout/menus/footerPopup.jsp" controllerUrl="/tiles/accessItems.do" />
+    
+    <definition name="portal.menu.payment"  path="/jsp/layout/menus/payment.jsp" controllerUrl="/tiles/accessItems.do" />
+
+    <definition name="portal.menu.interest" path="/jsp/layout/menus/interest.jsp" controllerUrl="/tiles/accessItems.do" />
+
+    <definition name="portal.menu.rightBanner" path="/jsp/layout/menus/rightBanner.jsp" controllerUrl="/tiles/accessItems.do"/>
+
+    <definition name="portal.menu.centerLeft" path="/jsp/layout/menus/centerLeft.jsp" controllerUrl="/tiles/accessItems.do"/>
+	
+    <definition name="portal.menu.navigation" path="/jsp/layout/menus/navigation.jsp" controllerUrl="/tiles/menuLeft.do">
+        <put name="imageColor" value="1" />
+    </definition>
+
+    <definition name="portal.menu.right"    path="/jsp/layout/menus/right.jsp"  controllerUrl="/tiles/catalogue/showRoomProducts.do" />
+	
+    <definition name="portal.news.home"    path="/jsp/layout/home/news.jsp"  controllerUrl="/tiles/newsPortal.do" />
+	
+	<definition name="portal.itinerary.popup" path="/jsp/layout/flight/popupRates.jsp"/>
+	
+	<definition name="portal.flash.menu"    path="/jsp/layout/xml/menu.jsp"  />
+
+
+    <definition name="portal.content" extends="portal">
+        <put name="body" value="content.principal" />
+    </definition>
+
+    <definition name="content.principal" extends="body">
+        <put name="content"      value="/jsp/layout/content/principalContent.jsp"/>        
+    </definition>
+
+    <definition name="portal.content.secundary" extends="portal">
+        <put name="body" value="content.secundary" />
+    </definition>
+
+    <definition name="content.secundary" extends="content">
+        <put name="content.mainContent"      value="/jsp/layout/content/secondaryContent.jsp"/>
+        <put name="content.featured"         value="/jsp/layout/menus/contentMenu.jsp" />
+    </definition>
+
+    <!--definition name="content.contact.form" extends="content" controllerUrl="/tiles/contact.do">
+        <put name="content.mainContent"      value="/jsp/layout/contact/contactForm.jsp"/>
+        <put name="content.featured"         value="/jsp/layout/blank.jsp" />
+    </definition-->
+
+    <definition name="portal.content.access" extends="portal">
+        <put name="body" value="body.content.access" />
+    </definition>
+	<!-- Contactenos -->
+    <definition name="portal.contact.form" extends="portal">
+        <put name="body" value="body.contact.form" />
+    </definition>
+	
+	<definition name="body.contact.form" extends="body" controllerUrl="/tiles/contact.do">
+        <put name="content" value="/jsp/layout/contact/contactForm.jsp" />
+    </definition>
+
+    <definition name="portal.form.success" extends="portal">
+        <put name="body" value="content.form.success" />
+    </definition>
+	
+	<definition name="content.form.success" extends="body">
+        <put name="content" value="/jsp/layout/contact/contactSuccess.jsp" />
+    </definition>
+
+    <!--definition name="content.form.success" extends="content">
+        <put name="content.mainContent"      value="/jsp/layout/contact/contactSuccess.jsp"/>
+        <put name="content.featured"         value="/jsp/layout/blank.jsp" />
+    </definition-->
+	
+	<!-- Mapa del Sitio -->
+    <definition name="portal.map" extends="portal">
+        <put name="body" value="body.map" />
+    </definition>
+
+    <definition name="body.map" extends="body">
+        <put name="content" value="/jsp/layout/map/map.jsp" />
+    </definition>
+
+
+    <!-- Buscador General -->
+
+    <definition name="portal.search.general" extends="portal">
+        <put name="body" value="body.search.general" />
+    </definition>	
+
+    <definition name="body.search.general" extends="body" controllerUrl="/tiles/search.do">
+        <put name="content" value="/jsp/layout/search/search.jsp" />
+    </definition>
+	
+		<!-- Buscador Vuelos -->
+
+    <definition name="portal.flight.search" extends="portal">
+        <put name="body" value="body.search.flight" />
+    </definition>
+
+    <definition name="body.flight.search" extends="body" controllerUrl="/tiles/search.do">
+        <put name="content" value="/jsp/layout/search/flights.jsp" />
+    </definition>
+
+
+    <!-- ======================================================= -->
+    <!-- Portal Errors                                           -->
+    <!-- ======================================================= -->
+    <definition name="portal.error.badRequest" extends="portal">
+        <put name="body" value="/jsp/common/badRequest.jsp" />
+    </definition>
+    
+    <!-- ======================================================= -->
+    <!-- Portal Popups                                       -->
+    <!-- ======================================================= -->
+    
+    <definition name="popupPortal.product" extends="popupPortal">
+        <put name="body" value="/jsp/common/preview.jsp" />
+    </definition>
+
+    <definition name="popupPortal.content" extends="popupPortal">
+        <put name="body" value="/jsp/layout/content/popupContent.jsp" />
+    </definition>
+
+    <!-- ======================================================= -->
+    <!-- System Entities                                         -->
+    <!-- ======================================================= -->
+
+    <!-- Catalogues -->
+    <definition name="system.entity.catalogueList" extends="system">
+        <put name="body" value="/system/entity/catalogueList.jsp" />
+    </definition>
+
+    <definition name="system.entity.catalogueForm" extends="system">
+        <put name="body" value="/system/entity/catalogueForm.jsp" />
+    </definition>
+	
+	 <!-- Catalogues -->
+    <definition name="system.entity.airportList" extends="system" controllerUrl="/tiles/system/portal/cityList.do">
+        <put name="body" value="/system/entity/airportList.jsp" />
+    </definition>
+
+    <definition name="system.entity.airportForm" extends="system" controllerUrl="/tiles/system/portal/cityList.do">
+        <put name="body" value="/system/entity/airportForm.jsp" />
+    </definition>
+	
+	<definition name="system.entity.establishmentList" extends="system" controllerUrl="/tiles/system/portal/establishment.do">
+        <put name="body" value="/system/catalogue/establishmentList.jsp" />
+    </definition>
+
+    <definition name="system.entity.establishmentForm" extends="system" controllerUrl="/tiles/system/portal/establishment.do">
+        <put name="body" value="/system/catalogue/establishmentForm.jsp" />
+    </definition>
+	
+	<definition name="system.entity.officeList" extends="system" controllerUrl="/tiles/system/portal/office.do">
+        <put name="body" value="/system/catalogue/officeList.jsp" />
+    </definition>
+
+    <definition name="system.entity.officeForm" extends="system" controllerUrl="/tiles/system/portal/office.do">
+        <put name="body" value="/system/catalogue/officeForm.jsp" />
+    </definition>
+
+    <!-- Zone -->
+    <definition name="system.entity.zoneList" extends="system">
+        <put name="body" value="/system/entity/zoneList.jsp" />
+    </definition>
+
+    <definition name="system.entity.zoneForm" extends="system">
+        <put name="body" value="/system/entity/zoneForm.jsp" />
+    </definition>
+
+
+    <!-- ======================================================= -->
+    <!-- System Administration Definitions                       -->
+    <!-- ======================================================= -->
+    <definition name="system" path="/system/layout/system.jsp">
+        <put name="header" value="system.header" />
+        <put name="body" />
+        <put name="footer" value="/system/layout/footer.jsp" />
+    </definition>
+
+    <definition name="popup" path="/system/layout/popup.jsp">
+        <put name="header" value="/system/layout/popupheader.jsp" />
+        <put name="body" />
+        <put name="footer" value="/system/layout/footer.jsp" />
+    </definition>
+
+    <definition name="systemLessMenu" path="/system/layout/systemLessMenu.jsp">
+        <put name="header" value="/system/layout/headerLessMenu.jsp" />
+        <put name="body" />
+        <put name="footer" value="/system/layout/footer.jsp" />
+    </definition>
+
+    <definition name="system.header" path="/system/layout/header.jsp" controllerUrl="/tiles/system/header.do">
+    </definition>
+
+    <definition name="system.iframe" path="/system/layout/iframe.jsp">
+        <put name="content" />
+    </definition>
+
+
+    <!-- System definitions -->
+    <definition name="system.home" extends="system">
+        <put name="body" value="/system/home.jsp" />
+    </definition>
+
+    <definition name="system.reset" path="/jsp/resetPassword.jsp">
+    </definition>
+
+    <definition name="popup.uploadMedia" path="/system/common/uploadMediaFile.jsp" controllerUrl="/tiles/uploadMediaTilesAction.do">
+    </definition>
+
+    <definition name="popup.uploadMedia.success" path="/system/common/uploadMediaFile.jsp" controllerUrl="/tiles/uploadMediaTilesAction.do">
+    </definition>
+
+    <!-- Administration definitions -->
+    <definition name="system.portal.searchParentMenu" extends="popup">
+        <put name="body" value="/system/portal/searchParent.jsp" />
+    </definition>
+
+    <definition name="system.portal.searchContent" extends="popup">
+        <put name="body" value="/system/portal/searchContent.jsp" />
+    </definition>
+
+    <definition name="system.admin.sysAuditList" extends="system" controllerUrl="/tiles/system/sysAudit.do">
+        <put name="body" value="/system/admin/sysAuditList.jsp" />
+    </definition>
+
+    <definition name="system.admin.sysAuditForm" extends="system">
+        <put name="body" value="/system/admin/sysAuditForm.jsp" />
+    </definition>
+
+    <definition name="system.admin.sysModuleFrame" extends="system">
+        <put name="body" value="/system/admin/sysModuleFrame.jsp" />
+    </definition>
+
+    <definition name="system.admin.sysModuleList" extends="system.iframe">
+        <put name="content" value="/system/admin/sysModuleList.jsp" />
+    </definition>
+
+    <definition name="system.admin.sysModuleForm" extends="system.iframe" controllerUrl="/tiles/system/sysModule.do">
+        <put name="content" value="/system/admin/sysModuleForm.jsp" />
+    </definition>
+
+    <definition name="system.admin.sysParamList" extends="system" controllerUrl="/tiles/system/sysParam.do">
+        <put name="body" value="/system/admin/sysParamList.jsp" />
+    </definition>
+
+    <definition name="system.admin.sysParamForm" extends="system" controllerUrl="/tiles/system/sysParam.do">
+        <put name="body" value="/system/admin/sysParamForm.jsp" />
+    </definition>
+
+    <definition name="system.admin.sysRoleList" extends="system">
+        <put name="body" value="/system/admin/sysRoleList.jsp" />
+    </definition>
+
+    <definition name="system.admin.sysRoleSectionList" extends="system">
+        <put name="body" value="/system/admin/sysRoleSectionList.jsp" />
+    </definition>
+
+    <!-- Reporte de Log de Paginas -->
+    <definition name="system.admin.reportsList" extends="system" controllerUrl="/tiles/system/pageLog.do">
+        <put name="body" value="/system/admin/reportsPageLog.jsp" />
+    </definition>
+
+    <definition name="system.admin.reportsForm" extends="system">
+        <put name="body" value="/system/admin/reportsPageLogForm.jsp" />
+    </definition>
+
+    <definition name="system.portal.sectionList" extends="system">
+        <put name="body" value="/system/portal/sectionList.jsp" />
+    </definition>
+
+    <definition name="system.portal.sectionForm" extends="system" controllerUrl="/tiles/system/portal/content.do">
+        <put name="body" value="/system/portal/sectionForm.jsp" />
+    </definition>
+
+    <definition name="system.portal.categoryList" extends="system" controllerUrl="/tiles/system/portal/content/search.do">
+        <put name="body" value="/system/portal/categoryList.jsp" />
+    </definition>
+
+    <definition name="system.portal.categoryForm" extends="system" controllerUrl="/tiles/system/portal/content.do">
+        <put name="body" value="/system/portal/categoryForm.jsp" />
+    </definition>
+
+    <definition name="system.portal.itemList" extends="system" controllerUrl="/tiles/system/portal/content/search.do">
+        <put name="body" value="/system/portal/itemList.jsp" />
+    </definition>
+
+    <definition name="system.portal.itemForm" extends="system" controllerUrl="/tiles/system/portal/content.do">
+        <put name="body" value="/system/portal/itemForm.jsp" />
+    </definition>
+
+    <definition name="system.portal.relatedContentList" extends="system">
+        <put name="body" value="/system/portal/relatedContentList.jsp" />
+    </definition>
+
+    <definition name="system.portal.relatedContentForm" extends="system" controllerUrl="/tiles/system/portal/content/related.do">
+        <put name="body" value="/system/portal/relatedContentForm.jsp" />
+    </definition>
+
+    <!-- BEGIN CONTENT - OBJECTS RELATIONS -->
+    <definition name="system.portal.sriDocumentHome" extends="system">
+        <put name="body" value="/system/portal/content/documentHome.jsp" />
+    </definition>
+
+    <!-- Document Related -->
+    <definition name="system.portal.contentDocumentForm" extends="system" controllerUrl="/tiles/system/container/document.do">
+        <put name="body" value="/system/portal/contentDocumentForm.jsp" />
+    </definition>
+
+    <definition name="system.portal.contentAssignDocumentList" extends="system" controllerUrl="/tiles/system/container/document.do">
+        <put name="body" value="/system/portal/contentAssignDocumentList.jsp" />
+    </definition>
+
+    <definition name="system.portal.contentAvailableDocumentList" extends="system" controllerUrl="/tiles/system/container/document.do">
+        <put name="body" value="/system/portal/contentAvailableDocumentList.jsp" />
+    </definition>
+
+    <!-- Faq Related -->
+    <definition name="system.portal.contentFaqForm" extends="system" controllerUrl="/tiles/system/container/faq.do">
+        <put name="body" value="/system/portal/contentFaqForm.jsp" />
+    </definition>
+
+    <definition name="system.portal.contentAssignFaqList" extends="system" controllerUrl="/tiles/system/container/faq.do">
+        <put name="body" value="/system/portal/contentAssignFaqList.jsp" />
+    </definition>
+
+    <definition name="system.portal.contentAvailableFaqList" extends="system" controllerUrl="/tiles/system/container/faq.do">
+        <put name="body" value="/system/portal/contentAvailableFaqList.jsp" />
+    </definition>
+
+    <!-- Link Related -->
+    <definition name="system.portal.contentLinkForm" extends="system" controllerUrl="/tiles/system/container/link.do">
+        <put name="body" value="/system/portal/contentLinkForm.jsp" />
+    </definition>
+
+    <definition name="system.portal.contentAssignLinkList" extends="system" controllerUrl="/tiles/system/container/link.do">
+        <put name="body" value="/system/portal/contentAssignLinkList.jsp" />
+    </definition>
+
+    <definition name="system.portal.contentAvailableLinkList" extends="system" controllerUrl="/tiles/system/container/link.do">
+        <put name="body" value="/system/portal/contentAvailableLinkList.jsp" />
+    </definition>
+
+    <!-- END CONTENT - OBJECTS RELATIONS -->
+
+    <definition name="system.admin.sysRoleForm" extends="system" controllerUrl="/tiles/system/sysRole.do">
+        <put name="body" value="/system/admin/sysRoleForm.jsp" />
+    </definition>
+
+    <definition name="system.admin.sysProfileList" extends="system">
+        <put name="body" value="/system/admin/sysProfileList.jsp" />
+    </definition>
+
+    <definition name="system.admin.sysUserList" extends="system">
+        <put name="body" value="/system/admin/sysUserList.jsp" />
+    </definition>
+
+    <definition name="system.admin.sysUserForm" extends="system" controllerUrl="/tiles/system/sysUser.do">
+        <put name="body" value="/system/admin/sysUserForm.jsp" />
+    </definition>
+
+    <definition name="system.update.sysUserForm" extends="systemLessMenu" controllerUrl="/tiles/system/sysUser.do">
+        <put name="body" value="/system/admin/sysUserUpdateForm.jsp" />
+    </definition>
+
+    <definition name="system.admin.ldap.userList" extends="system">
+        <put name="body" value="/system/admin/ldap/userList.jsp" />
+    </definition>
+
+    <!-- Portal definitions -->
+    <definition name="system.portal.languageList" extends="system">
+        <put name="body" value="/system/portal/languageList.jsp" />
+    </definition>
+
+    <definition name="system.portal.languageForm" extends="system">
+        <put name="body" value="/system/portal/languageForm.jsp" />
+    </definition>
+
+    <definition name="system.portal.menuList" extends="system">
+        <put name="body" value="/system/portal/menuList.jsp" />
+    </definition>
+
+    <definition name="system.portal.menuForm" extends="system">
+        <put name="body" value="/system/portal/menuForm.jsp" />
+    </definition>
+
+    <definition name="system.portal.menuItemList" extends="system">
+        <put name="body" value="/system/portal/menuItemList.jsp" />
+    </definition>
+
+    <definition name="system.portal.menuItemForm" extends="system" controllerUrl="/tiles/system/portal/menu/item.do">
+        <put name="body" value="/system/portal/menuItemForm.jsp" />
+    </definition>
+
+    <definition name="system.portal.accessMenuList" extends="system">
+        <put name="body" value="/system/portal/accessMenuList.jsp" />
+    </definition>
+
+    <definition name="system.portal.accessMenuForm" extends="system" controllerUrl="/tiles/system/portal/access.do">
+        <put name="body" value="/system/portal/accessMenuForm.jsp" />
+    </definition>
+
+    <definition name="system.entity.countryList" extends="system">
+        <put name="body" value="/system/entity/countryList.jsp" />
+    </definition>
+
+    <definition name="system.entity.countryForm" extends="system">
+        <put name="body" value="/system/entity/countryForm.jsp" />
+    </definition>
+    
+    <definition name="system.entity.flight.routeForm" extends="system" >
+        <put name="body" value="/system/entity/flight/routeForm.jsp" />
+    </definition>
+
+    <definition name="system.entity.flight.routeList" extends="system">
+        <put name="body" value="/system/entity/flight/routeList.jsp" />
+    </definition>
+    
+    <definition name="system.entity.flight.frequencyForm" extends="system" >
+        <put name="body" value="/system/entity/flight/frequencyForm.jsp" />
+    </definition>
+
+    <definition name="system.entity.flight.frequencyList" extends="system">
+        <put name="body" value="/system/entity/flight/frequencyList.jsp" />
+    </definition>
+    
+    <definition name="system.entity.flight.flightForm" extends="system" controllerUrl="/tiles/system/portal/flightForm.do" >
+        <put name="body" value="/system/entity/flight/flightForm.jsp" />
+    </definition>
+
+    <definition name="system.entity.flight.flightList" extends="system">
+        <put name="body" value="/system/entity/flight/flightList.jsp" />
+    </definition>
+
+    
+
+    <definition name="system.entity.flight.ticketRateForm" extends="system" controllerUrl="/tiles/system/portal/ticketRate.do">
+        <put name="body" value="/system/entity/flight/ticketRateForm.jsp" />
+    </definition>
+
+    <definition name="system.entity.flight.ticketRateList" extends="system">
+        <put name="body" value="/system/entity/flight/ticketRateList.jsp" />
+    </definition>
+
+
+    <definition name="system.portal.accessList" extends="system" controllerUrl="/tiles/system/portal/access.do">
+        <put name="body" value="/system/portal/accessList.jsp" />
+    </definition>
+
+    <definition name="system.portal.accessForm" extends="system" controllerUrl="/tiles/system/portal/access.do">
+        <put name="body" value="/system/portal/accessForm.jsp" />
+    </definition>
+
+    <definition name="system.portal.generalSearch" extends="popup">
+        <put name="body" value="/system/common/generalSearch.jsp" />
+    </definition>
+
+    <definition name="system.portal.stateList" extends="system" controllerUrl="/tiles/system/portal/state.do">
+        <put name="body" value="/system/portal/stateList.jsp" />
+    </definition>
+
+    <definition name="system.portal.stateForm" extends="system" controllerUrl="/tiles/system/portal/state.do">
+        <put name="body" value="/system/portal/stateForm.jsp" />
+    </definition>
+
+    <definition name="system.portal.cityList" extends="system" controllerUrl="/tiles/system/portal/city.do?listStates=true">
+        <put name="body" value="/system/portal/cityList.jsp" />
+    </definition>
+
+    <definition name="system.portal.cityForm" extends="system" controllerUrl="/tiles/system/portal/city.do">
+        <put name="body" value="/system/portal/cityForm.jsp" />
+    </definition>
+
+    <definition name="system.ajax.stateListByCountryAjax" path="/system/portal/ajax/stateListByCountry.jsp" />
+
+    <definition name="system.ajax.secListByPropAjax" path="/system/portal/ajax/secondaryListByProperty.jsp" />
+
+    <definition name="system.ajax.terListByPropAjax" path="/system/portal/ajax/terceryListByProperty.jsp" />
+
+    <definition name="system.entity.imageCategoryList" extends="system" controllerUrl="/tiles/system/portal/imageCategory.do">
+        <put name="body" value="/system/portal/imageCategoryList.jsp" />
+    </definition>
+
+    <definition name="system.entity.imageCategoryForm" extends="system" controllerUrl="/tiles/system/portal/imageCategory.do">
+        <put name="body" value="/system/portal/imageCategoryForm.jsp" />
+    </definition>
+
+    <definition name="system.portal.documentTypeList" extends="system">
+        <put name="body" value="/system/portal/documentTypeList.jsp" />
+    </definition>
+
+    <definition name="system.portal.documentTypeForm" extends="system">
+        <put name="body" value="/system/portal/documentTypeForm.jsp" />
+    </definition>
+
+    <definition name="system.portal.documentList" extends="system">
+        <put name="body" value="/system/portal/documentList.jsp" />
+    </definition>
+
+    <definition name="system.portal.documentForm" extends="system" controllerUrl="/tiles/system/portal/document.do">
+        <put name="body" value="/system/portal/documentForm.jsp" />
+    </definition>
+
+    <definition name="system.portal.sectionDocumentList" extends="system.iframe">
+        <put name="content" value="/system/portal/sectionDocumentList.jsp" />
+    </definition>
+
+    <definition name="system.portal.sectionDocumentForm" extends="system.iframe" controllerUrl="/tiles/system/portal/document.do">
+        <put name="content" value="/system/portal/sectionDocumentForm.jsp" />
+    </definition>
+
+    <definition name="system.portal.categoryDocumentList" extends="system.iframe">
+        <put name="content" value="/system/portal/categoryDocumentList.jsp" />
+    </definition>
+
+    <definition name="system.portal.categoryDocumentForm" extends="system.iframe" controllerUrl="/tiles/system/portal/document.do">
+        <put name="content" value="/system/portal/categoryDocumentForm.jsp" />
+    </definition>
+
+    <definition name="system.portal.sectionRelationList" extends="system.iframe">
+        <put name="content" value="/system/portal/sectionRelationList.jsp" />
+    </definition>
+
+    <!-- Service definitions -->
+    <definition name="system.service.linkList" extends="system">
+        <put name="body" value="/system/service/linkList.jsp" />
+    </definition>
+
+    <definition name="system.service.linkForm" extends="system" controllerUrl="/tiles/system/service/link.do">
+        <put name="body" value="/system/service/linkForm.jsp" />
+    </definition>
+
+
+    <!--*********************************************************************** -->
+    <!-- CONTAINERS                                                             -->
+    <!--*********************************************************************** -->
+
+    <!-- Document Container definitions -->
+    <definition name="system.container.documentList" extends="system" controllerUrl="/tiles/system/container/document.do">
+        <put name="body" value="/system/container/documentList.jsp" />
+    </definition>
+
+    <definition name="system.container.documentForm" extends="system" controllerUrl="/tiles/system/container/document.do">
+        <put name="body" value="/system/container/documentForm.jsp" />
+    </definition>
+
+    <!-- Department Container definitions -->
+    <definition name="system.container.departmentList" extends="system">
+        <put name="body" value="/system/container/departmentList.jsp" />
+    </definition>
+
+    <definition name="system.container.departmentForm" extends="system" controllerUrl="/tiles/system/container/department.do">
+        <put name="body" value="/system/container/departmentForm.jsp" />
+    </definition>
+
+    <!-- Auction Container definitions -->
+    <definition name="system.container.auctionList" extends="system">
+        <put name="body" value="/system/container/auction/auctionList.jsp" />
+    </definition>
+
+    <definition name="system.container.auctionForm" extends="system">
+        <put name="body" value="/system/container/auction/auctionForm.jsp" />
+    </definition>
+
+    <!-- Auction - documents definitions -->
+    <definition name="system.auction.documentList" extends="system" controllerUrl="/tiles/system/container/document.do">
+        <put name="body" value="/system/container/auction/documentList.jsp" />
+    </definition>
+    <definition name="system.auction.documentForm" extends="system" controllerUrl="/tiles/system/container/document.do">
+        <put name="body" value="/system/container/auction/documentForm.jsp" />
+    </definition>
+    <definition name="system.auction.assign.documentList" extends="system" controllerUrl="/tiles/system/container/document.do">
+        <put name="body" value="/system/container/auction/assignDocumentList.jsp" />
+    </definition>
+
+
+
+    <!-- Images Container definitions -->
+    <definition name="system.container.imageList" extends="system" controllerUrl="/tiles/system/container/image.do">
+        <put name="body" value="/system/container/imageList.jsp" />
+    </definition>
+
+    <definition name="system.container.imageForm" extends="system" controllerUrl="/tiles/system/container/image.do">
+        <put name="body" value="/system/container/imageForm.jsp" />
+    </definition>
+
+    <!-- Support Container definitions -->
+    <definition name="system.container.supportList" extends="system" controllerUrl="/tiles/system/container/support.do">
+        <put name="body" value="/system/container/supportList.jsp" />
+    </definition>
+
+    <definition name="system.container.supportForm" extends="system" controllerUrl="/tiles/system/container/support.do">
+        <put name="body" value="/system/container/supportForm.jsp" />
+    </definition>
+
+
+    <!-- Link Container definitions -->
+    <definition name="system.container.linkList" extends="system" controllerUrl="/tiles/system/container/link.do">
+        <put name="body" value="/system/container/linkList.jsp" />
+    </definition>
+
+    <definition name="system.container.linkForm" extends="system" controllerUrl="/tiles/system/container/link.do">
+        <put name="body" value="/system/container/linkForm.jsp" />
+    </definition>
+
+
+    <!-- FAQ Container definitions -->
+    <definition name="system.portal.itemListFaq" extends="system" controllerUrl="/tiles/system/container/faq.do">
+        <put name="body" value="/system/container/faq/faqList.jsp" />
+    </definition>
+
+    <definition name="system.portal.itemListLink" extends="system" controllerUrl="/tiles/system/container/link.do">
+        <put name="body" value="/system/container/faq/faqList.jsp" />
+    </definition>
+
+    <definition name="system.container.faqList" extends="system" controllerUrl="/tiles/system/container/faq.do">
+        <put name="body" value="/system/container/faq/faqList.jsp" />
+    </definition>
+
+    <definition name="system.container.faqForm" extends="system" controllerUrl="/tiles/system/container/faq.do">
+        <put name="body" value="/system/container/faq/faqForm.jsp" />
+    </definition>
+
+    <!-- FAQ - documents definitions -->
+    <definition name="system.faq.documentList" extends="system" controllerUrl="/tiles/system/container/document.do">
+        <put name="body" value="/system/container/faq/documentList.jsp" />
+    </definition>
+    <definition name="system.faq.documentForm" extends="system" controllerUrl="/tiles/system/container/document.do">
+        <put name="body" value="/system/container/faq/documentForm.jsp" />
+    </definition>
+    <definition name="system.faq.assign.documentList" extends="system" controllerUrl="/tiles/system/container/document.do">
+        <put name="body" value="/system/container/faq/assignDocumentList.jsp" />
+    </definition>
+
+
+    <!-- News definitions -->
+    <definition name="system.news.newsList" extends="system" controllerUrl="/tiles/system/news/news.do">
+        <put name="body" value="/system/news/newsList.jsp" />
+    </definition>
+    <definition name="system.news.newsForm" extends="system" controllerUrl="/tiles/system/news/news.do">
+        <put name="body" value="/system/news/newsForm.jsp" />
+    </definition>
+
+
+    <!-- News - documents definitions -->
+    <definition name="system.news.documentList" extends="system" controllerUrl="/tiles/system/container/document.do">
+        <put name="body" value="/system/news/documentList.jsp" />
+    </definition>
+    <definition name="system.news.documentForm" extends="system" controllerUrl="/tiles/system/container/document.do">
+        <put name="body" value="/system/news/documentForm.jsp" />
+    </definition>
+    <definition name="system.news.assign.documentList" extends="system" controllerUrl="/tiles/system/container/document.do">
+        <put name="body" value="/system/news/assignDocumentList.jsp" />
+    </definition>
+
+    <!-- News - image definitions -->
+    <definition name="system.news.imageList" extends="system">
+        <put name="body" value="/system/news/imageList.jsp" />
+    </definition>
+    <definition name="system.news.imageForm" extends="system">
+        <put name="body" value="/system/news/imageForm.jsp" />
+    </definition>
+
+
+    <!-- Event definitions -->
+    <definition name="system.event.eventList" extends="system" controllerUrl="/tiles/system/event/event.do">
+        <put name="body" value="/system/event/eventList.jsp" />
+    </definition>
+
+    <definition name="system.event.eventListDocuments" extends="system" controllerUrl="/tiles/system/event/eventDocuments.do">
+        <put name="body" value="/system/container/documentList.jsp" />
+    </definition>
+
+    <definition name="system.event.eventForm" extends="system" controllerUrl="/tiles/system/event/event.do">
+        <put name="body" value="/system/event/eventForm.jsp" />
+    </definition>
+
+    <definition name="system.event.eventDateList" extends="system" controllerUrl="/tiles/system/event/date.do">
+        <put name="body" value="/system/event/eventDateList.jsp" />
+    </definition>
+
+    <definition name="system.event.eventDateForm" extends="system" controllerUrl="/tiles/system/event/date.do">
+        <put name="body" value="/system/event/eventDateForm.jsp" />
+    </definition>
+
+    <!-- Event - documents definitions -->
+    <definition name="system.event.documentList" extends="system" controllerUrl="/tiles/system/container/document.do">
+        <put name="body" value="/system/event/documentList.jsp" />
+    </definition>
+    <definition name="system.event.documentForm" extends="system" controllerUrl="/tiles/system/container/document.do">
+        <put name="body" value="/system/event/documentForm.jsp" />
+    </definition>
+    <definition name="system.event.assign.documentList" extends="system" controllerUrl="/tiles/system/container/document.do">
+        <put name="body" value="/system/event/assignDocumentList.jsp" />
+    </definition>
+
+
+    <!-- Bulletin definitions -->
+    <definition name="system.bulletin.bulletinList" extends="system">
+        <put name="body" value="/system/bulletin/bulletinList.jsp" />
+    </definition>
+
+    <definition name="system.bulletin.bulletinForm" extends="system" controllerUrl="/tiles/system/bulletin/bulletin.do">
+        <put name="body" value="/system/bulletin/bulletinForm.jsp" />
+    </definition>
+
+    <definition name="system.bulletin.bulletinSubsList" extends="system" controllerUrl="/tiles/system/bulletin/subscriber.do">
+        <put name="body" value="/system/bulletin/bulletinSubsList.jsp" />
+    </definition>
+
+    <definition name="system.bulletin.template" extends="system">
+        <put name="body" value="/system/bulletin/template.jsp" />
+    </definition>
+
+    <definition name="system.bulletin.bulletinCategoryFrame" extends="system">
+        <put name="body" value="/system/bulletin/bulletinCategoryFrame.jsp" />
+    </definition>
+
+    <definition name="system.bulletin.bulletinCategoryList" extends="system.iframe">
+        <put name="content" value="/system/bulletin/bulletinCategoryList.jsp" />
+    </definition>
+
+    <definition name="system.bulletin.bulletinCategoryForm" extends="system.iframe" controllerUrl="/tiles/system/bulletin/bulletinCategory.do">
+        <put name="content" value="/system/bulletin/bulletinCategoryForm.jsp" />
+    </definition>
+
+    <!-- Bulletin definitions -->
+    <definition name="system.bulletin.templateList" extends="system">
+        <put name="body" value="/system/bulletin/templateList.jsp" />
+    </definition>
+
+    <definition name="system.bulletin.templateForm" extends="system">
+        <put name="body" value="/system/bulletin/templateForm.jsp" />
+    </definition>
+
+    <definition name="system.bulletin.topicList" extends="system">
+        <put name="body" value="/system/bulletin/topicList.jsp" />
+    </definition>
+
+    <definition name="system.bulletin.topicForm" extends="system">
+        <put name="body" value="/system/bulletin/topicForm.jsp" />
+    </definition>
+
+    <definition name="system.bulletin.bulletinList" extends="system">
+        <put name="body" value="/system/bulletin/bulletinList.jsp" />
+    </definition>
+
+    <definition name="system.bulletin.bulletinForm" extends="system" controllerUrl="/tiles/system/bulletin/bulletin.do">
+        <put name="body" value="/system/bulletin/bulletinForm.jsp" />
+    </definition>
+
+    <definition name="system.bulletin.subscriberList" extends="system" controllerUrl="/tiles/system/bulletin/subscriber.do">
+        <put name="body" value="/system/bulletin/subscriberList.jsp" />
+    </definition>
+
+    <!--SEND BULLETIN-->
+    <definition name="system.bulletin.step1" extends="system" controllerUrl="/tiles/system/bulletin/step1.do">
+        <put name="body" value="/system/bulletin/sendBulletin/step1.jsp" />
+    </definition>
+
+    <definition name="system.bulletin.step2" extends="system" controllerUrl="/tiles/system/bulletin/step2.do">
+        <put name="body" value="/system/bulletin/sendBulletin/step2.jsp" />
+    </definition>
+
+    <definition name="system.bulletin.step3" extends="system">
+        <put name="body" value="/system/bulletin/sendBulletin/step3.jsp" />
+    </definition>
+
+
+
+    <!--TILE EVENT-->
+    <definition name="portal.general.home">
+        <put name="body" value="/jsp/header/header.jsp" />
+    </definition>
+
+    <!--Contact Report-->
+
+    <definition name="system.report.contactList" extends="system" controllerUrl="/tiles/system/portal/city.do">
+        <put name="body" value="/system/report/contactList.jsp" />
+    </definition>
+
+    <!-- ======================================================= -->
+    <!-- Cart Definitions                                        -->
+    <!-- ======================================================= -->
+
+    <!--definition name="cart.system.catalogue.brandList" extends="system">
+        <put name="body" value="/system/catalogue/brandList.jsp" />
+    </definition>
+
+    <definition name="cart.system.catalogue.brandForm" extends="system">
+        <put name="body" value="/system/catalogue/brandForm.jsp" />
+    </definition-->	
+
+    <definition name="cart.system.catalogue.categoryFrame" extends="system">
+        <put name="body" value="/system/catalogue/categoryFrame.jsp" />
+    </definition>
+
+    <definition name="cart.system.catalogue.categoryList" extends="system.iframe">
+        <put name="content" value="/system/catalogue/categoryList.jsp" />
+    </definition>
+
+    <definition name="cart.system.catalogue.categoryForm" extends="system.iframe" controllerUrl="/tiles/system/catalogue/category.do">
+        <put name="content" value="/system/catalogue/categoryForm.jsp" />
+    </definition>
+
+    <!--definition name="cart.system.catalogue.sellerList" extends="system">
+        <put name="body" value="/system/catalogue/sellerList.jsp" />
+    </definition>
+
+    <definition name="cart.system.catalogue.sellerForm" extends="system">
+        <put name="body" value="/system/catalogue/sellerForm.jsp" />
+    </definition-->
+
+    <definition name="cart.system.catalogue.productList" extends="system" controllerUrl="/tiles/system/catalogue/product.do">
+        <put name="body" value="/system/catalogue/productList.jsp" />
+    </definition>
+
+    <definition name="cart.system.catalogue.productForm" extends="system" controllerUrl="/tiles/system/catalogue/product.do">
+        <put name="body" value="/system/catalogue/productForm.jsp" />
+    </definition>
+
+    <definition name="cart.system.catalogue.productRelatedList" extends="system" controllerUrl="/tiles/system/catalogue/product.do">
+        <put name="body" value="/system/catalogue/productRelatedList.jsp" />
+    </definition>
+
+    <definition name="cart.system.catalogue.productRelatedForm" extends="system" controllerUrl="/tiles/system/catalogue/product.do">
+        <put name="body" value="/system/catalogue/productRelatedForm.jsp" />
+    </definition>
+
+    <definition name="cart.system.portal.deliveryAgencyList" extends="system" controllerUrl="/tiles/system/portal/city.do?listStates=true&amp;listRoutes=true">
+        <put name="body" value="/system/cart/deliveryAgencyList.jsp" />
+    </definition>
+
+
+    <definition name="cart.system.portal.deliveryAgencyForm" extends="system" controllerUrl="/tiles/system/portal/city.do?listRoutes=true">
+        <put name="body" value="/system/cart/deliveryAgencyForm.jsp" />
+    </definition>
+
+    <definition name="cart.system.portal.customerList" extends="system">
+        <put name="body" value="/system/cart/customerList.jsp" />
+    </definition>
+
+    <definition name="cart.system.portal.customerForm" extends="system">
+        <put name="body" value="/system/cart/customerForm.jsp" />
+    </definition>
+
+    <definition name="cart.system.portal.customerOrderList" extends="system" controllerUrl="/tiles/system/cart/order.do">
+        <put name="body" value="/system/cart/customerOrderList.jsp" />
+    </definition>
+
+    <definition name="cart.system.portal.customerOrderForm" extends="system">
+        <put name="body" value="/system/cart/customerOrderForm.jsp" />
+    </definition>
+
+
+    <definition name="cart.system.cart.paymentTypeList" extends="system">
+        <put name="body" value="/system/cart/paymentTypeList.jsp" />
+    </definition>
+
+    <definition name="cart.system.cart.paymentTypeForm" extends="system">
+        <put name="body" value="/system/cart/paymentTypeForm.jsp" />
+    </definition>
+
+    <definition name="cart.system.cart.orderList" extends="system" controllerUrl="/tiles/system/cart/order.do">
+        <put name="body" value="/system/cart/orderList.jsp" />
+    </definition>
+
+    <definition name="cart.system.cart.orderForm" extends="system" controllerUrl="/tiles/system/cart/order.do">
+        <put name="body" value="/system/cart/orderForm.jsp" />
+    </definition>
+
+
+    <definition name="cart.system.cart.taxTypeList" extends="system" controllerUrl="/tiles/system/cart/taxType.do">
+        <put name="body" value="/system/cart/taxTypeList.jsp" />
+    </definition>
+
+    <definition name="cart.system.cart.taxTypeForm" extends="system" controllerUrl="/tiles/system/cart/taxType.do">
+        <put name="body" value="/system/cart/taxTypeForm.jsp" />
+    </definition>
+
+    <definition name="cart.system.cart.taxList" extends="system">
+        <put name="body" value="/system/cart/taxList.jsp" />
+    </definition>
+
+    <definition name="cart.system.cart.taxForm" extends="system">
+        <put name="body" value="/system/cart/taxForm.jsp" />
+    </definition>
+
+
+    <!-- ======================================================= -->
+    <!-- Tabs Definitions                                        -->
+    <!-- ======================================================= -->
+    <definition name="tabs.zone" path="/system/common/tabs.jsp">
+        <putList name="items">
+            <item value="link.zone.list"        link="/system/information/zone.do?action=list" />
+        </putList>
+    </definition>
+
+    <!-- System Contents Secciones -->
+    <definition name="tabs.system.content.1" path="/system/common/tabs.jsp">
+        <putList name="items">
+            <item value="link.content.infoGeneral"      link="/system/portal/section.do?action=read" />
+            <!--item value="link.content.related"          link="/system/portal/content/related.do?action=list" /-->
+            <!--
+                <item value="link.content.document"            link="/system/portal/content/document.do?action=listAssigned&amp;docTypeCode=1"/>                
+                <item value="link.content.document.support"    link="/system/portal/content/document.do?action=listAssigned&amp;docTypeCode=2"/>
+                <item value="link.content.faq"                 link="/system/portal/content/faq.do?action=listAssigned"/>
+                <item value="link.content.link"                link="/system/portal/content/link.do?action=listAssigned"/>-->
+            <item value="link.content.section.list"     link="/system/portal/section.do?action=list&amp;level=1" />
+        </putList>
+    </definition>
+
+    <!-- System Contents Categor?s -->
+    <definition name="tabs.system.content.2" path="/system/common/tabs.jsp">
+        <putList name="items">
+            <item value="link.content.infoGeneral"      link="/system/portal/category.do?action=read" />
+            <!--item value="link.content.related"          link="/system/portal/content/related.do?action=list" />
+            <item value="link.content.document"         link="/system/portal/content/document.do?action=listAssigned&amp;docTypeCode=1" /-->
+            <!--
+            <item value="link.content.document.support" link="/system/portal/content/document.do?action=listAssigned&amp;docTypeCode=2"/>
+            <item value="link.content.faq"              link="/system/portal/content/faq.do?action=listAssigned"/>-->
+            <!--item value="link.content.link"             link="/system/portal/content/link.do?action=listAssigned" /-->
+            <item value="link.content.category.list"    link="/system/portal/category.do?action=list&amp;level=2" />
+        </putList>
+    </definition>
+
+    <!-- System Contents Items -->
+    <definition name="tabs.system.content.3" path="/system/common/tabs.jsp">
+        <putList name="items">
+            <item value="link.content.infoGeneral"  link="/system/portal/item.do?action=read" />
+            <!--item value="link.content.related"      link="/system/portal/content/related.do?action=list" />
+            <item value="link.content.document"     link="/system/portal/content/document.do?action=listAssigned&amp;docTypeCode=1" /-->
+            <!--
+            <item value="link.content.document.support" link="/system/portal/content/document.do?action=listAssigned&amp;docTypeCode=2"/>
+            <item value="link.content.faq"          link="/system/portal/content/faq.do?action=listAssigned"/>-->
+            <!--item value="link.content.link"         link="/system/portal/content/link.do?action=listAssigned" /-->
+            <item value="link.content.item.list"    link="/system/portal/item.do?action=list&amp;level=3" />
+        </putList>
+    </definition>
+
+
+    <!-- Events -->
+    <definition name="tabs.system.events" path="/system/common/tabs.jsp">
+        <putList name="items">
+            <item value="link.event.edit"       link="/system/event/event.do?action=read" />
+            <item value="link.event.date"       link="/system/event/eventDate.do?action=list" />
+            <item value="link.event.document"   link="/system/event/event.do?action=listDocuments" />
+            <item value="link.event.list"       link="/system/event/event.do?action=list" />
+        </putList>
+    </definition>
+
+    <!-- News -->
+    <definition name="tabs.system.news" path="/system/common/tabs.jsp">
+        <putList name="items">
+            <item value="link.news.edit"        link="/system/news/news.do?action=read" />
+            <!--<item value="link.news.document"    link="/system/news/news.do?action=listDocuments" />
+            <item value="link.news.image"       link="/system/news/news.do?action=listImages" />-->
+            <item value="link.news.list"        link="/system/news/news.do?action=list" />
+        </putList>
+    </definition>
+
+    <!-- Customer -->
+    <definition name="tabs.system.customer" path="/system/common/tabs.jsp">
+        <putList name="items">
+            <item value="link.customer.edit"    link="/system/cart/customer.do?action=read" />
+            <item value="link.customer.order"   link="/system/cart/customerOrder.do?action=list" />
+            <item value="link.customer.list"    link="/system/cart/customer.do?action=list" />
+        </putList>
+    </definition>
+
+
+    <!-- FAQ tabs -->
+    <definition name="tabs.system.faq" path="/system/common/tabs.jsp">
+        <putList name="items">
+            <item value="link.faq.edit"         link="/system/container/faq.do?action=read" />
+            <item value="link.faq.document"     link="/system/container/faq.do?action=listDocuments" />
+            <item value="link.faq.list"         link="/system/container/faq.do?action=list" />
+        </putList>
+    </definition>
+
+    <!-- Menus -->
+    <definition name="tabs.system.menus" path="/system/common/tabs.jsp">
+        <putList name="items">
+            <item value="link.menu.infoGeneral"     link="/system/portal/menu.do?action=read" />
+            <!--  item value="link.menu.items"          link="/system/portal/menu/item.do?action=list" / -->
+            <item value="link.menu.access"          link="/system/portal/menu/access.do?action=list" />
+            <item value="link.menu.list"            link="/system/portal/menu.do?action=list" />
+        </putList>
+    </definition>
+
+    <!-- Bulletins -->
+    <definition name="tabs.bulletin" path="/system/common/tabs.jsp">
+        <putList name="items">
+            <item value="link.bulletin.infoGeneral" link="/system/bulletin/topic.do?action=read" />
+            <item value="link.bulletin.bulletins"   link="/system/bulletin/bulletin.do?action=list" />
+            <item value="link.bulletin.subscriber"  link="/system/bulletin/subscriber.do?action=list" />
+            <item value="link.bulletin.topics"      link="/system/bulletin/topic.do?action=list" />
+        </putList>
+    </definition>
+
+    <definition name="system.admin.loadFileExtensions" extends="system">
+        <put name="body" value="/files/listFiles.jsp" />
+    </definition>
+
+    <definition name="system.admin.cleanMainMenuKeys" extends="system">
+        <put name="body" value="/system/admin/cleanMenuKeysSuccess.jsp" />
+    </definition>
+
+    <definition name="system.admin.updateContentContainerList" extends="system">
+        <put name="body" value="/system/admin/updateContentContainerList.jsp" />
+    </definition>
+
+	<!-- Flights  -->
+	
+    <definition name="tabs.system.route" path="/system/common/tabs.jsp">
+        <putList name="items">
+            <item value="link.route.edit"        link="/system/portal/route.do?action=read" />
+            <item value="link.route.frequency"   link="/system/portal/route/frequency.do?action=list" />
+            <item value="link.route.ticketRate"  link="/system/portal/route/ticketRate.do?action=list" />
+            <item value="link.route.list"        link="/system/portal/route.do?action=list&amp;listItems=true" />
+        </putList>
+    </definition>
+
+    <definition name="tabs.system.frequency" path="/system/common/subTabs.jsp">
+        <putList name="items">
+            <item value="link.route.frequency.edit"     link="/system/portal/route/frequency.do?action=read" />
+            <item value="link.route.frequency.flight"   link="/system/portal/route/frequency/flight.do?action=list" />
+            <item value="link.route.frequency.list"     link="/system/portal/route/frequency.do?action=list&amp;listItems=true" />
+        </putList>
+    </definition>
+
+    <!-- News -->
+    <definition name="tabs.system.product" path="/system/common/tabs.jsp">
+        <putList name="items">
+            <item value="link.product.edit"     link="/system/catalogue/product.do?action=read" />
+            <item value="link.product.related"     link="/system/catalogue/productRelated.do?action=list" />
+            <item value="link.product.list"     link="/system/catalogue/product.do?action=list" />
+        </putList>
+    </definition>
+
+    <definition name="tabs.system.taxType" path="/system/common/tabs.jsp">
+        <putList name="items">
+            <item value="link.taxType.list"     link="/system/cart/taxType.do?action=list" />
+            <item value="link.tax.list"         link="/system/cart/tax.do?action=list" />
+        </putList>
+    </definition>
+
+    <!-- ======================================================= -->
+    <!-- PopUp Definitions                                       -->
+    <!-- ======================================================= -->
+
+    <definition name="popup.searchAccess"  path="/system/common/searchAccess.jsp" controllerUrl="/tiles/system/portal/access.do" />
+
+    <definition name="popup.searchCity"    path="/system/common/searchCity.jsp" controllerUrl="/tiles/system/portal/city.do" />
+
+    <definition name="popup.searchPortlet" path="/system/common/searchPortlet.jsp" />
+
+    <definition name="popup.bulletin"      path="/system/bulletin/sendBulletin/previewBulletin.jsp" />
+
+    <definition name="popup.searchCategory" path="/system/common/searchCategory.jsp" />
+
+</tiles-definitions>

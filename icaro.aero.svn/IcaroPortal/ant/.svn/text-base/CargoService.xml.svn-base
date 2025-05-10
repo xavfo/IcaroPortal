@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="./" default="all" name="generate_ICAROCARGO_stub">
+<property environment="env"/>
+<property name="axis.home" value="/home/burkhard/eclipse/libs/axis/axis-1_4/lib"/>
+       <path id="axis.classpath">
+          <fileset dir="${axis.home}">
+             <include name="**/*.jar"/>
+          </fileset>
+       </path>
+   <taskdef classpathref="axis.classpath" resource="axis-tasks.properties"/>
+
+   <!-- ant calls to call when executed -->
+   <target name="all">
+        <antcall target="generate_stub_ICARO.CARGO"/>
+   </target>
+
+   <!-- directory where to generate the code -->
+   <property name="generated.client.dir" value="../src"/>
+
+   <!-- definition of the web service from code is generated -->
+   <property name="ICARO.CARGO" value="http://icaro.aero/serviciosweb/IcargoService.php?wsdl"/>
+
+   <!-- generate client stub for SABLE service -->
+   <target description="generate the java sources for the client" name="generate_stub_ICARO.CARGO">
+      <axis-wsdl2java output="${generated.client.dir}" url="${ICARO.CARGO}" verbose="true">
+          <mapping namespace="http://webserver.icaro.aero/serviciosweb/IcargoService.php" package="aero.icaro.service.cargo"/>
+        <mapping namespace="webserver.icaro.aero/serviciosweb/IcargoService" package="aero.icaro.service.cargo.stub"/>
+          <mapping namespace="webserver.icaro.aero/serviciosweb/IcargoService" package="aero.icaro.service.cargo.stub"/>
+      </axis-wsdl2java>
+   </target>
+
+</project>

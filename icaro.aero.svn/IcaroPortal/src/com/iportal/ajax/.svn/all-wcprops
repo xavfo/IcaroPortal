@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ajax
+END
+BaseAjaxForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ajax/BaseAjaxForm.java
+END
+DropdownCityAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ajax/DropdownCityAction.java
+END
+DropdownZoneAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ajax/DropdownZoneAction.java
+END
+DropdownCategoryAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ajax/DropdownCategoryAction.java
+END
+DropdownLayoutAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ajax/DropdownLayoutAction.java
+END
+DropdownBulletinAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ajax/DropdownBulletinAction.java
+END
+BaseAjaxAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ajax/BaseAjaxAction.java
+END

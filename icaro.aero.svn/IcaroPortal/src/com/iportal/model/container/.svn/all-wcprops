@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/container
+END
+DocContainerCatalogues.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/container/DocContainerCatalogues.java
+END
+LinkContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/container/LinkContainer.java
+END
+DocumentContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/container/DocumentContainer.java
+END
+Container.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/container/Container.java
+END
+ImageContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/container/ImageContainer.java
+END
+FaqContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/container/FaqContainer.java
+END

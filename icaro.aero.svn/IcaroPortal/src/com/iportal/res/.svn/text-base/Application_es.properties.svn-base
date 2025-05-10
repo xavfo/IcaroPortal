@@ -1,0 +1,609 @@
+#
+# Copyright (c) Yage. All Rights Reserved.
+#
+# YAGE evolucion digital
+# Av. Brasil 951 y Mariano EcheverrÃ­a
+# Quito-Ecuador
+# www.yage.com.ec
+#
+label.uploadFile=Subir Archivo
+
+#
+# General Prompt Labels
+#
+prompt.abbreviation=Abreviaci\u00F3n
+prompt.access=Acceso directo
+prompt.accessMenu=Acceso directo
+prompt.accessImage=Imagen de Acceso
+prompt.accessLink=Link de Acceso
+prompt.accessLevel=Nivel de Acceso
+prompt.action=Acci\u00F3n
+prompt.address=Direcci\u00F3n
+prompt.addressType=Tipo de Direcci\u00F3n
+prompt.administrator=Administrador
+prompt.airport=Aeropuerto
+prompt.alias=Alias
+prompt.flightAlternative=Alternativa de Vuelo
+prompt.amount=Monto
+prompt.answer=Respuesta
+prompt.applicants=Postulantes
+prompt.applyTax3=Aplica Tax3
+prompt.area=Area
+prompt.arrival=Llegada
+prompt.arrivalDate=Fecha de Retorno
+prompt.arrivalAirport=Ciudad de Destino
+prompt.arrivalSegment=Tramo de Retorno
+prompt.arrivalTime=Hora de Retorno
+prompt.article=Art\u00EDculo
+prompt.assignation.date=Fecha de asignaci\u00f3n
+prompt.auction.date=Fecha de remate
+prompt.audience=Audiencia
+prompt.author=Autor
+prompt.authorizedPerson=Nombre y apellido de la persona aurorizada para recibir el pedido
+
+prompt.background=fondo
+prompt.banner=Banner
+prompt.beforeDiscount=Antes del Descuento
+prompt.beforeTax=Antes de Impuestos
+prompt.billId:Nro. Identificaci\u00f3n / RUC
+prompt.billName:Nombre y Apellido o Raz\u00f3n Social
+prompt.birthdate=Fecha de Nacimiento
+prompt.birthDay=Dia de Nacimiento
+prompt.birthMonth=Mes de Nacimiento 
+prompt.birthYear=Año de Nacimiento
+prompt.brand=Marca
+prompt.brief.description=Breve descripci\u00f3n
+prompt.bulletin=Bolet\u00EDn
+prompt.BulletinCategory=Categor\u00EDa de Boletines
+
+prompt.category=Categor\u00EDa
+prompt.cargoNumber=N\u00FAmero de Documento
+prompt.cargoTypeNumber=Tipo de Documento
+prompt.charset=CharSet
+prompt.city=Ciudad
+prompt.ci=CI
+prompt.class=Clase
+prompt.clearancePeriod=Periodo Saldo
+prompt.clearancePrice=Precio Saldo
+prompt.clearanceSince= inicio saldo
+prompt.clearanceUntil= fin saldo
+prompt.CmsLink=Enlace
+prompt.coactive.date=Fecha de incautaci\u00F3n
+prompt.code=C\u00f3digo
+prompt.color=Color
+prompt.comments=Comentarios
+prompt.contactName=Nombre de Contacto
+prompt.contactEmail=Email de Contacto
+prompt.contactPhone=Telefono de Contacto
+prompt.contactPosition=Cargo del Contacto
+prompt.contactReason=Motivo de Solicitud/Consulta
+prompt.contestDate=Fecha del Concurso
+prompt.content=Contenido
+prompt.contentItem=Item de Contenido
+prompt.contentType=Tipo de Contenido
+prompt.contest=Concurso
+prompt.country=Pa\u00EDs
+prompt.createUrl=Crear URL
+prompt.creation=Fecha de Emisi\u00F3n
+prompt.creator=Puede crear nuevas secciones
+prompt.currencyFormat=Formato Moneda
+
+prompt.date=Fecha
+prompt.dateFormat=Formato Fecha
+prompt.dateNews=Fecha de Noticia
+prompt.dateSent=Fecha de Env\u00EDo
+prompt.dateTimeFormat=Formato Fecha y Hora
+prompt.datoRelevante=Dato Relevante
+prompt.daysToDeliver=Dias para Entrega
+prompt.dear.user=Estimado usuario,<br><br>
+prompt.deliveryAgency=Agencia de Entrega
+prompt.department=Departamento
+prompt.departure=Salida
+prompt.departureDate=Fecha de Salida
+prompt.departureAirport=Ciudad de Salida
+prompt.departureSegment=Tramo de Salida
+prompt.departureTime=Hora de Salida
+prompt.description=Descripci\u00F3n
+prompt.detail=Detalle
+prompt.detailed.description=Descripci\u00f3n detallada
+prompt.difficulty=Complejidad
+prompt.dimensions=Dimensiones
+prompt.discount=Descuento
+prompt.disabled=Deshabilitado
+prompt.displayMode=Modo de Presentaci\u00F3n
+prompt.document=Documento
+prompt.documentType=Tipo de Documento
+
+prompt.email=E-mail
+prompt.email.alternate=E-mail - alternativo
+prompt.email.main=E-mail - principal
+prompt.email.cart.account=Su nombre de usuario es:
+prompt.email.cart.account.body=Los datos de acceso a su cuenta son los siguientes:<br>
+prompt.email.cart.addInfo=<br>Usted puede acceder a su cuenta ingresando a:
+prompt.enabled=Habilitado
+prompt.end=Finalizaci\u00F3n
+prompt.endHour=Finish Hour
+prompt.enterprise =Empresa
+prompt.establishment=Establecimiento
+prompt.event=Evento
+prompt.eventDate=Fecha de Evento
+prompt.expiration=Fecha Expiraci\u00F3n
+prompt.export=Exportaci\u00F3n
+prompt.externalCode=C\u00F3digo Externo
+
+prompt.fare=Tarifa
+prompt.faq=FAQ
+prompt.fax=Fax
+prompt.file=Archivo
+prompt.find=Buscar
+prompt.findIn=Buscar en
+prompt.firstName=Nombre
+prompt.featured=Destacado
+prompt.features=Caracter\u00EDsticas
+prompt.flightNumber=Nro. Vuelo
+prompt.floatFormat=Formato Flotantes
+prompt.format=Formato
+prompt.form.request.others=Formulario, Solicitudes, Otros Documentos
+prompt.forward=Forward
+prompt.frequency=Frecuencia
+prompt.frequentFlyer=Tarjeta Icaro Numero
+prompt.from=Desde
+prompt.fullname=Nombre completo
+
+prompt.game=Juego
+prompt.gender=G\u00E9nero
+prompt.group=Es un Grupo
+prompt.guide=Gu\u00EDa
+
+prompt.height=Alto
+prompt.html=Html
+prompt.homeDelivery=Entrega a Domicilio
+prompt.homePhone=Tel\u00E9fono Domicilio
+prompt.host=Expositores
+
+prompt.iataCode=iataCode
+prompt.icon=Icono
+prompt.id=Identificaci\u00F3n
+prompt.id.number=N\u00BA de documento de identificaci\u00F3n
+prompt.id.type=Tipo de documento de identificaci\u00F3n
+prompt.image=Imagen
+prompt.imageCategory=Categor\u00EDa de Imagen
+prompt.imageNote=Nota de Imagen
+prompt.images=Im\u00E1genes
+prompt.importantData=Dato Relevante
+prompt.ingredients=Ingredientes
+prompt.integerFormat=Formato Enteros
+prompt.introImage=Foto Intro
+prompt.inscriptionFrom=Inscripciones Desde
+prompt.inscriptionTo=Inscripciones Hasta
+prompt.institution=Instituci\u00F3n
+prompt.iso=C\u00F3digo ISO
+prompt.ivaRate=IVA
+
+prompt.key=Resource Key
+prompt.key2=Key
+prompt.keywords=Palabras Clave
+
+prompt.language=Lenguaje
+prompt.lastName=Apellido
+prompt.lastNames=Apellidos
+prompt.lastContact=\u00FAltimo Contacto
+prompt.layout=Dise\u00F1o
+prompt.legalDocument=Documento Legal
+prompt.legalName=Raz\u00F3n Social
+prompt.legal.documents=Documentos Legales
+prompt.leadinImage=Imagen Intro.
+prompt.leadinText=Sinopsis
+prompt.leadinTitle=T\u00EDtulo Intro.
+prompt.licitation=Licitation
+prompt.link=Enlace
+prompt.logo=Logo
+prompt.longDateFormat=Formato Fecha Larga
+prompt.location=Lugar
+
+prompt.max=M\u00E1ximo
+prompt.main=Principal
+prompt.mainImage=Foto Principal
+prompt.menu=Men\u00FA
+prompt.menuImage=Imagen de Men\u00FA;
+prompt.message= Mensaje para el Cliente
+prompt.middleName=Segundo Nombre
+prompt.min=M\u00EDnimo
+prompt.minShipCost=Costo Fijo (hasta 2 KL)
+prompt.mobile=Tel\u00E9fono m\u00F3vil
+prompt.modelNumber=N\u00FAmero de Modelo
+prompt.module=M\u00F3dulo
+
+prompt.name=Nombre
+prompt.names=Nombres
+prompt.nameOrEmail=Nombre o E-mail
+prompt.nationality=Nacionalidad
+prompt.news=Noticias
+prompt.notes=Observaciones
+prompt.number=N\u00FAmero
+prompt.numberOfQuotas=N\u00FAmero de Cuotas
+
+prompt.occasion=Ocasi\u00F3n
+prompt.occupation=Ocupaci\u00F3n
+prompt.officialPublishDate=Fecha Publicaci\u00F3n Registro Oficial
+prompt.onClearance=En saldo
+prompt.officePhone=Tel\u00E9fono Oficina
+prompt.onSale=En oferta
+prompt.order=Orden
+prompt.orderBy=Ordenar por
+prompt.orderIndex=\u00CDndice de Orden
+prompt.orderStatus=Estado de Pedidos
+prompt.organizer=Organizador
+
+prompt.pager=Pager
+prompt.parent=Padre
+prompt.password=Clave
+prompt.passwordVerify=Confirmar Clave
+prompt.path=system
+prompt.paxType=Tipo de Pasajero
+prompt.paymentStatus= Estado del Pago
+prompt.paymentType=Tipo de Pago
+prompt.phone=Tel\u00E9fono
+prompt.phone.countryCode=Tel\u00E9fono (C\u00F3digo de Pa\u00EDs)
+prompt.phone.regionCode=Tel\u00E9fono (C\u00F3digo de Regi\u00F3n)
+prompt.phone1=Tel\u00E9fono 1
+prompt.phone2=Tel\u00E9fono 2
+prompt.phoneCountryCode = C\u00F3digo
+prompt.phoneCityCode = C\u00F3digo Local
+prompt.pobox=Casilla Postal
+prompt.port=8080
+prompt.portal=Portal Colineal
+prompt.position=Cargo
+prompt.preparation=Preparaci\u00F3n
+prompt.previewImage=Imagen Vista Preliminar
+prompt.prizes=Premios
+prompt.product=Producto
+prompt.projectComponent=Componentes del Projecto
+prompt.profile.description=Descripci\u00f3n perfil
+prompt.publish=Fecha Publicaci\u00F3n
+prompt.publishFrom=Publicar desde
+prompt.publishHome=Publicar Home
+prompt.publishPeriod=Per\u00EDodo de Publicaci\u00F3n
+prompt.publishTo=Publicar hasta
+
+prompt.question=Pregunta
+prompt.quotaPrice=Valor de la Cuota
+
+prompt.recipe=Receta
+prompt.recommended=Recomendada
+prompt.reference=Referencia
+prompt.regularPrice=Precio Regular
+prompt.relatedContent=Contenido Relacionado
+prompt.relation=Relaci\u00F3n
+prompt.resource=Recurso
+prompt.resetPassword=Cambiar Clave 
+prompt.responsibleEmail=E-mail de responsable
+prompt.restricted=Restingida
+prompt.role=Rol
+prompt.route=Ruta
+prompt.routeRateNotes=Observaciones para tarifas
+prompt.routeRateDoc=Documento cuadro tarifario
+prompt.ruc=RUC
+prompt.rules=Reglamentos / Normas
+prompt.rulesUrl=Link a Normas de Cont. BM
+
+prompt.salePrice=Precio de Oferta
+prompt.schedule=Horarios
+prompt.scheduleBussines=Horario de Atenci\u00F3n
+prompt.search=Palabras claves
+prompt.searchSection=Buscar en
+prompt.secondLastName=Apellido Materno
+prompt.sector=Sector
+prompt.section=Secci\u00F3n
+prompt.sectionLinked=Secci\u00F3n Relacionada
+prompt.seller=Proveedor
+prompt.sent=Enviado
+prompt.service=Servicios que Brinda
+prompt.shipping=Transporte
+prompt.shippingDepth=profundidad
+prompt.shippingWeight=Peso
+prompt.shippingHeight=alto
+prompt.shippingWidth=ancho
+prompt.shippingTax=IVA Transporte
+prompt.showMenu=Mostrar en Men\u00
+prompt.showOpen=Mostrar Abierto
+prompt.shortDateFormat=Formato Fecha Corta
+prompt.show=Mostrar
+prompt.showRoom=Mostrar Home
+prompt.slogan=Slogan
+prompt.specialFare=Tarifa residente
+prompt.species=Especie
+prompt.specs=Especificaciones
+prompt.start=Inicio
+prompt.startHour=Start Hour
+prompt.state=Provincia/Estado
+prompt.statistic=Estad\u00EDsticas
+prompt.status=Estado
+prompt.stock=Stock
+prompt.stockMax=Stock M\u00E1ximo
+prompt.stockMin=Stock M\u00EDnimo
+prompt.street=Calle
+prompt.street.building=Departamento / torre / edificio / compa\u00F1ia
+prompt.street.number.crossing=Calle principal / n\u00FAmero / intersecci\u00F3n
+prompt.street.reference=Referencia de direcci\u00F3n 
+prompt.street1=Direcci\u00F3n L\u00EDnea 1 
+prompt.street2=Direcci\u00F3n L\u00EDnea 2
+prompt.subject=Tema
+prompt.suscribeBulletin=Suscripto a Boletines
+prompt.summary=Resumen
+
+prompt.tax1 = Tax1
+prompt.tax2 = Tax2
+prompt.tax3 = Tax3
+prompt.taxName=Impuesto
+prompt.taxRate=Valor del Impuesto
+prompt.taxSince=Impuesto vigente desde
+prompt.taxUntil=Impuesto vigente hasta
+prompt.taxType=Tipo de Impuesto
+prompt.taxTypeName=Nombre de la Combinaci\u00F3n de Impuesto
+prompt.taxTypeTaxes=Seleciona Impuesto(s) (varios con CTRL)
+prompt.template=Plantilla
+prompt.text=Texto
+prompt.themes=Temas
+prompt.ticketIssue=Fecha Emisi\u00F3n
+prompt.ticketRate=Tarifa
+prompt.tile=Tile
+prompt.time=Hora
+prompt.timeFormat=Formato Hora
+prompt.title=T\u00EDtulo
+prompt.to=Hasta
+prompt.total=Total
+prompt.topic=T\u00F3pico
+prompt.tripType=Tipo de Vuelo
+prompt.type=Tipo
+
+
+prompt.uid=C\u00E9dula
+prompt.update=Actualizaci\u00F3n
+prompt.updateNotes=Detalle de Actualizaci\u00F3n
+prompt.url=URL
+prompt.username=Usuario
+prompt.userAccount=Cuenta usuario
+
+prompt.value=Valor
+
+prompt.wheelchair=Silla de Ruedas
+prompt.width=Ancho
+
+prompt.x=Coordenada X
+
+prompt.y=Coordenada Y
+prompt.year=A\u00F1o
+prompt.weightCost=Costo por Kilo
+
+prompt.zip=C\u00F3digo Postal
+prompt.zone=Zona
+
+#
+# Error Messages
+#
+error.eventDate.noDateSelected= Debe seleccionar al menos una fecha.
+error.language=No existe un lenguaje definido. Por favor revise la instalaci\u00F3n de la base de datos.
+error.load=No es posible cargar el objeto.
+error.password=La contrase\u00F1a es inv\u00E1lida.
+error.subscriberExists=La cuenta de correo electr\u00F3nico ya existe.
+error.unexpected=Error inesperado.
+error.userAccount=La cuenta de usuario se encuentra deshabilitada.
+error.username=El nombre de usuario es inv\u00E1lido.
+error.userNameExist=El nombre de usuario ya existe.
+error.userName.not.exist=El nombre de usuario no existe en el dominio.
+error.wrong.credentials=Credenciales incorrectas.
+
+
+# Portal Error
+
+error.cart.notLogged=Usuario no autentificado.
+
+error.content.module= Contenido {0} no tiene modulo definido .
+error.content.notFound= Contenido con codigo {0} no encontrado.
+
+error.upload.name=No es posible generar un nombre para la imagen cargada.
+error.upload.fileNotFound=No es posible encontrar la ruta especificada.
+error.upload.io=No es posible subir el archivo.
+error.upload.data=No se pudo crear el registro en el repositorio de {0}.
+
+
+error.webService.clientNotAuthorized= You Must login first or you do not have authorization in order to perform this operation.
+error.webService.client.callFailed=There was an error calling Web Service: {0}. Error Message: {1}. Exception message: {2}.
+error.webService.client.interface=There is no Web Service interface initialized for {0}. Invoke service locator {1} please. 
+error.webService.client.nullForm=Form {0} cannot be null.
+error.webService.client.nullRequest=Request must be inicialized in order to call {0}.{1} Web Service.
+error.webService.client.loginRequired=Login required in order to execute this service.
+error.webService.client.loginFemaleRequired=You can login here only if you are a woman.
+error.webService.client.loginCardRequired=Sorry, you can not enter here;<br> to enter this section you must have one VitalCard card at least.
+error.webService.client.userNotFound = User {0} not found.
+
+error.webService.client.login = There was a problem during login, please try again.
+error.webService.client.notLogged = El nombre de usuario y/o clave de acceso no es v\u00E1lida. 
+error.webService.client.loginFailed = Fallo el login debido a : {0}.
+error.webService.client.general= There was a problem during the Web Service Call. Please try again. 
+error.webService.client.message= Web Service call failed. Message: {0}.
+error.webService.client.notauthorized= Por favor registrese para proceder.
+error.webService.client.nouser=There is a problem with your Fybeca account. Please register again in order to proceed. To register again, you need to delete you account first from My Account.
+error.webService.client.message.response= {0}.
+
+#
+# General Messages
+#
+message.accessDenied= Su rol de usuario <strong>{0}</strong> no le da permiso para acceder a esta operaci\u00F3n.
+message.accessDenied.corpUsers= Usted no requiere efectuar esta operaci\u00F3n. Si su reserva ya se registro es suficiente.  
+message.alreadyExists=La cuenta de usuario {0} ya existe.
+message.subscriber.alreadyExists=El E-mail {0} ya existe.
+message.subscriber.notExists=El E-mail {0} no est\u00E1 registrado en nuestra Base de Datos.
+message.subscriber.noReceive=Si ya esta suscrito al portal y no recibe notificaciones por favor cont\u00E1ctese con el Administrador del portal.
+message.at.least.one=Debe seleccionar al menos un item
+message.content.notFound= El Contenido solicitado no pudo ser encontrado.
+message.dependencies=La entidad {0} tiene dependencias.
+message.dependencies.links=La entidad {0} tiene servicios digitales dependientes.
+message.dependencies.themes=La entidad {0} tiene temas dependientes.
+message.emptyResults=No existen resultados que se ajusten a su requerimiento.
+message.empty.records=No se encontraron registros para la b\u00FAsqueda
+message.failure=Se ha producido un error que impide completar su requerimiento.
+message.failure.msg=Se ha producido un error que impide completar su requerimiento. Mensaje del Sistema: {0}
+message.lostData=Informacion invalida para efectuar la presente {0}. 
+message.cart.maxItemsExceed=Usted ha solicitado {0} productos. Usted puede hacerse acreedor a un descuento. Por favor contactese con nosotros para cerrar la transacci\u00F3n.
+message.cart.lostAvailibility= Se ha perdido la informaci\u00F3n sobre las Disponibilidad de Vuelos, por favor busque de nuevo
+message.cart.lostPowerShopInfo= Se ha perdido la informaci\u00F3n sobre las Alternativas de Vuelo, por favor busque de nuevo
+message.cart.noStock=Al momento solo contamos con un n\u00FAmero de unidades disponibles de  {0}  del producto {1} solicitado.
+message.sql.foreignKey= No se puede eliminar el registro "{0}" de  {1} porque tiene informacion relacionada.
+message.sql.uniqueKey= No se puede insertar o actualizar el registro "{0}" de {1}, debido a {2}. 
+message.sql.generic=Ha ocurrido un error de base de datos que impide completar su requerimiento. Mensaje: {0} Codigo de error: {1}.
+message.success=Su requerimiento ha sido procesado satisfactoriamente.
+message.success.msg={0}
+message.success.register=Su registro se ha procesado exitosamente, sus datos de usuario para el Portal de Icaro han sido enviado a {0}.<br/><br/>Lo invitamos a seguir navegando en nuestro portal.
+message.success.assign.users=Los usuarios fueron agregados satisfactoriamente.
+
+message.bookFailed=Su reserva no pudo ser registrada por el siguiente motivo: {0}
+message.bookFailed.unexpected=Su reserva no pudo ser registrada por error inesperado por favor intente de nuevo.
+message.bookFailed.noRecordLocator=No se ha generado record Locator.
+message.bookSuccess=Su reserva ha sido registrada exitosamente.
+message.bookExpired=EL PNR "{0}" seleccionado ha expirado con fecha: {1}
+message.required=Datos Obligatorios
+message.paymentAuthorized=Su Pago ha sido autorizado de manera exitosa. A continuaci\u00F3n la informaci\u00F3n completa de su vuelo.
+message.paymentNotificationError=Ocurri\u00F3 un error al registrar el resultado de su pago, por favor intente nuevamente.
+message.paymentAuthorizedBefore=Su pago ya ha sido registrado exitosamente es fecha {0} y la informaci\u00F3n de su vuelo es la siguiente.
+message.powerShop.noAlternatives=Su busqueda no obtuvo ning\u00FAn resultado, por favor intente otras opciones de vuelo o fechas.
+message.ticketPNRError=Su Pago ha sido autorizado de manera exitosa. Sinembargo, ocurri\u00F3 un error inesperado al generar los codigos de Etickets, por favor ponerse en contacto con el administrador.
+message.ticketPNRErrorMsg=Su Pago ha sido autorizado de manera exitosa. Sinembargo, ocurri\u00F3 el siguiente error al generar los codigos de Etickets: {0}.
+message.terms.notAccepted=No se han aceptado los terminos legales
+#
+# Portal Messages
+#
+
+portal.area=Nuestras \u00C1reas de Acci\u00F3n
+portal.bulletin=Boletines
+portal.components=Componentes
+portal.faq=Preguntas Frecuentes
+portal.finder=Buscador
+prompt.flight.passengerNumber=La cantidad de pasajeros no puede ser mayor a 7
+prompt.flight.arriveCity=La ciudad de destino debe ser diferente a la de salida
+portal.news=Noticias
+portal.wellcome=Bienvenido al CMS 2.<br>Se han implementado servicios de encriptaci\u00F3n de passwords con MD5, manejo basado en roles, section info, etc.
+com.iportal.ctrl.HomeAction=P\u00E1gina Principal
+#
+# Validator
+# Standard error messages for validator framework checks
+#
+
+errors.header=<ul>
+errors.footer=</ul>
+errors.prefix=<li class="error">
+errors.suffix=</li>
+errors.required=El campo {0} es requerido.
+errors.minlength=El campo {0} no puede ser menor a {1} caracteres.
+errors.maxlength=El campo {0} no puede ser mayor a {2} caracteres.
+errors.invalid=El campo {0} es inv\u00E1lido.
+errors.byte=El campo {0} debe ser un valor del tipo byte.
+errors.short=El campo {0} debe ser un valor del tipo entero corto.
+errors.integer=El campo {0} debe ser un valor del tipo entero.
+errors.long=El campo {0} debe ser un valor del tipo entero largo.
+errors.float=El campo {0} debe ser un valor del tipo flotante.
+errors.double=El campo {0} debe ser un valor del tipo doble.
+errors.date=El campo {0} no es una fecha.
+errors.range=El campo {0} no est\u00E1 en el rango entre {1} y {2}.
+errors.creditcard=El campo {0} no es un n\u00FAmero v\u00E1lido de tarjeta de cr\u00E9dito.
+errors.email=El campo {0} es una direcci\u00f3n inv\u00E1lida de email.
+errors.twofields=Los campos {0} y {3} deben ser iguales.
+
+phone.maskmsg={0} solo debe contener n\u00FAmeros o [()-] sin espacios.
+errors.maskNumber= {0} solo puede contener n\u00FAmeros
+errors.maskCurrency= {0} solo debe contener n\u00FAmeros.
+errors.maskPhone= {0} solo debe contener n\u00FAmeros o [()-] sin espacios.
+
+errors.nochar.maskmsg = {0} no puede contener caracteres especiales.
+
+errors.greaterDate= {0} debe ser posterior a {1} para poder procesar su requerimiento.  
+#CUSTOM ERRORS
+errors.required.propertyList= El campo {0} es requerido para {1} {2}.
+
+errors.searchFligh.minPassengers= Debe escoger la cantidad de pasajeros para buscar vuelos.
+errors.searchFligh.noAdultWithotherPassengers=No es posible efectuar reservaciones de pasajeros adultos con personas de la tercera edad, niños y minusválidos. Por favor, realize la reserva de todos los pasajeros adultos por separado y luego la reserva para pasajeros de la tercera edad, niños y discapacitados.
+errors.searchFligh.noChildWithotherPassengers=No es posible efectuar reservaciones de pasajeros niños sin al menos una personas de la tercera edad, adulta o minusválidos. Por favor, realize la reserva de pasajeros niños conjuntamente con al menos una persona mayor de 18 años. 
+errors.passenger.ageRange=La Edad del pasajero {0} {1} debe ser mayor o igual  a {2} y menor a {3}.
+errors.passenger.minAge= La Edad del pasajero {0} {1} debe ser mayor o igual a {2}.
+errors.passenger.maxAge= La Edad del pasajero {0} {1} debe ser menor a {2}.
+
+#
+# Page Log Messages
+#
+com.iportal.cart.model.cart.PaymentType=Tipo de Pago
+com.iportal.model.Access=Accesos Directos
+com.iportal.model.event.Event=Evento
+com.iportal.model.news.News=Noticia
+com.iportal.model.portal.Content=Contenido
+com.iportal.model.EventSubscriber=Suscriptor de evento
+com.iportal.model.directory.Authority=Autoridad
+com.iportal.model.directory.Office=Oficina
+
+com.iportal.model.event.EventDate=Fecha de evento
+com.iportal.model.Banner=Anuncio
+com.iportal.model.BannerType=Tipo de Anuncio
+com.iportal.model.Catalogue=Cat\u00E1logo
+com.iportal.model.Contact=Contacto
+com.iportal.model.CatalogueType=Tipo de cat\u00E1logo
+com.iportal.model.City=Ciudad
+com.iportal.model.Country=Pa\u00EDs
+com.iportal.model.icaro.office.Establishment=Establecimientos
+com.iportal.model.icaro.office.Office=Oficina
+com.iportal.model.icaro.office.OfficeType=Tipo de Oficina
+com.iportal.model.Image=Im\u00E1genes
+com.iportal.model.ImageCategory=Categor\u00EDa de im\u00E1genes
+com.iportal.model.LinkType=Tipo de enlace
+com.iportal.model.portal.AccessMenu=AccessMenu
+com.iportal.model.State=Estado
+com.iportal.model.bulletin.Bulletin=Bolet\u00EDn
+com.iportal.model.bulletin.Historic=Hist\u00F3rica
+com.iportal.model.bulletin.Subscriber=Suscriptor
+com.iportal.model.bulletin.SubscriberTopic=Categor\u00EDa de bolet\u00EDn
+com.iportal.model.bulletin.Template=Plantilla
+com.iportal.model.bulletin.Topic=T\u00F3pico
+com.iportal.model.PageLog=Log de p\u00E1gina
+com.iportal.model.Zone=Zona
+com.iportal.model.portal.AccessLevel=Nivel de acceso
+com.iportal.model.portal.DisplayMode=Modo de presentaci\u00F3n
+com.iportal.model.DocumentDisplayMode=Modo de presentaci\u00F3n documento
+com.iportal.model.DocumentType=Tipo de documento
+com.iportal.model.portal.Menu=Mne\u00FA
+com.iportal.model.portal.MenuItem=Item de Men\u00FA
+com.iportal.model.portal.MenuLanguage=Lenguaje de Men\u00FA
+com.iportal.model.portal.RelatedContent=Contenido relacionado
+com.iportal.model.container.Auction=Remate o coactiva
+com.iportal.model.container.DocumentContainer=Documento
+com.iportal.model.container.ImageContainer=Im\u00E1genes
+com.iportal.model.container.FaqContainer=Pregunta frecuente
+com.iportal.model.container.LegalDocumentContainer=Documento legal
+com.iportal.model.container.LinkContainer=Enlace
+com.iportal.model.container.StatisticContainer=Estad\u00EDstica
+
+com.iportal.model.container.ActivityLang=Actividad
+com.iportal.model.container.GroupLang=Grupo econ\u00F3mico
+com.iportal.model.document.ThemeLang=Tema
+com.iportal.model.document.SpeciesLang=Especie
+com.iportal.model.document.SpeciesLangLink=Servicio de especie
+com.iportal.model.document.SpeciesDoc=Documento de especie
+com.iportal.model.document.SpeciesTypeLang=Tipo de especie
+com.iportal.model.jobs.Area=Area
+com.iportal.model.jobs.Position=Posici\u00F3n
+com.iportal.model.jobs.PositionRequest=Aplicaci\u00F3n
+com.iportal.model.jobs.Requester=Solicitante
+
+com.iportal.model.icaro.Airport=Aeropuerto
+com.iportal.model.system.SysAudit=Registro de auditor\u00EDa
+com.iportal.model.system.SysLog=Log de auditor\u00EDa
+com.iportal.model.system.SysModule=M\u00F3dulo de sistema
+com.iportal.model.system.SysParam=Parametro de sistema
+com.iportal.model.system.SysProfile=Perfil de sistema
+com.iportal.model.system.SysRole=Rol de sistema
+com.iportal.model.system.SysUser=Usuario de sistema
+
+com.iportal.ctrl.language.SwitchLanguage= Cambio de Lenguage
+
+
+
+
+

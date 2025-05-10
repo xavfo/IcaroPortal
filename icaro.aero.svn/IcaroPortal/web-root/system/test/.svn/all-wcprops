@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/j2ee/icaro/!svn/ver/594/IcaroPortal/web-root/system/test
+END
+testConstants.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/j2ee/icaro/!svn/ver/594/IcaroPortal/web-root/system/test/testConstants.jsp
+END
+snoopTest.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/j2ee/icaro/!svn/ver/594/IcaroPortal/web-root/system/test/snoopTest.jsp
+END
+testHttpClient.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/j2ee/icaro/!svn/ver/594/IcaroPortal/web-root/system/test/testHttpClient.jsp
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/com/iportal/ctrl/portal/job
+END
+JobAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/com/iportal/ctrl/portal/job/JobAction.java
+END
+RequestFormAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/portal/job/RequestFormAction.java
+END
+VitaeFormAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/portal/job/VitaeFormAction.java
+END
+RequestForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/com/iportal/ctrl/portal/job/RequestForm.java
+END

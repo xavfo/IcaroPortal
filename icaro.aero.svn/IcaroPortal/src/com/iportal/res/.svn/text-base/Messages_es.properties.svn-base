@@ -1,0 +1,1068 @@
+#
+# Copyright © Yage. All Rights Reserved.
+#
+# YAGE evolucion digital
+# Av. Brasil 951 y Mariano Echeverr\u00EDa
+# Quito-Ecuador
+# www.yage.com.ec
+#
+yage.name=Yage Evoluci\u00F3n Digital
+yage.copyright=YAGE &copy; 2004-2006. All rights reserved;
+
+application.name=iPortal YAGE
+application.window.title=CMS YAGE
+
+
+
+# Applications Buttons
+#
+button.add=A\u00F1adir
+button.add2=A\u00F1adir
+button.apply=Aplicar
+button.assign=Asignar
+button.back=Retroceder
+button.book=Reservar
+button.buyNow=Comprar Ahora
+button.cancel=Cancelar
+button.clean=Limpiar
+button.close=Cerrar
+button.closeAll=Cerrar Todos
+button.continue=Continuar
+button.default=Predeterminar
+button.delete=Eliminar
+button.document=Documentos
+button.edit=Editar
+button.enabled=Habilitar
+button.exit=Salir
+button.find=Buscar
+button.finish=Finalizar
+button.login=Ingresar
+button.next=Continuar
+button.newBook=Nueva Reserva
+button.newBulletin=Nuevo Bolet\u00EDn
+button.ok=Aceptar
+button.open=Abrir
+button.openAll=Abrir Todos
+button.payNow=Realizar Pago
+button.preview=Vista Previa
+button.refresh=Refrescar
+button.related=Relacionado
+button.remove=Remover
+button.requestPassword=Recuperar Contrase\u00F1a
+button.reset=Reset
+button.search=Buscar
+button.sectionInfo=Informaci\u00F3n Relacionada
+button.send=Enviar
+button.save=Grabar
+button.tryAgain=Intentar De Nuevo
+button.upload=Subir
+
+
+#
+# Applications Labels
+#
+label.abbreviation=Abreviaci\u00F3n
+label.access=Acceso directo
+label.accesses=Accesos directos
+label.accessLevel=Nivel de Acceso
+label.access.related=Objecto relacionado
+label.account=Cuenta
+label.accountType=Tipo de Cuenta
+label.accountNumber=N\u00FAmero de Cuenta
+label.action=Acci\u00F3n
+label.add=A\u00F1adir
+label.additional=Adicional
+label.address=Direcci\u00F3n
+label.addresList=Lista de Direcciones
+label.addressType=Tipo de Direcci\u00F3n
+label.adult=Adultos
+label.alias=Alias
+label.all=Todos
+label.allLicitations=Todos los Concursos y Licitaciones
+label.amount=Monto
+label.answer=Respuesta
+label.applicants=Postulantes
+label.approve=Aprobar
+label.approved=Aprobado
+label.arrivalTime=Hora de Llegada
+label.assign=Asignar
+label.asc=ASC
+label.ascending=Ascendente 
+label.assigned=Asignados
+label.assignedBy=Asignado Por
+label.attachment=Adjunto
+label.available=Disponibles
+
+label.back=Atr\u00E1s
+label.backTo=Ir a
+label.bank=Banco
+label.banner=Banner
+label.bannerType=Tipo de Acceso
+label.beneficiary=Beneficiarios
+label.beneficiaryAddress=Direcci\u00F3n de Beneficiario
+label.beneficiaryBank=Banco del Beneficiario
+label.beneficiaryName=Nombre del Beneficiario
+label.billInfo=Informaci\u00F3n de Factura
+label.billTo=Facturar a
+label.bidding=Licitaci\u00F3n
+label.birthdate=Nacimiento
+label.bookFailed=Reserva No Exitosa
+label.bookSuccess=Reserva Exitosa
+label.brand=Marca
+label.bulletin=Bolet\u00EDn
+
+label.category=Categor\u00EDa
+label.city=Ciudad
+label.clasification=Clasificaci\u00F3n
+label.class=Clase
+label.components=Componentes
+label.contact=Persona de Contacto
+label.contactInfo=Informaci\u00F3n de Contacto
+label.contest=Concurso
+label.content=Contenido
+label.country=Pa\u00EDs
+label.creation=Emisi\u00F3n
+label.customer=Cliente
+label.customerOf=del Cliente
+
+label.date=Fecha
+label.dates=Fechas
+label.dateFrom=Fecha desde
+label.dateTo=Fecha hasta
+label.default=Predeterminado
+label.delete=Eliminar
+label.documentList=Lista de documentos
+label.documentType=Tipo
+label.deliveryAgency=Agencia de Entrega
+label.description=
+label.difficulty=Complejidad
+label.digitalFiles=Archivos Digitales
+label.digitalLibrary=Biblioteca Digital
+label.document=Documentos
+label.documentType=Tipo de Documento
+label.download=Bajar Archivo
+
+label.enabled=Activo
+label.external=Externo
+
+label.flowControl=Control de Flujo
+label.form=Formulario
+label.from=Desde
+
+label.gender=G\u00E9nero
+label.general=General
+label.generalInformation=Informaci\u00F3n General
+
+label.history=Historia
+label.height=Alto
+label.home=Inicio
+label.homeAddress=Direccion de Domicilio
+
+label.iataCode=C\u00F3digo IATA
+label.icon=\u00CDcono
+label.images=Im\u00E1genes
+label.imagesList=Lista de imagenes
+label.implementor=Ejecutores
+label.institution=Instituci\u00F3n
+label.institutions=Instituciones Involucradas
+label.institutions2=Instituciones
+label.instruction.level=Nivel de instrucci\u00F3n
+label.internal=Interno
+label.iso=ISO
+label.item=\u00CDtem de Contenido
+
+label.key=Key
+
+label.language=Lenguaje
+label.lastUpdate=\u00DAltima actualizaci\u00F3n
+label.licitations=Licitaciones
+label.listAll=Listar
+label.local=Local
+
+label.map=Mapa del Sitio
+label.menu=Men\u00FA
+label.menu.info=informaci\u00F3n de Men\u00FA
+label.menuItem=Men\u00FA \u00CDtem
+label.metadata=Meta Datos
+label.moreInfo=M\u00E1s Informaci\u00F3n
+
+label.name=Nombre
+label.news=Noticias
+label.no=No
+label.no.apply=No aplica
+label.notEnabled=Not Enabled
+
+label.other.documents=Otros documentos
+label.order=Orden
+label.orderBy=Ordenar por
+
+label.parent=Padre
+label.phone=Tel\u00E9fono
+label.portlet.name=Nombre Portlet
+label.preview=Vista Preliminar
+label.product=Producto
+label.projects=Proyectos
+label.profile=Perfil
+
+label.question=Pregunta
+
+label.related=Relacionados
+label.registered=Registrado
+label.request=Solicitudes
+label.role=Rol
+label.route=Ruta
+label.rules=Reglamentos / Normas
+
+label.salary.aspiration=Aspiraci\u00F3n salarial
+label.search=Buscar
+label.section=Secci\u00F3n
+label.sections=Secciones
+label.sectionInfoList=Lista de Informaci\u00F3n Relacionada
+label.sector=Sector
+label.send=Enviar
+label.sent=Enviado
+label.sentBy=Enviado por
+label.service.function=Servicio/Funci\u00F3n
+label.species=Especie
+label.state=Estado/Provincia
+label.status=Estado
+label.step1=Paso 1
+label.step2=Paso 2
+label.step3=Paso 3
+label.stock=Stock
+label.stockMax=Stock M\u00E1ximo
+label.stockMin=Stock M\u00EDnimo
+label.street=Calle
+label.study.branch=Rama de estudios
+label.subcomponent=Subcomponente
+label.subject=Tema
+label.suscribeBulletin=Suscriptor
+label.system=Sistema
+
+label.tax = Impuesto
+label.taxes = Impuestos
+label.taxRate = Procentaje del Impuesto
+label.taxSince = Impuesto vigente desde
+label.taxType=Combinaci\u00F3n de Impuestos
+label.taxUntil = Impuesto vigente hasta
+label.themes=Temas
+label.title=T\u00EDtulo
+label.to=Hasta
+label.type=Tipo
+
+label.user=Usuario
+label.update=Actualizaci\u00F3n
+label.updateNotes=Detalle de Actualizaci\u00F3n
+label.uploadFile=Subir Archivo
+label.uploadImage=Subir Imagen
+
+label.value=Valor
+label.viewAllProject=Ver todos los Proyectos
+label.viewProject=Ver Proyectos
+label.vitae=Vitae
+
+label.width=Ancho
+
+label.year=A\u00F1o
+label.yes=Si
+
+#
+# Applications Labels
+#
+label.abbreviation=Abreviaci\u00F3n
+label.account=Cuenta
+label.accountType=Tipo de Cuenta
+label.accountNumber=N\u00FAmero de Cuenta
+label.action=Acci\u00F3n
+label.add=A\u00F1adir
+label.addresList=Lista de Direcciones
+label.addressType=Tipo de Direcci\u00F3n
+label.adult=Adultos
+label.all=Todos
+label.allLicitations=Todos los Concursos y Licitaciones
+label.amount=Monto
+label.answer=Respuesta
+label.applicants=Solicitantes
+label.approve=Aprobar
+label.approved=Aprobado
+label.asc=ASC
+label.ascending=Ascendente 
+label.assigned=Asignados
+label.assignedBy=Asignado Por
+label.attachment=Adjunto
+label.available=Disponibles
+label.back=Atr\u00E1s
+label.backTo=Ir a
+label.bank=Banco
+label.beneficiary=Beneficiarios
+label.beneficiaryAddress=Direcci\u00F3n de Beneficiario
+label.beneficiaryBank=Banco del Beneficiario
+label.beneficiaryName=Nombre del Beneficiario
+label.birthdate=Nacimiento
+label.brand=Marca
+label.bulletin=Bolet\u00EDn
+
+label.calendar=Calendario
+label.category=Categor\u00EDa
+label.cardType=Tipo de Tarjeta
+label.central=Central
+label.child=Ni\u00F1os
+label.city=Ciudad
+label.cityFrom=Ciudad desde
+label.cityTo=Ciudad hacia
+label.class=Clase
+label.client=Cliente
+label.clientEmail=Email del Cliente
+label.clientName=Nombre del Cliente
+label.clientId=Id. del Cliente
+label.close=Cerrado
+label.code=C\u00F3digo
+label.codeType=Tipo de C\u00F3digo
+label.color=Color
+label.comments=Comentarios
+label.commercialExecutive=Ejecutivo Comercial
+label.commission=Comisi\u00F3n
+label.company=Compan\u00EDa
+label.components=Componentes
+label.content=Contenido
+label.country=Pa\u00EDs
+label.counterSamples=Ejemplos de contadores
+label.checked=Revisado
+label.creationDate=Fecha de Creaci\u00F3n
+
+
+label.date=Fecha
+label.dates=Fechas
+label.default=Predeterminado
+label.delete=Eliminar
+label.documentList=Lista de documentos
+label.documentType=Tipo
+label.deliveryAgency=Agencia de Entrega
+label.description=Descripci\u00F3n
+label.difficulty=Complejidad
+label.digitalFiles=Archivos Digitales
+label.digitalLibrary=Biblioteca Digital
+label.document=Documentos
+label.documentType=Tipo de Documento
+label.download=Bajar Archivo
+
+label.date=Fecha
+label.dateAssigned==Fecha de Asignaci\u00F3n
+label.dateEntry=Fecha de Entrada
+label.dateOffered=Fecha de Oferta
+label.dateRegistered=Fecha de Registro
+label.dateRequested=Fecha de Solicitud
+label.day=D\u00EDa
+label.default=Predeterminado
+label.delete=Eliminar
+label.department=Departamento
+label.departureTime=Hora de Salida
+label.desc=DSC
+label.descendent=Descendente 
+label.description=Descripci\u00F3n
+label.details=Detalles
+label.digitalFiles=Archivos Digitales
+label.digitalLibrary=Biblioteca Digital
+label.disease=Enfermedades
+label.document=Documentos
+label.documentList=Lista de documentos
+label.documentType=Tipo de Documento
+label.download=Bajar Archivo
+
+label.edit=Editar
+label.enabled=Activo
+label.endDate=Fecha Fin
+label.executedBy=Ejecutado por
+label.executive=Ejecutivo
+label.expiration=Fecha de Expiraci\u00F3n
+label.export=Exportaci\u00F3n
+label.exportLicense=Export License
+label.externalCode=C\u00F3digo Externo
+label.experience=Experiencia
+label.email=Email
+label.emailAdditional=Email Adicional
+label.empty=Borrar
+label.enabled=Activo
+label.event=Evento
+label.eventList = Lista de Eventos
+label.external=Externo
+
+label.fare=Tarifa
+label.fares=Tarifas
+label.featured=Destacado
+label.female=Femenino
+label.firstName=Nombre
+label.fly=Vuelo
+label.flow.departure=Origen
+label.flow.limitDateToBuy=La fecha límite para comprar los boletos de su reserva <strong>{0}</strong> es:
+label.flow.return=Destino
+label.flow.SelectedItinerary=Itinerario seleccionado
+label.flow.taxes=Impuestos y Tasas
+
+label.flowControl=Control de Flujo
+
+label.form=Formulario
+label.frequency=Frecuencia
+label.from=Desde
+
+label.gender=G\u00E9nero
+label.general=General
+label.generalInformation=Informaci\u00F3n General
+label.getInformation=Recibir Info
+
+label.headquarterCity=Casa Matriz
+label.history=Historia
+label.height=Alto
+label.handicapped=Discapacitados	 
+label.home=Inicio
+label.homeAddress=Direccion de Domicilio
+label.horizontal=Horizontal
+
+
+label.iataCode=C\u00F3digo IATA
+label.icon=\u00CDcono
+label.images=Im\u00E1genes
+label.imagesList=Lista de imagenes
+label.implementor=Ejecutores
+label.institution=Instituci\u00F3n
+label.institutions=Instituciones Involucradas
+label.institutions2=Instituciones
+label.instruction.level=Nivel de instrucci\u00F3n
+label.internal=Interno
+label.iso=ISO
+label.item=\u00CDtem de Contenido
+label.itinerary=Itinerario
+
+label.icon=\u00CDcono
+label.id=Identificaci\u00F3n/RUC
+label.idType= Tipo de  Identificaci\u00F3n/RUC
+label.image=Imagen
+label.images=Im\u00E1genes
+label.implementor=Ejecutores
+label.industry=Industry
+label.infant=Infantes
+label.insert=Insertar
+label.institution=Instituci\u00F3n
+label.institutions=Instituciones Involucradas
+label.institutions2=Instituciones
+label.intermediaryAddress=Direcci\u00F3n de Intermediario
+label.intermediaryBank=Banco de Intermediario
+label.invoice=Factura
+label.iso=ISO
+label.intlCoord=Coordinador Internacional
+label.ivaRate=IVA
+
+label.job=T\u00EDtulo
+
+label.key=Key
+
+label.language=Lengua
+label.lastAccess=\u00DAltimo Acceso
+label.lastLogin=\u00DAltimo Acceso
+label.lastName=Apellido
+label.lastUpdate=\u00DAltima actualizaci\u00F3n
+label.legalName=Nombre Legal
+label.legalRepresentative=Representante Legal
+label.liberate=Liberate
+label.licitations=Licitaciones
+label.listAll=Listar
+label.local=Local
+label.location=Lugar
+label.login=Ingreso
+label.logout=Salir
+
+label.male=Masculino
+label.manager=Gerente
+label.map=Mapa del Sitio
+label.maritalStatus=Estado Civil
+label.mcpRepresentation= MCP Representation
+label.menu=Men\u00FA
+label.menu.info=informaci\u00F3n de Men\u00FA
+label.menuItem=Men\u00FA \u00CDtem
+
+label.message.accountInfo=Datos de Cuenta ICARO online
+label.message.arrivalOptions=Opciones de tramo de Regreso
+label.message.arrivalOptions.availability=Seleccione el tramo de regreso de su preferencia. Los valores son referenciales uacute la tarifa de adulto nacional
+label.message.certify=Certifico haber le\u00EDdo y acepto los
+label.message.departuresOptions=Opciones de tramo de Ida
+label.message.departuresOptions.availability=Seleccione el tramo de ida de su preferencia. Los valores son referenciales seg&uacute;n la tarifa de adulto nacional
+label.message.flightSearch=Busque su Vuelo
+label.message.flightOptions=Opciones de vuelo disponibles.
+label.message.flightOptions.power=Seleccione la alternativa de su preferencia.
+label.message.register.loginInfo= A continuaci\u00F3n ingrese su direcci\u00F3n de correo electr\u00F3nico a la cual le enviaremos su cuenta de usuario y clave de acceso, como respaldo de la misma en caso de olvidarla.
+label.message.register.personal=Datos Personales
+label.message.summary.passengerInfo=A continuaci\u00F3n se detallan los datos de cada uno de los pasajeros.
+label.message.terms=T\u00E9rminos Legales
+
+
+
+
+label.metadata=Meta Datos
+label.method=M\u00E9todo
+label.mobile=Celular
+label.modified=Modificado
+label.module=M\u00F3dulo
+label.month=Mes
+label.moreInfo=M\u00E1s Informaci\u00F3n
+label.motive=Motivo
+
+label.nationality=Nacionalidad
+label.name=Nombre
+label.needFile=Archivo necesario
+label.news=Noticias
+label.no=No
+label.no.apply=No aplica
+label.notAvailable=No disponible
+label.notificationEmail=Notificaci\u00F3n de Email
+label.notEnabled=No Activo
+label.notes=Observaciones
+label.number=N\u00FAmero
+label.old=3ra Edad
+label.occasion=Ocasi\u00F3n
+label.oneWay=Una v\u00EDa
+label.onlineShop=Reserva en L\u00CDnea
+label.options=Opciones
+label.order=Orden
+label.orderBy=Ordenar por
+label.orderStatus=Estado de la Orden
+label.orderNumber=N\u00FAmero de Reserva
+label.other.documents=Otros documentos
+
+label.parent=Padre
+label.passenger=Pasajero
+label.passengerId=C.I/Pass
+label.passengers=Pasajeros
+
+label.passenger.adult= Pasajero adulto Nro
+label.passenger.child= Pasajero ni\u00F1o Nro
+label.passenger.handicapped= Pasajero discapacitado Nro
+label.passenger.infant= Pasajero infante Nro
+label.passenger.old= Pasajero tercera edad Nro
+
+label.paymentFailed=Pago NO Exitoso
+label.paymentType=Tipo de Pago
+label.paymentStatus=Estado del Pago
+label.paymentSuccess=Confirmaci\u00F3n de Pago Exitoso
+label.paxType=Tipo de Pasajero
+label.pendingForApprove=Pendiente de aprobaci\u00F3n
+label.phone=Tel\u00E9fono
+label.portlet.name=Nombre Portlet
+label.position=Cargo
+label.preferred=Producto en Oferta
+label.preview=Vista Preliminar
+label.price=Precio
+label.priority=Prioridad
+label.process=Proceso
+label.product=Producto
+label.products=Productos
+label.projects=Proyectos
+label.profile=Perfil
+label.promotion=Promoci\u00F3n
+label.publishHome=Publicar en el Home
+label.publishPeriod=Per\u00EDodo de Publicaci\u00F3n
+label.purchaseOffice=Oficina de Compra
+
+label.quantity=Cantidad
+label.question=Pregunta
+label.quotation=Cotizaci\u00F3n
+label.quotationManagementStatus=Administraci\u00F3n de Estado de Cotizaci\u00F3n
+label.quotationStatus=Estado de Cotizaci\u00F3n
+
+label.ratting=Ratting
+label.recipe=Receta
+label.recipeType=Tipo de Receta
+label.recommended=Recomendada
+label.registered=Registrado
+label.related=Relacionados
+label.relatedContent=Contenido Relacionado
+label.relation=Relaci\u00F3n
+label.request=Solicitudes
+label.requested=Solicitado
+label.requirementNumber=N\u00FAmero de solicitud
+label.reservation=Nro. Reserva
+label.resetPasword=Cambiar Contrase\u00F1a
+label.residence=Lugar de Residencia
+label.results=Resultados
+label.role=Rol
+label.role=Rol
+label.route=Ruta
+label.rules=Reglamentos / Normas
+label.ruc=RUC
+
+
+
+label.salary.aspiration=Aspiraci\u00F3n salarial
+label.schedule=Horario
+label.search=Buscar
+label.secretQuestion=Pregunta Secreta de recuperaci\u00F3n de Contrase\u00F1a
+label.section=Secci\u00F3n
+label.sections=Secciones
+label.sectionInfoList=Lista de Informaci\u00F3n Relacionada
+label.sections=Secciones
+label.sector=Sector
+label.select=Seleccionar
+label.seller=Proveedor
+label.seminary=Seminario
+label.send=Enviar
+label.sent=Enviado
+label.sentBy=Enviado por
+label.service=Servicio
+label.service.function=Servicio/Funci\u00F3n
+label.sessionId= ID de Sesi\u00F3n
+label.specialFare=Tarifa residente
+label.species=Especie
+label.sponsor=Auspiciante
+label.state=Estado/Provincia
+label.startDate=Fecha de Inicio
+label.status=Estado
+label.step1=Paso 1
+label.step2=Paso 2
+label.step3=Paso 3
+label.step4=Paso 4
+label.step5=Paso 5
+label.step6=Paso 6
+label.step7=Paso 7
+label.stock=Stock
+label.stockMax=Stock M\u00E1ximo
+label.stockMin=Stock M\u00EDnimo
+label.street=Calle
+label.studies=Estudios
+label.study.branch=Rama de estudios
+label.subcomponent=Subcomponente
+label.subindustry=Subindustria
+label.subsidiary=Subsidiario
+label.subject=Tema
+label.supplier=Solicitante
+label.suscribeBulletin=Suscriptor
+label.system=Sistema
+
+label.tax = Impuesto
+label.tax1 = Tax1
+label.tax2 = Tax2
+label.tax3 = Tax3
+label.taxes = Impuestos
+label.taxRate = Procentaje del Impuesto
+label.taxSince = Impuesto vigente desde
+label.taxType=Combinaci\u00F3n de Impuestos
+label.taxUntil = Impuesto vigente hasta
+label.text=Texto
+label.title=T\u00EDtulo
+label.themes=Temas
+label.to=Hasta
+label.total=Total
+label.tradeName=Trade Name
+label.transactionNumber=Nro. Transacci\u00F3n
+label.transactionType=Tipo Transacci\u00F3n
+label.twoWay=Ida y Vuelta
+label.type=Tipo
+
+label.user=Usuario
+label.userAccount=Cuenta de Usuario
+label.update=Actualizaci\u00F3n
+label.updateNotes=Detalle de Actualizaci\u00F3n
+label.uploadFile=Subir Archivo
+label.uploadImage=Subir Imagen
+label.usd=USD
+
+label.value=Monto
+label.vertical=Vertical
+label.version=Versi\u00F3n
+label.view=Ver
+label.viewAllProject=Ver todos los Proyectos
+label.viewImage=Ver Imagen
+label.viewInfo=Vista de Informaci\u00F3n
+label.viewProject=Ver Proyectos
+label.vitae=Curriculum vitae
+
+label.width=Ancho
+label.working=Se encuentra trabajando
+
+label.year=A\u00F1o
+label.yes=Si
+
+label.zone=Zona
+
+#
+# Meses
+#
+label.january = Enero
+label.february = Febrero
+label.march = Marzo
+label.april = Abril
+label.may = Mayo
+label.june = Junio
+label.july = Julio
+label.august = Agosto
+label.september = Septiembre
+label.october = Octubre
+label.november = Noviembre
+label.dicember = Diciembre
+
+label.monday = Lun
+label.tuesday = Mar
+label.wednesday = Mier
+label.thursday = Jue
+label.friday = Vier
+label.saturday = Sab
+label.sunday = Dom
+
+
+label.search.access=Buscador de Accesos directos
+label.search.category=Buscador de Categor\u00EDa
+label.search.city=Buscador de Ciudad
+label.search.sector=Buscador de Sector
+label.search.news=Buscador de Noticias
+label.search.event=Buscador de Eventos
+label.search.portlet=Buscador de Portlets
+label.search.product=Buscador de Productos
+label.search.user=Buscador de Usuarios
+
+label.welcome= Bienvenido/(a)
+
+# Links
+#
+
+link.auction.edit=Info General
+link.auction.document=Documentos
+link.auction.list=Listar Remates y coativas
+
+link.bulletin.infoGeneral=Info General
+link.bulletin.bulletins=Boletines
+link.bulletin.subscriber=Subscritos
+link.bulletin.topics=T\u00F3picos
+
+link.content.infoGeneral=Info General
+link.content.related=Info Relacionada
+link.content.document=Adjuntos
+link.content.document.sri=Documentos
+link.content.document.support=Material Soporte
+link.content.images=Imagenes
+link.content.faq=FAQ
+link.content.link=Links
+link.content.section.list=Listar Secciones
+link.content.category.list=List Categorias
+link.content.item.list=Listar items
+
+link.customer.edit=Info General
+link.customer.order=Compras Reservas
+link.customer.list=Lista Clientes
+
+link.documents.infoGeneral=Info General
+link.documents.news=Documentos
+link.documents.images=Im\u00E1genes
+
+link.event.edit=Info General
+link.event.date=Fechas
+link.event.document=Documentos
+link.event.image=Im\u00E1genes
+link.event.list=Listar Eventos
+
+link.faq.edit=Info General
+link.faq.document=Documentos
+link.faq.list=Volver a Listado
+
+link.jobs.positions=Cargos Abiertos
+link.jobs.areas=Informaci\u00F3n Area
+link.jobs.curriculum=Curriculum
+link.jobs.positionsRequests=Aplicaciones
+link.jobs.list=Listar Areas
+
+link.menu.infoGeneral=Info General
+link.menu.items=Items de Men\u00FA
+link.menu.access=Accesos directos
+link.menu.list=Listar Men\u00FAs
+
+link.news.edit=Info General
+link.news.document=Documentos
+link.news.image=Im\u00E1genes
+link.news.list=Listar Noticias
+
+link.product.edit=Info General
+link.product.related=Relacionados
+link.product.list=Listar Productos
+
+link.taxType.list=Combinaciones de Impuestos
+link.tax.list=Tipos de Impuestos
+
+link.return.list=Volver a listado
+link.return.list.sri.document=Listado de tipos de documentos
+
+link.role.edit=Role
+link.role.list=List Roles
+
+link.route.edit=Info Ruta
+link.route.frequency= Frecuencias
+link.route.ticketRate= Tarifas
+link.route.list= Lista de Rutas
+
+link.route.frequency.edit=Info Frecuencia
+link.route.frequency.flight=Lista de Vuelos
+link.route.frequency.list=Lista de Frecuencia
+
+link.species.infoGeneral=Info General
+link.species.format.guides=Formatos y guias
+link.species.services=Servicios en linea
+link.species.list=Volver a listado
+
+link.zone.list=City Zones List
+#
+# Applications Options
+#
+option.all=Todos
+option.center=Centro
+option.left=Izquierda
+option.right=Derecha
+option.none=[Ninguno]
+option.root=[Nodo Principal]
+option.select=[Seleccione]
+option.defaultMenu=Men\u00FA Principal
+option.allSite=Todo el Sitio
+option.sections=Secciones
+option.projects=Proyectos
+option.institutions=Instituciones
+option.licitations=Licitaciones
+option.documents=Documentos
+
+#
+# Country Labels
+#
+country.ecuador=Ecuador
+country.afghanistan=Afghanistan
+country.albania=Albania
+country.alemania=Alemania
+country.algeria=Algeria
+country.andorra=Andorra
+country.angola=Angola
+country.anguilla=Anguilla
+country.antartica=Ant\u00E1rtica
+country.antiguaBarbuda=Antigua Barbuda
+country.antillasHolandesas=Antillas Holandesas
+country.arabiaSaudita=Arabia Saudita
+country.argentina=Argentina
+country.armenia=Armenia
+country.aruba=Aruba
+country.australia=Australia
+country.austria=Austria
+country.azerbaijan=Azerbaijan
+country.bahamas=Bahamas
+country.bahrein=Bahrein
+country.bangladesh=Bangladesh
+country.barbados=Barbados
+country.belarus=Belarus
+country.belgica=B\u00E9lgica
+country.belice=Belice
+country.benin=Ben\u00EDn
+country.bermuda=Bermuda
+country.bolivia=Bolivia
+country.bosniaHerzegovina=Bosnia Herzegovina
+country.botswana=Botswana
+country.brasil=Brasil
+country.brunei=Brunei
+country.bulgaria=Bulgaria
+country.burkinaFaso=Burkina Faso
+country.butan=Butan
+country.burundi=Burundi
+country.caboVerde=Cabo Verde
+country.camboya=Camboya
+country.camerun=Camer\u00FAn
+country.canada=Canada
+country.chad=Chad
+country.chile=Chile
+country.china=China
+country.chipre=Chipre
+country.colombia=Colombia
+country.comores=Comores
+country.congoZaire=Congo (Zaire)
+country.congo=Congo
+country.costaRica=Costa Rica
+country.coteDivoire=Cote Divoire
+country.croacia=Croacia
+country.cuba=Cuba
+country.dinamarca=Dinamarca
+country.djibouti=Djibouti
+country.dominica=Dominica
+country.egipto=Egipto
+country.elSalvador=El Salvador
+country.emiratosArabesUnidos=Emiratos Arabes Unidos
+country.eritrea=Eritrea
+country.eslovaquia=Eslovaquia
+country.eslovenia=Eslovenia
+country.espana=Espa\u00F1a
+country.estadosUnidos=Estados Unidos
+country.estonia=Estonia
+country.etiopia=Etiop\u00EDa
+country.fiji=Fiji
+country.filipinas=Filipinas
+country.finlandia=Finlandia
+country.francia=Finlandia
+country.franciaMetropolitana=Francia Metropolitana
+country.gabon=Gab\u00F3n
+country.gambia=Gambia
+country.georgia=Georgia
+country.ghana=Ghana
+country.gibraltar=Gibraltar
+country.grecia=Grecia
+country.granada=Granada
+country.groenlandia=Groenlandia
+country.guadalupe=Guadalupe
+country.guam=Guam
+country.guatemala=Guatemala
+country.guinea=Guinea
+country.guineaBissau=Guinea Bissau
+country.guineaEcuatorial=Guinea Ecuatorial
+country.guyana=Guyana
+country.guyanaFrancesa=Guyana Francesa
+country.haiti=Haiti
+country.holanda=Holanda
+country.honduras=Honduras
+country.hongKong=Hong Kong
+country.hungria=Hungria
+country.india=India
+country.indonesia=Indonesia
+country.irak=Irak
+country.iran=Iran
+country.irlanda=Irlanda
+country.islandia=Islandia
+country.islasBouvet=Islas Bouvet
+country.islasCayman=Islas Cayman
+country.islasCocos=Islas Cocos
+country.islasCook=Islas Cook
+country.islasFaroe=Islas Faroe
+country.georgiaSurSandwichSur=Islas Georgia Sur y Sandwich Sur
+country.heardMcDonald=Islas Heard y Mc Donald
+country.islasMalvinas=Islas Malvinas
+country.islasMarshall=Islas Marshall
+country.menoresEstadosUnidos=Islas Menores de Estados Unidos
+country.islasNavidad=Islas Navidad
+country.islasNorfolk=Islas Norfolk
+country.islasSolomon=Islas Solomon
+country.islasSvalbardJanMayen=Islas Svalbard Y Jan Mayen
+country.islasTurcosCaicos=Islas Turcos y Caicos
+country.islasVirgenesAmericanas=Islas V\u00EDrgenes Americanas
+country.islasVirgenesBritanicas=Islas V\u00EDrgenes Brit\u00E1nicas
+country.islasWallisFutuna=Islas Wallis y Futuna
+country.israel=Israel
+country.italia=Italia
+country.jamaica=Jamaica
+country.japon=Jap\u00F3n
+country.jordania=Jordania
+country.kazajstan=Kazajstan
+country.kenia=Kenia
+country.kiribati=Kiribati
+country.korea=Korea
+country.kuwait=Kuwait
+country.kirguizistan=Kirguizistan
+country.laos=Laos
+country.latvia=Latvia
+country.lesoto=Lesoto
+country.libano=Libano
+country.liberia=Liberia
+country.libia=Libia
+country.liechtenstein=Liechtenstein
+country.lituania=Lituania
+country.luxemburgo=Luxemburgo
+country.macao=Macao
+country.macedonia=Macedonia
+country.madagascar=Madagascar
+country.malawi=Malawi
+country.malasia=Malasia
+country.maldivas=Maldivas
+country.mali=Mali
+country.malta=Malta
+country.marianasDelNorte=Marianas del Norte
+country.martinica=Martinica
+country.marruecos=Marruecos
+country.mauritania=Mauritania
+country.mauricio=Mauricio
+country.mayotte=Mayotte
+country.mexico=Mexico
+country.micronesia=Micronesia
+country.moldova=Moldova
+country.monaco=M\u00F3naco
+country.mongolia=Mongolia
+country.montserrat=Montserrat
+country.mozambique=Mozambique
+country.myanmar=Myanmar
+country.namibia=Namibia
+country.nauru=Nauru
+country.nepal=Nepal
+country.nicaragua=Nicaragua
+country.niger=Niger
+country.nigeria=Nigeria
+country.niue=Niue
+country.noruega=Noruega
+country.nuevaCaledonia=Nueva Caledonia
+country.nuevaZelanda=Nueva Zelanda
+country.oman=Oman
+country.pakistan=Pakistan
+country.palau=Palau
+country.palestina=Palestina
+country.panama=Panam\u00E1
+country.papuaNuevaGuinea=Papua Nueva Guinea
+country.paraguay=Paraguay
+country.peru=Per\u00FA
+country.pitcairn=Pitcairn
+country.polonia=Polonia
+country.polinesiaFrancesa=Polinesia Francesa
+country.portugal=Portugal
+country.puertoRico=Puerto Rico
+country.qatar=Qatar
+country.reinoUnido=Reino Unido
+country.republicaCentroafricana=Rep\u00FAblica Centroafricana
+country.reunion=Reuni\u00F3n
+country.republicaCheca=Rep\u00FAblica Checa
+country.republicaDominicana=Rep\u00FAblica Dominicana
+country.repPopularDemocKorea=Rep\u00FAblica Popular Democratica de Korea
+country.ruanda=Ruanda
+country.rumania=Rumania
+country.rusia=Rusia
+country.saharaOccidental=Sahara Occidental
+country.sanCristobalNevis=San Crist\u00F3bal y Nevis
+country.santaLucia=Santa Luc\u00EDa
+country.sanVicenteGranadinas=San Vicente y Granadinas
+country.samoa=Samoa
+country.samoaOccidental=Samoa Occidental
+country.sanMarino=San Marino
+country.saoTomePrincipe=Sao Tome y Principe
+country.senegal=Senegal
+country.seychelles=Seychelles
+country.sierraLeona=Sierra Leona
+country.singapur=Singapur
+country.somalia=Somalia
+country.sudafrica=Sudafrica
+country.sriLanka=Sri Lanka
+country.santaHelena=Santa Helena
+country.sanPierraMiquelon=San Pierra Y Miquel\u00F3n
+country.sudan=Sud\u00E1n
+country.surinam=Surinam
+country.suazilandia=Suazilandia
+country.suecia=Suecia
+country.suiza=Suiza
+country.siria=Siria
+country.taiwan=Taiwan
+country.tajikistan=Tajikistan
+country.tanzania=Tanzania
+country.terrOceanoBritanicoIndio=Territorio de Oceano Britanico-Indio
+country.terrFrancecesSur=Territorios Franceces del Sur
+country.tailandia=Tailandia
+country.timorOriental=Timor Oriental
+country.togo=Togo
+country.tokelau=Tokelau
+country.tonga=Tonga
+country.trinidadTobago=Trinidad y Tobago
+country.tunicia=Tunicia
+country.turquia=Turqu\u00EDa
+country.turkmenistan=Turkmenistan
+country.tuvalu=Tuval\u00FA
+country.uganda=Uganda
+country.ucrania=Ucrania
+country.uruguay=Uruguay
+country.uzbekistan=Uzbekistan
+country.vanuatu=Vanuatu
+country.vaticano=Vaticano
+country.venezuela=Venezuela
+country.vietnam=Vietnam
+country.yemen=Yemen
+country.yugoslavia=Yugoslavia
+country.zambia=Zambia
+country.zimbabwe=Zimbabwe

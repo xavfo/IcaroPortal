@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/j2ee/icaro/!svn/ver/552/IcaroPortal/src/com/iportal/biz/worldspan
+END
+Segment.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/j2ee/icaro/!svn/ver/526/IcaroPortal/src/com/iportal/biz/worldspan/Segment.java
+END
+PaxTypeInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/j2ee/icaro/!svn/ver/552/IcaroPortal/src/com/iportal/biz/worldspan/PaxTypeInfo.java
+END
+Leg.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/j2ee/icaro/!svn/ver/182/IcaroPortal/src/com/iportal/biz/worldspan/Leg.java
+END
+PricingInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/j2ee/icaro/!svn/ver/332/IcaroPortal/src/com/iportal/biz/worldspan/PricingInfo.java
+END
+PowerShopperResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/j2ee/icaro/!svn/ver/378/IcaroPortal/src/com/iportal/biz/worldspan/PowerShopperResponse.java
+END
+BookSegment.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/j2ee/icaro/!svn/ver/378/IcaroPortal/src/com/iportal/biz/worldspan/BookSegment.java
+END
+BookAndPriceResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/j2ee/icaro/!svn/ver/501/IcaroPortal/src/com/iportal/biz/worldspan/BookAndPriceResponse.java
+END
+TicketPNRResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/j2ee/icaro/!svn/ver/502/IcaroPortal/src/com/iportal/biz/worldspan/TicketPNRResponse.java
+END
+WorldspanError.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/j2ee/icaro/!svn/ver/339/IcaroPortal/src/com/iportal/biz/worldspan/WorldspanError.java
+END
+WorldspanResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/j2ee/icaro/!svn/ver/441/IcaroPortal/src/com/iportal/biz/worldspan/WorldspanResponse.java
+END
+AvailabilityResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/j2ee/icaro/!svn/ver/263/IcaroPortal/src/com/iportal/biz/worldspan/AvailabilityResponse.java
+END
+FlightInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/j2ee/icaro/!svn/ver/526/IcaroPortal/src/com/iportal/biz/worldspan/FlightInfo.java
+END
+PaxTypeDetailInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/j2ee/icaro/!svn/ver/347/IcaroPortal/src/com/iportal/biz/worldspan/PaxTypeDetailInfo.java
+END
+TripInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/j2ee/icaro/!svn/ver/340/IcaroPortal/src/com/iportal/biz/worldspan/TripInfo.java
+END
+FlightOptionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/j2ee/icaro/!svn/ver/262/IcaroPortal/src/com/iportal/biz/worldspan/FlightOptionBean.java
+END
+PSAlternateInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/j2ee/icaro/!svn/ver/552/IcaroPortal/src/com/iportal/biz/worldspan/PSAlternateInfo.java
+END

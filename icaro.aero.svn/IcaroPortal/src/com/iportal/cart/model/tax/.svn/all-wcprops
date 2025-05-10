@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/com/iportal/cart/model/tax
+END
+TaxRate.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/j2ee/icaro/!svn/ver/164/IcaroPortal/src/com/iportal/cart/model/tax/TaxRate.java
+END
+Tax.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/j2ee/icaro/!svn/ver/96/IcaroPortal/src/com/iportal/cart/model/tax/Tax.java
+END
+TaxType.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/com/iportal/cart/model/tax/TaxType.java
+END

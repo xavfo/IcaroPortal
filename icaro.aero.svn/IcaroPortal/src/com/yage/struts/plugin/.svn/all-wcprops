@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/j2ee/icaro/!svn/ver/5/IcaroPortal/src/com/yage/struts/plugin
+END
+HibernatePlugIn.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/j2ee/icaro/!svn/ver/5/IcaroPortal/src/com/yage/struts/plugin/HibernatePlugIn.java
+END
+InitParametersPlugIn.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/j2ee/icaro/!svn/ver/5/IcaroPortal/src/com/yage/struts/plugin/InitParametersPlugIn.java
+END
+BasePlugIn.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/j2ee/icaro/!svn/ver/5/IcaroPortal/src/com/yage/struts/plugin/BasePlugIn.java
+END
+FileExtensionPlugIn.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/j2ee/icaro/!svn/ver/5/IcaroPortal/src/com/yage/struts/plugin/FileExtensionPlugIn.java
+END
+UserInventoryPlugIn.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/j2ee/icaro/!svn/ver/5/IcaroPortal/src/com/yage/struts/plugin/UserInventoryPlugIn.java
+END
+Log4jPlugIn.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/j2ee/icaro/!svn/ver/5/IcaroPortal/src/com/yage/struts/plugin/Log4jPlugIn.java
+END

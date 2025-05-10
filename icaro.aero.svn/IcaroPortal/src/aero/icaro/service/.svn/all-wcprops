@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service
+END
+IcaroUserBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/j2ee/icaro/!svn/ver/356/IcaroPortal/src/aero/icaro/service/IcaroUserBean.java
+END
+IcaroPaqBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/j2ee/icaro/!svn/ver/344/IcaroPortal/src/aero/icaro/service/IcaroPaqBean.java
+END
+IcaroDocBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/j2ee/icaro/!svn/ver/344/IcaroPortal/src/aero/icaro/service/IcaroDocBean.java
+END
+IcaroServiceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/aero/icaro/service/IcaroServiceManager.java
+END
+IcaroServiceMessageBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/j2ee/icaro/!svn/ver/237/IcaroPortal/src/aero/icaro/service/IcaroServiceMessageBean.java
+END
+IcaroServiceException.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/aero/icaro/service/IcaroServiceException.java
+END
+MillesDetailBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/j2ee/icaro/!svn/ver/255/IcaroPortal/src/aero/icaro/service/MillesDetailBean.java
+END

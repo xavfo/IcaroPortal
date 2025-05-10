@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/j2ee/icaro/!svn/ver/571/IcaroPortal/web-root/system/cart
+END
+customerForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/j2ee/icaro/!svn/ver/474/IcaroPortal/web-root/system/cart/customerForm.jsp
+END
+deliveryAgencyList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/j2ee/icaro/!svn/ver/9/IcaroPortal/web-root/system/cart/deliveryAgencyList.jsp
+END
+orderList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/j2ee/icaro/!svn/ver/571/IcaroPortal/web-root/system/cart/orderList.jsp
+END
+taxList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/j2ee/icaro/!svn/ver/9/IcaroPortal/web-root/system/cart/taxList.jsp
+END
+customerOrderList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/j2ee/icaro/!svn/ver/496/IcaroPortal/web-root/system/cart/customerOrderList.jsp
+END
+taxTypeList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/j2ee/icaro/!svn/ver/9/IcaroPortal/web-root/system/cart/taxTypeList.jsp
+END
+paymentTypeList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/j2ee/icaro/!svn/ver/9/IcaroPortal/web-root/system/cart/paymentTypeList.jsp
+END
+customerList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/j2ee/icaro/!svn/ver/338/IcaroPortal/web-root/system/cart/customerList.jsp
+END
+deliveryAgencyForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/j2ee/icaro/!svn/ver/474/IcaroPortal/web-root/system/cart/deliveryAgencyForm.jsp
+END
+orderForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/j2ee/icaro/!svn/ver/571/IcaroPortal/web-root/system/cart/orderForm.jsp
+END
+taxForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/j2ee/icaro/!svn/ver/474/IcaroPortal/web-root/system/cart/taxForm.jsp
+END
+customerOrderForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/j2ee/icaro/!svn/ver/501/IcaroPortal/web-root/system/cart/customerOrderForm.jsp
+END
+taxTypeForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/j2ee/icaro/!svn/ver/474/IcaroPortal/web-root/system/cart/taxTypeForm.jsp
+END
+paymentTypeForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/j2ee/icaro/!svn/ver/474/IcaroPortal/web-root/system/cart/paymentTypeForm.jsp
+END

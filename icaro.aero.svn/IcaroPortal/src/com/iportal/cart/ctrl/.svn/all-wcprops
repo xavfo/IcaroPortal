@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/j2ee/icaro/!svn/ver/613/IcaroPortal/src/com/iportal/cart/ctrl
+END
+PaymentForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/j2ee/icaro/!svn/ver/424/IcaroPortal/src/com/iportal/cart/ctrl/PaymentForm.java
+END
+CheckoutAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/j2ee/icaro/!svn/ver/613/IcaroPortal/src/com/iportal/cart/ctrl/CheckoutAction.java
+END
+SearchPurchaseForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/j2ee/icaro/!svn/ver/310/IcaroPortal/src/com/iportal/cart/ctrl/SearchPurchaseForm.java
+END
+RetrievePasswordAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/j2ee/icaro/!svn/ver/415/IcaroPortal/src/com/iportal/cart/ctrl/RetrievePasswordAction.java
+END
+CartAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/j2ee/icaro/!svn/ver/568/IcaroPortal/src/com/iportal/cart/ctrl/CartAction.java
+END
+AddressForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/j2ee/icaro/!svn/ver/177/IcaroPortal/src/com/iportal/cart/ctrl/AddressForm.java
+END
+AccountAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/com/iportal/cart/ctrl/AccountAction.java
+END
+PaymentAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/j2ee/icaro/!svn/ver/568/IcaroPortal/src/com/iportal/cart/ctrl/PaymentAction.java
+END
+CartForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/cart/ctrl/CartForm.java
+END
+SearchPurchaseAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/j2ee/icaro/!svn/ver/568/IcaroPortal/src/com/iportal/cart/ctrl/SearchPurchaseAction.java
+END

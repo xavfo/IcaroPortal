@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/j2ee/icaro/!svn/ver/474/IcaroPortal/src/com/iportal/cart/model/catalog
+END
+Product.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/cart/model/catalog/Product.java
+END
+Brand.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/j2ee/icaro/!svn/ver/474/IcaroPortal/src/com/iportal/cart/model/catalog/Brand.java
+END
+Seller.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/j2ee/icaro/!svn/ver/474/IcaroPortal/src/com/iportal/cart/model/catalog/Seller.java
+END
+Category.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/cart/model/catalog/Category.java
+END

@@ -1,0 +1,53 @@
+#
+# Copyright © Yage. All Rights Reserved.
+#
+# YAGE evolucion digital
+# Av. Brasil 951 y Mariano Echeverría
+# Quito-Ecuador
+# www.yage.com.ec
+#
+
+
+#
+# Tables Keys
+#
+accessLevel.public=P\u00FAblico
+accessLevel.registered=Registrado
+
+displayMode.text=Texto
+displayMode.banner=Banner
+portalModule.brand=Marcas
+displayMode.brief=Resumen
+
+portalModule.account=Mi Cuenta
+portalModule.cart=Carrito de Compras
+portalModule.content=Contenido
+portalModule.subHome=Sub Home
+portalModule.home=Home
+portalModule.itinerary=Itinerarios
+portalModule.event=Evento
+portalModule.legal=Terminos Legales
+portalModule.map=Mapa
+portalModule.establishment=Establecimientos
+portalModule.contact=Contacto
+portalModule.news=Noticias
+portalModule.news1=Noticias Institucionales
+portalModule.news2=Sala de Prensa
+portalModule.contact=Contactos
+portalModule.authority.content=Contenido Autoridades
+portalModule.office=Directorio de Contactos
+portalModule.eventDetail=Detalle de Eventos
+portalModule.services=Servicios en Linea
+portalModule.job=Bolsa de Trabajo
+portalModule.jobView=Bolsa de Trabajo
+portalModule.contact=Contacto
+portalModule.partner=Socios Icaro
+portalModule.coerciveView=Remates
+portalModule.salesPoint=Punto de Venta
+portalModule.subscriberBulletin=Subscripci\u00F3n de Boletines
+portalModule.unsubscriberBulletin=Desubscripci\u00F3n de Boletines
+portalModule.search= Busqueda
+portalModule.searchForms=Buscador
+portalModule.seller=Proveedores
+portalModule.interestAplication= Links de Interes
+portalModule.promotion=Promociones

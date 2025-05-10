@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/j2ee/icaro/!svn/ver/492/IcaroPortal/src/com/iportal/ctrl/security
+END
+MyCallbackHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/security/MyCallbackHandler.java
+END
+UserFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/security/UserFilter.java
+END
+RetrievePasswordAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/security/RetrievePasswordAction.java
+END
+LogoutAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/security/LogoutAction.java
+END
+PortalFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/security/PortalFilter.java
+END
+ResetPasswordSystemAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/security/ResetPasswordSystemAction.java
+END
+LanguageFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/j2ee/icaro/!svn/ver/492/IcaroPortal/src/com/iportal/ctrl/security/LanguageFilter.java
+END
+LoginSystemAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/j2ee/icaro/!svn/ver/492/IcaroPortal/src/com/iportal/ctrl/security/LoginSystemAction.java
+END

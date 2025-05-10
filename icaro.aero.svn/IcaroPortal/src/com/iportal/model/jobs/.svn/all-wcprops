@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/jobs
+END
+Requester.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/jobs/Requester.java
+END
+Position.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/jobs/Position.java
+END
+Area.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/jobs/Area.java
+END
+RequesterWorkCity.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/jobs/RequesterWorkCity.java
+END
+PositionRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/jobs/PositionRequest.java
+END

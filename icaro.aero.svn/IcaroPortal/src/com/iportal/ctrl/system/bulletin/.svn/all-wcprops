@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/system/bulletin
+END
+SubscriberAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/system/bulletin/SubscriberAction.java
+END
+BulletinForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/system/bulletin/BulletinForm.java
+END
+TopicForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/system/bulletin/TopicForm.java
+END
+SubscriberListForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/system/bulletin/SubscriberListForm.java
+END
+SendBulletinAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/system/bulletin/SendBulletinAction.java
+END
+BulletinAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/system/bulletin/BulletinAction.java
+END
+SendBulletinForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/system/bulletin/SendBulletinForm.java
+END
+TopicAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/system/bulletin/TopicAction.java
+END
+BulletinTabBaseAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/system/bulletin/BulletinTabBaseAction.java
+END

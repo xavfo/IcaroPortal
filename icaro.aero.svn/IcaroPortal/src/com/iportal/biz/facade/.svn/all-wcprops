@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/com/iportal/biz/facade
+END
+LinkContainerFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/facade/LinkContainerFacade.java
+END
+DocumentContainerFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/facade/DocumentContainerFacade.java
+END
+DocumentAssignFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/facade/DocumentAssignFacade.java
+END
+ImageContainerFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/com/iportal/biz/facade/ImageContainerFacade.java
+END
+RowItemFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/facade/RowItemFacade.java
+END
+FaqContainerFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/facade/FaqContainerFacade.java
+END

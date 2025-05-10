@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/j2ee/icaro/!svn/ver/552/IcaroPortal/src/com/iportal/model
+END
+LinkType.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/LinkType.java
+END
+Access.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/Access.java
+END
+ImageGallery.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/ImageGallery.java
+END
+Country.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/j2ee/icaro/!svn/ver/46/IcaroPortal/src/com/iportal/model/Country.java
+END
+Occupation.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/Occupation.java
+END
+Catalogue.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/Catalogue.java
+END
+EventSubscriber.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/EventSubscriber.java
+END
+CatalogueType.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/CatalogueType.java
+END
+City.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/j2ee/icaro/!svn/ver/46/IcaroPortal/src/com/iportal/model/City.java
+END
+DocumentDisplayMode.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/DocumentDisplayMode.java
+END
+Zone.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/Zone.java
+END
+PageLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/PageLog.java
+END
+Document.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/Document.java
+END
+State.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/j2ee/icaro/!svn/ver/46/IcaroPortal/src/com/iportal/model/State.java
+END
+DocumentType.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/DocumentType.java
+END
+ImageCategory.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/ImageCategory.java
+END
+Image.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/Image.java
+END
+Language.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/j2ee/icaro/!svn/ver/451/IcaroPortal/src/com/iportal/model/Language.java
+END
+AccessUrl.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/AccessUrl.java
+END
+Contact.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/j2ee/icaro/!svn/ver/501/IcaroPortal/src/com/iportal/model/Contact.java
+END

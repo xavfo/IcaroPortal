@@ -1,0 +1,170 @@
+#
+# Copyright © Yage. All Rights Reserved.
+#
+# YAGE evolucion digital
+# Av. Brasil 951 y Mariano Echeverría
+# Quito-Ecuador
+# www.yage.com.ec
+#
+
+administration=Administraci\u00F3n
+administration.module=M\u00F3dulos
+administration.sysParam=Parametros del Sistema
+administration.role=Roles
+administration.users=Usuarios
+administration.user=Usuario
+administration.memoryMenu=Menus en memoria
+administration.counters=Calcular Contadores
+administration.assign.users=Asignaci\u00F3n de Usuarios
+administration.ldap.users=Administraci\u00F3n de Usuarios
+
+
+audit=Auditor\u00EDa
+audit.adminAudit=Audit. Administraci\u00F3n
+audit.reports=Reporte de Visitas
+
+event.event=Eventos
+event.event.dates=Lugares y fechas
+event.eventCategory=Tipos de Evento
+
+icaro=Icaro
+icaro.flight=Informacion de Vuelos
+icaro.flight.route=Rutas
+icaro.flight.ticketRate=Tarifas
+icaro.flight.frequency=Frecuencias
+icaro.flight.frequency.flight=Vuelos
+
+portal=Portal
+portal.access=Accesos directos
+portal.category=Categor\u00EDas
+portal.content.1=Secciones
+portal.content.2=Categor\u00EDa
+portal.content.3=\u00CDtem de contenido
+portal.document=Documentos
+portal.item=\u00CDtems de contenido
+portal.guide.format=Gu\u00EDas y Formatos
+portal.language=Lenguajes
+portal.menu=Men\u00FAes
+portal.online.service=Servicios en l\u00EDnea
+portal.section=Secciones
+portal.sri.documents=Documentos SRI
+portal.sri.documents.options=Documentos SRI Opciones
+portal.sri.species.select=Selecci\u00F3n Sol/Form/Otros existentes
+portal.sri.statistic.select=Selecci\u00F3n Estad\u00EDsticas
+portal.sri.legal.select=Selecci\u00F3n Base Legal
+
+
+
+service=Servicios
+service.activities=Actividades econ\u00F3micas
+service.activity=Actividad econ\u00F3mica
+service.faq=FAQ
+service.faqCategory=Categor\u00EDas de FAQ
+service.groups=Grupos econ\u00F3micos
+service.group=Grupo econ\u00F3mico
+service.link=Links
+service.linkCategory=Categor\u00EDas de Links
+service.directory=Directorio
+service.office=Oficinas
+service.authority=Autoridades
+service.bidding=Licitaci\u00F3n
+service.auction=Remates y Coactivas
+service.themes=Temas
+service.theme=Tema
+service.species.categories=Categor\u00EDas de Documentos SRI
+service.species.category=Categor\u00EDa de Documentos SRI
+service.digital.services=Servicios digitales
+service.report=Reportes
+service.report.contact=Contactenos
+
+
+document.document=Documentos
+
+container.container=Contenedor
+container.static=Estad\u00EDsticas
+
+link.link=Links
+
+news.news=Noticias
+news.newsSection=Secci\u00F3n de Noticias
+
+bulletin.address=Direcciones
+bulletin.bulletin=Boletines
+bulletin.occupation=Ocupaciones
+bulletin.subscriber=Suscriptores
+bulletin.template=Plantillas
+bulletin.topic=T\u00F3picos
+bulletin.sendBulletin=Env\u00EDo de Boletines
+
+information=Info General
+information.city=Ciudades
+information.country=Pa\u00EDses
+information.application.cv=Lista de curriculums
+information.application.list=Lista de aplicaciones
+information.documentType=Tipos de Documento
+information.documentTopic=T\u00F3picos
+information.related.documents=Documentos relacionados
+information.related.images=Im\u00E1genes relacionadas
+information.selection.container=Seleccionar de Contenedor
+information.selection.documents=Selecci\u00F3n de documentos existentes
+information.selection.faq=Selecci\u00F3n de FAQ's existentes
+information.selection.link=Selecci\u00F3n de Links existentes
+information.selection.support=Selecci\u00F3n de material de soporte existente
+
+information.state=Estados/Provincias
+information.zone=Zonas
+
+information.catalogues=Cat\u00E1logos
+information.catalogues.airport=Aeropuertos
+information.catalogues.requestReason=Motivo de Solicitud
+information.catalogues.passengerOption=Opciones Adicionales de Pasajeros
+information.catalogues.newsClasificator=Clasificaci\u00F3n de Noticias
+information.catalogues.establishment=Tipo de Establecimientos
+information.catalogues.statesClasificator=Clasificaci\u00F3n de Establecimientos
+information.catalogues.document=Categor\u00EDa de Documentos
+information.catalogues.serviceArea=\u00C1reas de Servicio
+information.catalogues.job=Cargos
+information.catalogues.faq=Tipos de FAQ
+information.catalogues.general=Generales
+information.catalogues.news=Categor\u00EDa de Noticias
+information.catalogues.link=Tipos de Links
+information.catalogues.event=Categor\u00EDa de Eventos
+information.catalogues.legalDocument=Tipos de Documentos Legales
+information.catalogues.species=Tipos de Especies
+information.catalogues.econActivity=Actividad Econ\u00F3mica
+information.catalogues.econGroup=Grupos Econ\u00F3micos
+information.catalogues.imageCategory=Categor\u00EDas de Im\u00E1genes
+information.catalogues.occasion=Ocasiones
+information.catalogues.difficulty=Complejidad
+information.catalogues.recipeType=Tipos de Recetas
+information.catalogues.maritalStatus=Estado Civil
+information.catalogues.instructionLevel=Nivel de Instrucci\u00F3n
+information.catalogues.studyBranch=Rama de Estudios
+information.catalogues.salaryAspiration=Aspiraci\u00F3n Salarial
+information.container.support=Material de Soporte
+information.container.statistic=Estad\u00EDsticas
+information.container.legalDoc=Base Legal
+information.container.image=Im\u00E1genes
+
+information.jobs = Bolsa de trabajo
+information.jobs.area=\u00C1rea
+information.jobs.position=Cargos Disponibles
+
+cart=Carrito
+cart.brand=Marcas
+cart.category=Categor\u00EDas
+cart.customer=Cliente
+cart.establishment=Establecimientos
+cart.office=Directorio de Contactos y Puntos de Venta
+cart.order=\u00D3rdenes
+cart.orderStatus=Estados de la Orden
+cart.paymentStatus=Estados del Pago
+cart.paymentType=Tipos de Pago
+cart.product=Productos
+cart.route=Tipo de Ruta
+cart.seller=Proveedores
+cart.shipping=Inf Envios
+cart.shipping.deliveryAgency=Agencia de Entrega
+cart.shipping.route=Trayecto de Entrega
+cart.taxType=Impuestos
+cart.tax=Impuesto

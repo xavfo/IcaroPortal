@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE struts-config SYSTEM "struts-config_1_2.dtd">
+<struts-config>
+        <form-beans>
+			<!-- ======================================================= -->
+            <!-- Common Forms                                            -->
+            <!-- ======================================================= -->
+            <form-bean name="baseForm"               type="com.yage.struts.action.BaseForm" />
+			<form-bean name="portalForm"             type="com.iportal.ctrl.BasePortalForm" />
+            <form-bean name="newsPortalForm"         type="com.iportal.biz.portal.news.NewsForm" />
+			<form-bean name="eventPortalForm"        type="com.iportal.biz.portal.event.EventForm" />
+			<form-bean name="eventDateSearchForm"    type="com.iportal.biz.portal.event.EventDateSearchForm" />
+            <form-bean name="contentPortalForm"      type="com.iportal.biz.portal.content.ContentForm" />
+			<form-bean name="containerForm"          type="com.iportal.biz.portal.content.ContainerForm" />
+            <form-bean name="clientContactForm"      type="com.iportal.ctrl.portal.contact.ContactForm" />
+			<form-bean name="eventSubscriberForm"    type="com.iportal.biz.portal.event.EventSubscriberForm" />
+			<form-bean name="establishmentForm"      type="com.iportal.ctrl.system.entity.EstablishmentForm" />
+			<form-bean name="officeForm"             type="com.iportal.ctrl.system.entity.OfficeForm" />			
+			<form-bean name="partnerPortalForm"      type="com.iportal.ctrl.portal.partner.PartnerForm" />
+			<form-bean name="skiesServiceForm"       type="com.iportal.ctrl.icaro.service.ServiceAccountForm" />
+			<form-bean name="searchPurchaseForm"     type="com.iportal.cart.ctrl.SearchPurchaseForm" />
+			<form-bean name="icargoForm"             type="com.iportal.ctrl.icaro.service.IcaroCargoForm" />
+			
+			<form-bean name="searchGeneralForm" 	 type="com.iportal.ctrl.portal.search.SearchGeneralForm" />			
+					
+			<form-bean name="faqContainerForm"       type="com.iportal.ctrl.system.container.FaqContainerForm" />
+      
+            <!-- CART -->
+            <form-bean name="cartForm"               type="com.iportal.cart.ctrl.CartForm" />
+			<form-bean name="searchFlightForm"       type="com.iportal.cart.ctrl.flight.SearchFlightForm" />
+            <form-bean name="paymentForm"            type="com.iportal.cart.ctrl.PaymentForm" />			
+            <form-bean name="searchProductForm"      type="com.iportal.cart.ctrl.catalog.SearchProductForm" />
+			<form-bean name="menuDynaForm"           type="org.apache.struts.validator.DynaValidatorForm" />
+			
+			
+			<form-bean name="retrievePasswordPortalForm" type="org.apache.struts.validator.DynaValidatorForm">
+				<form-property name="username"  type="java.lang.String"/>
+			</form-bean>
+      
+       	</form-beans>
+			
+		<global-exceptions />
+			
+		<global-forwards >
+				<forward name="generalHome"            path="/general/home.do" redirect="true" />
+				<forward name="failure"    	           path="portal.error.badRequest"/>
+		</global-forwards>
+
+		<!-- ======================================================= -->
+		<!-- Portal Site                                             -->
+		<!-- ======================================================= -->
+        <action-mappings>
+
+				<!--action path="/general/home"
+					type="org.apache.struts.actions.ForwardAction"
+					parameter="portal.home">
+                </action-->
+			
+				<action path="/general/home"
+					type="com.iportal.ctrl.HomeAction">
+					<forward name="success"         path="portal.home" redirect="false"/>
+					
+                </action>
+                
+				<action path="/general/switchLanguage"
+						type="com.iportal.ctrl.language.SwitchLanguage"
+   		                name="portalForm"
+        	            scope="request"
+            	        validate="false">
+					<forward name="home"         path="/general/home.do" redirect="false"/>
+					<forward name="seachFlight"  path="/portal/main.do" redirect="false"/>
+					<forward name="paySuccess"   path="/general/home.do" redirect="false"/>
+					<forward name="payFailed"    path="/general/home.do" redirect="false"/>
+					<forward name="failure"      path="/general/sessionFailure.do" redirect="false"/>
+					
+					
+                </action>
+
+				<action path="/general/failure"
+                               type="org.apache.struts.actions.ForwardAction"
+                               parameter="portal.error.badRequest">
+                </action>
+				
+				<action path="/general/sessionFailure"
+                               type="org.apache.struts.actions.ForwardAction"
+                               parameter="portal.error.sessionFailure">
+                </action>
+				
+                <action path="/portal/jsmenu"
+	                type="com.iportal.ctrl.PortalMenuAction"
+    	                name="portalForm"
+                        scope="request"
+                        validate="false">
+                </action>
+
+		        <action path="/portal/main"
+                               type="com.iportal.ctrl.PortalMainAction"
+							   name="baseForm"
+                               scope="request"
+                               validate="false">
+					<forward name="content"                path="/portal/content/content.do?action=read" />
+					<forward name="subHome"                path="/portal/catalog/category.do?action=listCategories" />			
+					<forward name="promotion"              path="/portal/content/content.do?action=onSale" />
+					<forward name="cart"                   path="/portal/flightSearch.do"/>
+					<forward name="clientLogin"            path="/portal/webService/skiesClientLogin.do" redirect="false" />
+                    <forward name="account"                path="/portal/content/account.do?action=read&amp;code=52" redirect="true"/>
+					<forward name="news"                   path="/portal/news/news.do?action=list"/>				
+					<forward name="home"                   path="portal.home"/>
+					<forward name="seller"                 path="/portal/catalog/seller.do?action=listSellers" />
+					<forward name="establishment"          path="/portal/establishment/establishment.do?action=list" />
+					<forward name="office"                 path="/portal/office/office.do?action=list&amp;typeCode=1" />
+					<forward name="salesPoint"             path="/portal/office/office.do?action=list&amp;typeCode=2" />
+					<forward name="partner"                path="/portal/partner/partner.do?action=read"/>
+					<forward name="itinerary"              path="/portal/flight/itinerary.do?action=list"/>
+					<forward name="brand"                  path="/portal/catalog/brand.do?action=listBrands" />
+					<forward name="contact"                path="/portal/content/content.do?action=read"/>
+					<forward name="search"                 path="/portal/search/general.do?action=search" />
+					<forward name="map"                    path="/portal/map/map.do"/>
+					<forward name="legal"                  path="portal.legal"/>
+                </action>
+                <!-- ======================================================= -->
+                <!-- Acciones para contenidos                                -->
+                <!-- ======================================================= -->
+				
+                <action path="/portal/content/content"
+                		type="com.iportal.ctrl.portal.content.ContentAction"
+              			name="contentPortalForm"
+                        parameter="action"  scope="request"
+                 		validate="false">
+                	<forward name="success_content_layout1" path="portal.content" redirect="false" />
+                	<forward name="success_content_layout2" path="portal.subHome" redirect="false" />
+                    <forward name="success_content_layout6" path="portal.content.secundary" redirect="false" />
+                    <forward name="success_content_popup" path="popupPortal.content" redirect="false" />
+                    
+                    <forward name="success_promotion_layout1" path="portal.content" redirect="false" />
+                    <!-- Nose si se usen -->
+					<forward name="success_content_layout3" path="portal.promotion.info" redirect="false" />
+					<forward name="success_content_layout4" path="portal.content.flash" redirect="false" />
+					<forward name="success_content_layout5" path="portal.content.banner" redirect="false" />
+					<forward name="success_contact_layout1" path="portal.contact.form" redirect="false" />
+                </action>
+
+                <!-- Categorias -->
+		        <action path="/portal/catalog/category"
+        	        	type="com.iportal.cart.ctrl.catalog.CategoryAction"
+						name="baseForm"
+						parameter="action" 
+	                    scope="request"
+                    	validate="false">
+					<forward name="success_content_layout2" path="portal.catalog.home" redirect="false" />
+					<forward name="success_category"    path="portal.catalog.category" redirect="false" />
+					<forward name="success_subCategory" path="portal.catalog.subCategory" redirect="false" />
+                </action>
+                
+                <!-- Productos -->
+		        <action path="/portal/catalog/product"
+        	        	type="com.iportal.cart.ctrl.catalog.ProductAction"
+						name="searchProductForm"
+						parameter="action" 
+	                    scope="session"
+                    	validate="false">
+					<forward name="success_category" path="portal.catalog.subCategory" redirect="false" />
+					<forward name="success_brand"    path="portal.catalog.brand" redirect="false" />
+					<forward name="success_seller"   path="portal.catalog.seller" redirect="false" />
+					<forward name="success_compare"  path="portal.catalog.products" redirect="false" />
+                    <forward name="success_promotion_layout1" path="portal.content" redirect="false" />
+					<forward name="form"             path="portal.catalog.productInfo" redirect="false" />
+                </action>
+
+
+				<action path="/popup/catalog/preview"
+                               type="org.apache.struts.actions.ForwardAction"
+                               parameter="popupPortal.product">
+                </action>
+				
+                <!-- Itinerarios -->
+		        <action path="/portal/flight/itinerary"
+        	        	type="com.iportal.ctrl.portal.flight.ItineraryAction"
+						name="baseForm"
+						parameter="action" 
+	                    scope="request"
+                    	validate="false">                        
+					<forward name="success_itinerary_layout" path="portal.flight.itinerary" redirect="false" />
+					<forward name="form_itinerary_popup" path="portal.itinerary.popup" redirect="false" />
+                </action>
+			
+				<!-- Establecimientos -->
+		        <action path="/portal/establishment/establishment"
+        	        	type="com.iportal.ctrl.portal.office.EstablishmentAction"
+						name="establishmentForm"
+						parameter="action" 
+	                    scope="request"
+                    	validate="false">                        
+					<forward name="success_establishment_layout" path="portal.establishment" redirect="false" />
+                </action>
+			
+				<action path="/portal/menu/xml"
+        	        	type="com.iportal.ctrl.xml.AccessMenuXmlAction"	
+						name="menuDynaForm"	
+						parameter="action" 														
+	                    scope="request"
+                    	validate="false">                        
+					<forward name="success_menu" path="/jsp/layout/xml/menu.jsp"/>
+                </action>
+
+				<!-- Directorio de Contactos y Puntos de Venta -->
+		        <action path="/portal/office/office"
+        	        	type="com.iportal.ctrl.portal.office.OfficeAction"
+						name="officeForm"
+						parameter="action" 
+	                    scope="request"
+                    	validate="false">                        
+					<forward name="success_office_layout" path="portal.office" redirect="false" />
+                </action>
+
+				<!-- Socios -->
+				<action path="/portal/partner/partner"
+                        type="com.iportal.ctrl.icaro.service.WebServiceIcaroAction"
+                        name="skiesServiceForm"
+                        parameter="action"
+                        input="/portal/partner/partner.do?action=read"
+                        scope="request"
+                        validate="false">
+                    <forward name="success_viajero_layout" path="portal.partners.viajero.login" redirect="false" />
+					<forward name="success_loyalty_layout" path="portal.partners.loyalty.login" redirect="false" />										
+					<forward name="success_icaroclub_layout" path="portal.partners.icaroclub.login" redirect="false" />
+					<forward name="principal_viajero_layout" path="portal.partners.skies.principal" redirect="false" />
+					<forward name="principal_icaroclub_layout" path="portal.partners.corp.principal" redirect="false" />
+					<forward name="principal_loyalty_layout" path="portal.partners.agency.principal" redirect="false" />					
+					<forward name="account_viajero_layout" path="portal.partners.skies.account" redirect="false" />
+					<forward name="account_icaroclub_layout" path="portal.partners.corp.account" redirect="false" />
+					<forward name="account_loyalty_layout" path="portal.partners.agency.account" redirect="false" />					
+					<forward name="service_account_viajero_layout" path="/portal/partner/partner.do?action=accountSkies" redirect="false" />
+					<forward name="service_account_icaroclub_layout" path="/portal/partner/partner.do?action=accountAgency" redirect="false" />
+					<forward name="service_account_loyalty_layout" path="/portal/partner/partner.do?action=accountCorp" redirect="false" />
+					<forward name="account_buys" path="/portal/content/myPurchases.do?action=read" redirect="true" />
+					<forward name="search_flight" path="/portal/flightSearch.do" redirect="true" />					
+                </action>
+			
+			<!--Icaro Cargo-->
+			
+			<action path="/portal/icargo/icargo"
+                        type="com.iportal.ctrl.icaro.service.WebServiceIcaroAction"
+                        name="icargoForm"
+                        parameter="action"
+                        input="/portal/icargo/icargo.do?action=icargoEstado"
+                        scope="request"
+                        validate="false">
+                    <forward name="success_icaro_cargo" path="portal.icaro.cargo" redirect="false" />
+                </action>
+
+				<!-- Noticias -->
+				<action path="/portal/news/news"
+                        type="com.iportal.ctrl.portal.news.NewsAction"
+                        name="newsPortalForm"
+                        parameter="action"
+                        input="/portal/news/news.do?action=list"
+                        scope="request"
+                        validate="false">
+                    <forward name="success_news_layout1" path="portal.news.list" redirect="false" />
+                    <forward name="form_news_layout1" path="portal.news.info" redirect="false" />
+                </action>
+                
+                <!-- Marcas -->
+		        <action path="/portal/catalog/brand"
+        	        	type="com.iportal.cart.ctrl.catalog.BrandAction"
+						name="baseForm"
+						parameter="action" 
+	                    scope="request"
+                    	validate="false">                        
+					<forward name="success_brand_layout1" path="portal.catalog.brandList" redirect="false" />
+					<forward name="success"    path="portal.catalog.brand" redirect="false" />
+                </action>
+
+                <!-- Account -->
+                <action path="/portal/content/account"
+                        type="com.iportal.cart.ctrl.AccountAction"
+                        name="customerForm"
+                        parameter="action" 
+                        scope="request"
+                        validate="false">
+                    <forward name="success_account_layout1" path="portal.content.account" redirect="false" />
+                    <forward name="success_account_layout2" path="portal.content.accountSub" redirect="false" />
+					<forward name="success_account_buys" path="/portal/content/myPurchases.do?action=read" redirect="true" />
+					<forward name="success_account_pnr" path="/portal/content/myPNRs.do?action=read" redirect="true" />
+					<forward name="success_search_flight" path="/portal/flightSearch.do" redirect="true" />
+					<forward name="apply" path="portal.account.successUpdate" redirect="false" />
+                    <forward name="showOrder" path="/jsp/account/orderPopup.jsp" redirect="false" />
+                </action>
+			
+				<action path="/retrievePasswordPortal" 
+				        type="com.iportal.cart.ctrl.RetrievePasswordAction"
+		                input="/jsp/account/passwordRecover.jsp" 
+						name="retrievePasswordPortalForm" 
+						scope="request"  
+						validate="true">
+					<forward name="success" path="/jsp/account/passwordRecoverSuccess.jsp" redirect="false" />
+				</action>
+			
+				<action path="/portal/content/myPurchases"
+                        type="com.iportal.cart.ctrl.SearchPurchaseAction"
+                        name="searchPurchaseForm"
+                        parameter="action" 
+                        scope="request"
+                        validate="false">
+                    <forward name="purchases" path="portal.content.accountPurchases" redirect="false" />
+					<forward name="showOrderReserve" path="portal.content.accountPurchaseDetailReserve" redirect="false" />
+					<forward name="showOrder" path="portal.content.accountPurchaseDetail" redirect="false" />
+				</action>
+				
+				<action path="/portal/content/myPNRs"
+                        type="com.iportal.cart.ctrl.SearchPurchaseAction"
+                        name="searchPurchaseForm"
+                        parameter="action" 
+                        scope="request"
+                        validate="false">
+                    <forward name="purchases" path="portal.content.accountPNR" redirect="false" />
+					<forward name="showOrderReserve" path="portal.content.accountPurchaseDetailReserve" redirect="false" />
+					<forward name="showOrder" path="portal.content.accountPurchaseDetail" redirect="false" />
+				</action>
+
+				
+				
+				<action path="/portal/contact/send"
+                        type="com.iportal.ctrl.portal.contact.ContactAction"
+                        name="clientContactForm"
+                        parameter="action"
+                        input="portal.contact.form"
+                        scope="request"
+                        validate="true">
+                	<forward name="success" path="portal.form.success"	redirect="false" />
+                </action>
+
+				<!-- Mapa del sitio -->
+				<action path="/portal/map/map"
+                        type="com.iportal.ctrl.portal.map.MapAction"
+						name="baseForm" 
+						validate="false">
+	                <forward name="map"	path="portal.map"	redirect="false" />
+				</action>
+                
+				<!-- Buscador General -->
+				<action path="/portal/search/general"
+                    	type="com.iportal.ctrl.portal.search.SearchGeneralAction"
+						name="searchGeneralForm"
+						parameter="action"
+						input="portal.search.general"
+						scope="request"
+						validate="true">
+                	<forward name="search_general" path="portal.search.general" redirect="false" />
+                </action>
+
+				<!-- Buscador de Vuelos -->
+				<!--<forward name="search_flight" path="portal.flight.search" redirect="false" />-->
+
+				<action path="/portal/flightSearch"
+						type="org.apache.struts.actions.ForwardAction"
+                    	parameter="cart">
+                </action>
+			
+				<action path="/portal/flight"
+                    	type="com.iportal.cart.ctrl.flight.FlightAction"
+						name="searchFlightForm"
+						parameter="action"
+						input="cart"
+						scope="session"
+						validate="true">
+                	<set-property property="cancellable" value="true"/>
+                	<forward name="success" path="cart" redirect="false" />
+                </action>					
+				
+				<action path="/flight"
+                    	type="com.iportal.cart.ctrl.flight.FlightAction"
+						name="searchFlightForm"
+						parameter="action"
+						input="portal.home"
+						scope="session"
+						validate="true">
+                	<set-property property="cancellable" value="true"/>
+                	<forward name="success" path="cart" redirect="false" />
+                </action>					
+
+
+                <action path="/portal/cart/checkout"
+                        type="com.iportal.cart.ctrl.CheckoutAction"
+                                name="searchFlightForm"
+                                parameter="action"
+                                input="cart"
+                                scope="session"
+                                validate="true">
+                    <set-property property="cancellable" value="true"/>               
+                    <forward name="ajaxForm" path="system.ajax.stateListByCountryAjax" redirect="false" />
+                    <forward name="ajaxSecForm" path="system.ajax.secListByPropAjax" redirect="false" />
+                    <forward name="ajaxTerForm" path="system.ajax.terListByPropAjax" redirect="false" />
+                    <forward name="success" path="cart" redirect="false" />
+                    
+                </action>
+
+                <action path="/portal/cart/retryCheckout"
+                        type="com.iportal.cart.ctrl.CheckoutAction"
+                                name="searchFlightForm"
+                                parameter="action"
+                                input="cart"
+                                scope="session"
+                                validate="false">
+                    <forward name="account" path="/portal/content/account.do?action=read&amp;code=55&amp;itemCode=55&amp;nextForward=purchase" redirect="false" />
+                    <forward name="failure" path="/portal/content/myPurchases.do?action=list" redirect="false" />
+                    <forward name="success" path="cart" redirect="false" />
+                </action>
+
+				<!-- Documentos adjuntos -->
+				<action path="/portal/content/documents"
+						type="com.iportal.ctrl.portal.content.ListContainerAction"
+						name="containerForm"
+						parameter="action"
+						input="/portal/content/content.do?action=read"
+						scope="request"
+						validate="false">
+					
+					<forward name="content_layout1_list"         path="principal.content.documents" redirect="false" />
+					<forward name="content_layout1_faq_list"     path="principal.content.faqs" redirect="false" />
+					<forward name="content_layout1_link_list"    path="principal.content.links" redirect="false" />
+					<forward name="content_layout1_legal_list"   path="principal.content.legalDocs" redirect="false" />
+					<forward name="content_layout1_species_list" path="principal.content.species" redirect="false" />
+															
+					<forward name="layout1_list" path="portal.event.documents" redirect="false" />
+					<forward name="layout1_faq_list" path="portal.event.faqs" redirect="false" />
+					<forward name="layout1_link_list" path="portal.event.links" redirect="false" />
+					<forward name="layout1_legal_list" path="portal.event.legalDocs" redirect="false" />
+					<forward name="layout1_species_list" path="portal.event.species" redirect="false" />
+					
+					<forward name="news_layout1_list" path="portal.news.documents" redirect="false" />
+					<forward name="news_layout1_faq_list" path="portal.news.faqs" redirect="false" />
+					<forward name="news_layout1_link_list" path="portal.news.links" redirect="false" />
+					<forward name="news_layout1_legal_list" path="portal.news.legalDocs" redirect="false" />
+					<forward name="news_layout1_species_list" path="portal.news.species" redirect="false" />
+				</action>
+					
+                <!-- CART -->
+                <action path="/portal/cart/cart"
+                        type="com.iportal.cart.ctrl.CartAction"
+                                name="cartForm"
+                                parameter="action"
+                                input="cart"
+                                scope="request"
+                                validate="true">
+						<set-property property="cancellable" value="true"/>								
+						<forward name="success" path="/portal/cart/cart.do?action=showCart&amp;itemCode=7" redirect="false" />
+                    <forward name="delivery" path="/portal/cart/checkout.do?action=delivery&amp;itemCode=7" redirect="true" />
+                    <!-- forward name="entrega" path="/portal/cart/customerAddress.do?action=read&amp;itemCode=7" redirect="true" / -->
+					<forward name="cancel" path="cart" redirect="false" />
+                </action>
+                                
+                <action path="/portal/cart/register"
+                        type="com.iportal.cart.ctrl.CartAction"
+                                name="customerForm"
+                                parameter="action"
+                                input="cart"
+                                scope="request"
+                                validate="true">
+                    <set-property property="cancellable" value="true"/>               
+                    <forward name="success" path="/portal/cart/checkout.do?action=delivery&amp;itemCode=7" redirect="true" />
+                    <forward name="showCart" path="/portal/cart/cart.do?action=showCart&amp;itemCode=7" redirect="true" />
+                    <forward name="delivery" path="/portal/cart/checkout.do?action=delivery&amp;itemCode=7" redirect="true" />
+                    <forward name="accountLogin" path="portal.content.accountLogin" redirect="false" />
+                    <forward name="account" path="/portal/content/account.do?action=read&amp;code=52" redirect="true" />
+                    <forward name="purchase" path="/portal/content/account.do?action=read&amp;code=104&amp;itemCode=104" redirect="true" />
+                    <forward name="cancel"    path="cart" redirect="false" />
+                    <forward name="cartFlow"  path="cart" redirect="false" />
+					<forward name="succesRegister" path="portal.account.successRegister" redirect="false" />
+					<forward name="accountPasswordReset" path="portal.account.passwordReset" redirect="false" />
+                </action>
+                                
+                                
+                <action path="/portal/cart/payment"
+                        type="com.iportal.cart.ctrl.PaymentAction"
+                                name="paymentForm"
+                                parameter="action"
+                                input="cart"
+                                scope="request"
+                                validate="true">
+                    <forward name="success_receive" path="cart" redirect="false" />
+                </action>
+
+			
+                <!-- action path="/portal/cart/cart"
+                        type="org.apache.struts.actions.ForwardAction"
+                        parameter="cart">
+                </action-->
+			
+		<!-- WEB Services -->
+			
+			<!-- Icaro Skies Service -->
+			
+		<action path="/portal/webService/skiesClientLogin"
+                        type="com.iportal.ctrl.icaro.skies.LoginClientIcaroAction"
+						input="portal.content.accountLogin"
+                                name="loginForm"
+                                scope="request"
+                                validate="false">
+                        <forward name="success"        path="portal.content.accountLogin" redirect="false" />
+                        <forward name="successCart"    path="/portal/webService/checkOut1.do?action=getClientAddresses" redirect="false" />
+                        <forward name="medicationPlan" path="/portal/webService/medicationPlan.do?action=getMedicationList" redirect="false" />
+        </action>			              
+						
+         <!-- ======================================================= -->
+		<!-- Portal Tiles                                            -->
+		<!-- ======================================================= -->       
+		
+            <action path="/tiles/catalogue/categoriesFeatured"
+                    type="com.iportal.cart.view.CategoriesFeaturedTilesAction"/>
+
+            <action path="/tiles/catalogue/showRoomProducts"
+                    type="com.iportal.cart.view.ShowRoomProductTilesAction"/>     
+    
+            <action path="/tiles/cart/flow"
+                    type="com.iportal.cart.view.CartFlowTilesAction"/>
+			
+            <action path="/tiles/cart/headerFlow"
+                    type="com.iportal.cart.view.CartHeaderTilesAction"/>
+			
+            
+            <action path="/tiles/cart/register"
+                    type="com.iportal.cart.view.RegisterTilesAction"/>
+
+            <action path="/tiles/cart/payment"
+                    type="com.iportal.cart.view.PaymentTilesAction"/>
+			
+			<action path="/tiles/cart/purchases"
+                    type="com.iportal.cart.view.PurchasesTilesAction"/>
+
+            <action path="/tiles/content"
+                    type="com.iportal.view.ContentTilesAction"/>
+
+			<action path="/tiles/accessItems"
+		        type="com.iportal.view.AccessMenuTilesAction"/>			
+
+			<action path="/tiles/menu"
+                type="com.iportal.view.MenuPortalTilesAction"/>
+			
+			<action path="/tiles/mainMenu"
+		        type="com.iportal.view.MainMenuTilesAction"/>	
+                
+             <action path="/tiles/cargo"
+		        type="com.iportal.view.IcaroCargoTilesAction"/>	        
+                
+            <action path="/tiles/contact" 
+		        type="com.iportal.view.ContactTilesAction"/>
+                 
+            <action path="/tiles/newsPortal"
+		        type="com.iportal.view.NewsPortalTilesAction"/>
+		        
+		    			
+		    <action path="/tiles/menuLeft"
+		        type="com.iportal.view.MenuPortalLeftTilesAction"/>
+				
+			<action path="/tiles/subHome"
+		        type="com.iportal.view.SubHomeTilesAction"/>
+				
+			<action path="/tiles/search"
+		        type="com.iportal.view.SearchFormTilesAction"/>			
+			
+			<action path="/tiles/news/timePopups"
+		        type="com.iportal.view.TimePopupsTilesAction"/>
+			
+			<action path="/tiles/event/timePopups"
+		        type="com.iportal.view.TimePopupsTilesAction"/>
+				
+			<action path="/tiles/city"
+		        type="com.iportal.view.CityTilesAction"/>	
+			<action path="/tiles/menuItems"
+		        type="com.iportal.view.MenuItemsTilesAction"/>			
+				
+			<action path="/tiles/navigationTree"
+		        type="com.iportal.view.NavigationTreeTilesAction"/>			
+
+			<action path="/tiles/flight"
+		        type="com.iportal.view.FlightTilesAction"/>		
+
+			<action path="/tiles/passenger"
+		        type="com.iportal.view.PassengerTilesAction"/>		
+
+        </action-mappings>
+
+</struts-config>
+

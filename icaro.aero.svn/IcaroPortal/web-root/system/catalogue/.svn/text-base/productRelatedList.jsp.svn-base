@@ -1,0 +1,174 @@
+<%@ page language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="/struts-html" prefix="html" %>
+<%@ taglib uri="/struts-bean" prefix="bean" %>
+<%@ taglib uri="/struts-tiles" prefix="tiles" %>
+
+<!-- Head -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td class="title" width="300">
+			<bean:message key="cart.product" bundle="systemMenu" />
+			<c:set var="systemMenuLabel" ><bean:message key="cart.product" bundle="systemMenu" /></c:set>
+		</td>
+		<td align="right">
+			<bean:message key="cart" bundle="systemMenu" /> &gt;
+			${systemMenuLabel}
+		</td>
+	</tr>
+</table>
+<hr width="100%" size="1" color="#999999" noshade>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td>
+			<ul>
+			<html:messages id="message" message="true">
+				<li class="message"><c:out value="${message}" escapeXml="false" /></li>
+			</html:messages>
+			</ul>
+			<div class="error"><html:errors/></div>			
+		</td>
+	</tr>
+</table>
+
+<img src="${pageContext.request.contextPath}/images/shim.gif" width="1" height="20" border="0">
+<table>
+	<tr>
+		<td class="subtitle">
+			<c:if test="${!empty productForm.code && productForm.code != 0 && !empty productForm.name}">
+				${productForm.name}
+			</c:if>
+		</td>	
+	</tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+	<td>
+		<tiles:insert definition="tabs.system.product">
+			<tiles:put name="code" value="${productForm.code}" />
+		</tiles:insert>
+	</td>
+</tr>
+<tr>
+	<td>
+		<table class="tabForm" border="0" cellpadding="0" cellspacing="4" width="100%">		
+		<tr>
+			<td><img src="${pageContext.request.contextPath}/images/shim.gif" width="1" height="20" border="0"></td>
+		</tr>
+		<tr>
+		<td>		
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td>
+			            <table cellpadding="0" cellspacing="0" border="0" width="100%" >
+						<tr>
+						<td valign="top">
+						<!--inicio seccion general information-->
+						<table cellpadding="0" cellspacing="0" align="center"  width="100%">
+							<tr>
+								<td>
+								  <html:form action="/system/catalogue/productRelated">	
+									<html:hidden property="action" value="" />
+									<html:hidden property="code" />
+									<html:hidden property="tab" value="${param.tab}" />
+									<table cellpadding="0" cellspacing="0" border="0" width="100%">
+										<tr>
+										<td valign="top">
+										<!--inicio listado-->
+											<table cellpadding="0" cellspacing="0" width="97%" border="0" align="center">
+											<tr><td><img src="${pageContext.request.contextPath}/images/shim.gif" height="5" width="5"></td></tr>
+											<tr>
+												<td align="center">
+												<table border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tr>
+														<td>
+														</td>
+														<td align="left">
+															<tiles:insert definition="system.navBar">
+																<tiles:put name="add" 		value="true" />
+																<tiles:put name="delete" 	value="true" />
+																<tiles:put name="formIndex" value="0" />
+															</tiles:insert>
+														</td>
+													</tr>
+												</table>
+												<img src="${pageContext.request.contextPath}/images/spacer.gif" width="1" height="5" border="0"><br>
+												<table align="center" class="list" border="0" cellpadding="2" cellspacing="1" width="95%">
+												<!--inicio cabecera lista-->								
+										        <tr>
+													<th width="50">#</th>						
+													<th width="30"><input type="checkbox" name="checkAll" onClick="setCheckBoxValue(this.form, 'codes', this.checked)"></th>
+													<th><bean:message key="label.product" bundle="messages" /></th>
+													<th width="120"><bean:message key="label.brand" bundle="messages" /></th>
+													<th width="120"><bean:message key="label.category" bundle="messages" /></th>
+													<th width="120"><bean:message key="label.seller" bundle="messages" /></th>
+													<th width="80"><bean:message key="label.enabled" bundle="messages" /></th>
+												</tr>
+												<!--fin cabecera lista-->
+												
+												<!--inicio codigo repetitivo de registros lista-->			
+												<c:forEach var="item" items="${product.related}" varStatus="status">
+													<c:set value="row${status.count % 2}" var="sclass" />
+									      			<tr class="<c:out value="${sclass}"/>">
+														<td align="right">&nbsp;&nbsp;${status.count}&nbsp;&nbsp;</td>
+														<td style="padding-left:5px"><html:checkbox property="codes" value="${item.code}" />	</td>
+														<td>&nbsp;&nbsp;${item.name}&nbsp;&nbsp;</td>																	
+														<td>${item.brand.name}</td>
+														<td>${item.category.name}</td>
+														<td>${item.seller.name}</td>
+														<td style="padding-left:5px">
+															<c:choose>
+																<c:when test="${item.enabled == true}">
+																	<bean:message key="label.yes" bundle="messages" />
+																</c:when>
+																<c:otherwise>
+																	<bean:message key="label.no" bundle="messages" />
+																</c:otherwise>
+															</c:choose>
+														</td>	
+													</tr>	
+												</c:forEach>	
+												<c:if test="${empty product.related }">
+													<tr>
+														<td height="20" align="center" colspan="7" class="message">No hay productos relacionado</td>
+													</tr>	
+												</c:if>  
+
+												
+												<!--fin codigo repetitivo de registros lista-->
+												</table>
+												</td>
+											</tr>
+											</table>
+											<!--fin listado-->
+										</td>
+										</tr>	
+										<tr><td width="100%" height="2"><img src="${pageContext.request.contextPath}/images/shim.gif" height="10" width="5"></td></tr>								
+									</table>
+									</html:form>														
+								</td>
+							</tr>
+						</table>
+						</td>			            
+						</tr>						
+						</table>                           										
+					</td>
+				</tr>
+				<tr>
+					<td><img src="${pageContext.request.contextPath}/images/shim.gif" width="1" height="20" border="0" alt=""></td>
+				</tr>
+			</table>	
+		</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td background="${pageContext.request.contextPath}/images/tables/file_bottom.gif"><img src="${pageContext.request.contextPath}/images/shim.gif" width="1" height="7" border="0" alt=""></td>
+</tr>
+<tr>
+	<td><img src="${pageContext.request.contextPath}/images/shim.gif" width="1" height="20" border="0" alt=""></td>
+</tr>
+</table>
+

@@ -1,0 +1,34 @@
+9
+
+dir
+613
+http://yage.ec:81/svn/j2ee/icaro/IcaroPortal/src/com
+http://yage.ec:81/svn/j2ee/icaro
+
+
+
+2008-11-13T14:54:17.680735Z
+613
+burkhard
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+5c501523-6fc9-7f4f-9b2d-c353c6dfb7dd
+
+yage
+dir
+
+iportal
+dir
+

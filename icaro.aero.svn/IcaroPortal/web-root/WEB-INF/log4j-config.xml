@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+  <appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
+    </layout>
+  </appender>
+
+  <appender name="FILE" class="org.apache.log4j.FileAppender">
+    <!--<param name="File"   value="/home/hernan/apache-tomcat-5.5.17/logs/sri.log" />-->
+     <param name="File"   value="icaro.log" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
+    </layout>
+  </appender>
+
+  <appender name="WORLDSPAN" class="org.apache.log4j.FileAppender">
+    <!--<param name="File"   value="/home/hernan/apache-tomcat-5.5.17/logs/sri.log" />-->
+     <param name="File"   value="icaro_worldspan.log" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
+    </layout>
+  </appender>
+
+
+
+  <appender name="HIBERNATE" class="org.apache.log4j.FileAppender">
+    <!--<param name="File"   value="/home/hernan/apache-tomcat-5.5.17/logs/sri_hibernate.log" />-->
+    <param name="File"   value="icaro_hibernate.log" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
+    </layout>
+  </appender>
+
+  <appender name="POOL" class="org.apache.log4j.FileAppender">
+    <param name="File"   value="austro_pool.log" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
+    </layout>
+  </appender>
+
+  <category name="com.iportal">
+    <priority value="info" />
+    <appender-ref ref="FILE" />
+  </category>
+
+  <category name="com.iportal.cart.biz.payment">
+    <priority value="debug" />
+    <appender-ref ref="FILE" />
+  </category>
+
+  <category name="org.hibernate">
+    <priority value="info" />
+    <appender-ref ref="HIBERNATE" />
+  </category>
+
+  <category name="com.apache.commons">
+    <priority value="info" />
+    <appender-ref ref="POOL" />
+  </category>
+
+  <category name="com.iportal.biz.helper">
+    <priority value="debug" />
+    <appender-ref ref="WORLDSPAN" />
+  </category>
+
+  <root>
+    <priority value ="info" />
+    <appender-ref ref="STDOUT"/>
+  </root>
+
+</log4j:configuration>

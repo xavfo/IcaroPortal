@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/j2ee/icaro/!svn/ver/604/IcaroPortal/src/com/iportal/biz
+END
+CalendarBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/CalendarBean.java
+END
+NavBarConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/NavBarConfig.java
+END
+BulletinBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/BulletinBean.java
+END
+LanguageUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/j2ee/icaro/!svn/ver/451/IcaroPortal/src/com/iportal/biz/LanguageUtils.java
+END
+EmailItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/EmailItem.java
+END
+SequenceHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/j2ee/icaro/!svn/ver/174/IcaroPortal/src/com/iportal/biz/SequenceHelper.java
+END
+IPersistent.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/IPersistent.java
+END
+BaseHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/j2ee/icaro/!svn/ver/492/IcaroPortal/src/com/iportal/biz/BaseHelper.java
+END
+PageHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/PageHelper.java
+END
+AuditRowItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/AuditRowItem.java
+END
+EmailBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/EmailBean.java
+END
+ISearch.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/ISearch.java
+END
+Unit.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/Unit.java
+END
+TimeUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/TimeUtils.java
+END
+ItemBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/ItemBean.java
+END
+RowItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/j2ee/icaro/!svn/ver/124/IcaroPortal/src/com/iportal/biz/RowItem.java
+END
+GroupBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/GroupBase.java
+END
+BaseBussinessLogic.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/BaseBussinessLogic.java
+END
+PortalBeanHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/PortalBeanHelper.java
+END
+MapSiteBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/MapSiteBean.java
+END
+Group.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/Group.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/j2ee/icaro/!svn/ver/168/IcaroPortal/src/com/iportal/ctrl/portal/event
+END
+EventAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/j2ee/icaro/!svn/ver/168/IcaroPortal/src/com/iportal/ctrl/portal/event/EventAction.java
+END
+EventSubscriberAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/j2ee/icaro/!svn/ver/168/IcaroPortal/src/com/iportal/ctrl/portal/event/EventSubscriberAction.java
+END
+EventDateAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/portal/event/EventDateAction.java
+END

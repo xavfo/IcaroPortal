@@ -1,0 +1,31 @@
+END
+log4j-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/j2ee/icaro/!svn/ver/601/IcaroPortal/web-root/WEB-INF/log4j-config.xml
+END
+struts-config_1_2.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/j2ee/icaro/!svn/ver/7/IcaroPortal/web-root/WEB-INF/struts-config_1_2.dtd
+END
+tiles-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/j2ee/icaro/!svn/ver/572/IcaroPortal/web-root/WEB-INF/tiles-config.xml
+END
+hibernate-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/j2ee/icaro/!svn/ver/604/IcaroPortal/web-root/WEB-INF/hibernate-config.xml
+END
+portal-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/j2ee/icaro/!svn/ver/587/IcaroPortal/web-root/WEB-INF/portal-config.xml
+END

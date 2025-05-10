@@ -1,0 +1,81 @@
+package com.iportal.ajax;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.ajaxtags.helpers.AjaxXmlBuilder;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionMapping;
+import org.hibernate.Query;
+import org.hibernate.Session;
+
+import com.iportal.biz.ItemBean;
+
+public class DropdownCategoryAction extends BaseAjaxAction {
+
+	private static Log logger = LogFactory.getLog(DropdownCategoryAction.class);
+
+	  /**
+	   * Genera el esquema con los datos para el XLM dinamico
+	   * @see org.ajaxtags.demo.servlet.BaseAjaxServlet#getXmlContent(javax.servlet.http.HttpServletRequest,
+	   *      javax.servlet.http.HttpServletResponse)
+	   */
+	  public String getXmlContent(ActionMapping mapping, ActionForm form, HttpServletRequest request,
+		      HttpServletResponse response)
+	      throws Exception {
+		  
+		List list = getList((BaseAjaxForm)form, request);
+	    return new AjaxXmlBuilder().addItems(list, "name", "code").toString();
+	  }
+	  
+	  /**
+	   * Lista las categorías según la seccion elacionada. 
+	   * Toma el codigo de <code>code</code> del Objeto <code>BaseAjaxForm</code>
+	   * @see org.ajaxtags.demo.servlet.BaseAjaxServlet#getXmlContent(javax.servlet.http.HttpServletRequest)
+	   */
+	@SuppressWarnings("unchecked")
+	public List<ItemBean> getList(BaseAjaxForm form, HttpServletRequest request) {
+
+	  Session sess = null;
+      List<ItemBean> results = null;
+      List<ItemBean> resultsFinal = null;
+
+      try {
+  		sess = this.getHibernateSession();
+
+  		StringBuffer sql = new StringBuffer();
+
+  		sql.append("SELECT new com.iportal.biz.ItemBean(content.code, content.title) ");
+  		sql.append("FROM Content as content ");
+  		sql.append("WHERE content.parent = ? ");
+  		
+  		Query query = sess.createQuery(sql.toString());
+		query.setLong(0, form.getCode());
+
+		results = query.list();
+	    
+		//Agrega un registro si la consulta no trae registro.
+		resultsFinal = new ArrayList<ItemBean>();
+	    resultsFinal.add(new ItemBean());
+	    resultsFinal.addAll(1,results);
+  		
+      } catch (Exception e) {
+          logger.error(e.getMessage(), e);
+		} finally {
+			if (sess != null)
+				try {
+					sess.clear();
+					sess.close();
+				} catch (Exception e) {
+				}
+		}
+		
+		return resultsFinal;
+	}
+
+}

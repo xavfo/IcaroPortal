@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/j2ee/icaro/!svn/ver/175/IcaroPortal/src/com/iportal/biz/portal/event
+END
+EventFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/portal/event/EventFacade.java
+END
+EventForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/portal/event/EventForm.java
+END
+EventDateSearchForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/j2ee/icaro/!svn/ver/175/IcaroPortal/src/com/iportal/biz/portal/event/EventDateSearchForm.java
+END
+EventSubscriberFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/portal/event/EventSubscriberFacade.java
+END
+EventSubscriberForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/biz/portal/event/EventSubscriberForm.java
+END

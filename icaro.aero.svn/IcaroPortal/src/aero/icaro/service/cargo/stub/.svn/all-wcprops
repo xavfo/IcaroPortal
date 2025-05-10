@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/cargo/stub
+END
+IcaroPaq.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/cargo/stub/IcaroPaq.java
+END
+IcaroDoc.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/cargo/stub/IcaroDoc.java
+END
+IcargoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/cargo/stub/IcargoService.java
+END
+IcargoServiceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/cargo/stub/IcargoServiceLocator.java
+END
+IcargoServicePortType.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/cargo/stub/IcargoServicePortType.java
+END
+IcargoServiceBindingStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/cargo/stub/IcargoServiceBindingStub.java
+END

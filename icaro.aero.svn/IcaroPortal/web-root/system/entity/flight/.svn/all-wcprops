@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/j2ee/icaro/!svn/ver/593/IcaroPortal/web-root/system/entity/flight
+END
+frequencyForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/j2ee/icaro/!svn/ver/494/IcaroPortal/web-root/system/entity/flight/frequencyForm.jsp
+END
+flightList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/j2ee/icaro/!svn/ver/144/IcaroPortal/web-root/system/entity/flight/flightList.jsp
+END
+routeList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/j2ee/icaro/!svn/ver/139/IcaroPortal/web-root/system/entity/flight/routeList.jsp
+END
+ticketRateList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/j2ee/icaro/!svn/ver/149/IcaroPortal/web-root/system/entity/flight/ticketRateList.jsp
+END
+frequencyList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/j2ee/icaro/!svn/ver/139/IcaroPortal/web-root/system/entity/flight/frequencyList.jsp
+END
+flightForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/j2ee/icaro/!svn/ver/474/IcaroPortal/web-root/system/entity/flight/flightForm.jsp
+END
+routeForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/j2ee/icaro/!svn/ver/494/IcaroPortal/web-root/system/entity/flight/routeForm.jsp
+END
+ticketRateForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/j2ee/icaro/!svn/ver/593/IcaroPortal/web-root/system/entity/flight/ticketRateForm.jsp
+END

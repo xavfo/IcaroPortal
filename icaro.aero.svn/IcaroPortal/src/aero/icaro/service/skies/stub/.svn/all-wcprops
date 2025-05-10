@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/skies/stub
+END
+SkiesService.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/skies/stub/SkiesService.java
+END
+IcaroServiceMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/skies/stub/IcaroServiceMessage.java
+END
+SkiesServiceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/skies/stub/SkiesServiceLocator.java
+END
+MilleDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/skies/stub/MilleDetail.java
+END
+SkiesServicePortType.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/skies/stub/SkiesServicePortType.java
+END
+SkiesServiceBindingStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/skies/stub/SkiesServiceBindingStub.java
+END
+SkiesAccountSummary.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/skies/stub/SkiesAccountSummary.java
+END
+IcaroUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/skies/stub/IcaroUser.java
+END

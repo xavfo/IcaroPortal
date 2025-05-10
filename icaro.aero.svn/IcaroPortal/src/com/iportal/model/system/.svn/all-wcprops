@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/system
+END
+SysParam.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/system/SysParam.java
+END
+SysProfile.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/system/SysProfile.java
+END
+SysLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/system/SysLog.java
+END
+SysRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/system/SysRole.java
+END
+SysModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/system/SysModule.java
+END
+SysAccessMode.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/system/SysAccessMode.java
+END
+SysAudit.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/system/SysAudit.java
+END
+SysUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/model/system/SysUser.java
+END

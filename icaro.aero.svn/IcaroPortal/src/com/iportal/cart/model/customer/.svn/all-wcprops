@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/com/iportal/cart/model/customer
+END
+OrderCustomerType.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/j2ee/icaro/!svn/ver/342/IcaroPortal/src/com/iportal/cart/model/customer/OrderCustomerType.java
+END
+Customer.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/j2ee/icaro/!svn/ver/187/IcaroPortal/src/com/iportal/cart/model/customer/Customer.java
+END
+CustomerAddress.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/cart/model/customer/CustomerAddress.java
+END
+BillInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/com/iportal/cart/model/customer/BillInfo.java
+END
+HomeAddress.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/cart/model/customer/HomeAddress.java
+END
+IDType.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/cart/model/customer/IDType.java
+END

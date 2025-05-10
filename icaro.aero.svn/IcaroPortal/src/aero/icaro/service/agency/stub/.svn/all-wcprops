@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/agency/stub
+END
+AgencyServiceBindingStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/agency/stub/AgencyServiceBindingStub.java
+END
+AgencyAccountSummary.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/agency/stub/AgencyAccountSummary.java
+END
+IcaroServiceMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/agency/stub/IcaroServiceMessage.java
+END
+MilleDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/agency/stub/MilleDetail.java
+END
+AgencyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/agency/stub/AgencyService.java
+END
+AgencyServiceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/agency/stub/AgencyServiceLocator.java
+END
+IcaroUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/agency/stub/IcaroUser.java
+END
+AgencyServicePortType.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/j2ee/icaro/!svn/ver/547/IcaroPortal/src/aero/icaro/service/agency/stub/AgencyServicePortType.java
+END

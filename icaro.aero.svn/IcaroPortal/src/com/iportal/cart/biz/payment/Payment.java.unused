@@ -1,0 +1,132 @@
+package com.iportal.cart.biz.payment;
+
+import com.yage.Globals;
+
+public abstract class Payment {
+    
+    private Long orderId;
+    
+    private Long value;
+    
+    private Boolean result;
+    
+    private String resultCode;
+    
+    private String resultMessage;
+
+    private String errorCode;
+    
+    private String errorMessage;
+
+    public Payment() {
+        this.orderId = null;
+        this.value = null;
+        this.result = Globals.FALSE;
+        this.resultCode = null;
+        this.resultMessage = null;
+        this.errorCode = null;
+        this.errorMessage = null;
+    }
+
+    /**
+     * @return the errorCode
+     */
+    public String getErrorCode() {
+        return errorCode;
+    }
+
+    /**
+     * @param errorCode the errorCode to set
+     */
+    public void setErrorCode(String errorCode) {
+        this.errorCode = errorCode;
+    }
+
+    /**
+     * @return the errorMessage
+     */
+    public String getErrorMessage() {
+        return errorMessage;
+    }
+
+    /**
+     * @param errorMessage the errorMessage to set
+     */
+    public void setErrorMessage(String errorMessage) {
+        this.errorMessage = errorMessage;
+    }
+
+    /**
+     * @return the orderId
+     */
+    public Long getOrderId() {
+        return orderId;
+    }
+
+    /**
+     * @param orderId the orderId to set
+     */
+    public void setOrderId(Long orderId) {
+        this.orderId = orderId;
+    }
+
+    /**
+     * @return the result
+     */
+    public Boolean getResult() {
+        return result;
+    }
+
+    /**
+     * @param result the result to set
+     */
+    public void setResult(Boolean result) {
+        this.result = result;
+    }
+
+    /**
+     * @return the resultCode
+     */
+    public String getResultCode() {
+        return resultCode;
+    }
+
+    /**
+     * @param resultCode the resultCode to set
+     */
+    public void setResultCode(String resultCode) {
+        this.resultCode = resultCode;
+    }
+
+    /**
+     * @return the resultMessage
+     */
+    public String getResultMessage() {
+        return resultMessage;
+    }
+
+    /**
+     * @param resultMessage the resultMessage to set
+     */
+    public void setResultMessage(String resultMessage) {
+        this.resultMessage = resultMessage;
+    }
+
+    /**
+     * @return the value
+     */
+    public Long getValue() {
+        return value;
+    }
+
+    /**
+     * @param value the value to set
+     */
+    public void setValue(Long value) {
+        this.value = value;
+    }
+    
+    
+
+}
+

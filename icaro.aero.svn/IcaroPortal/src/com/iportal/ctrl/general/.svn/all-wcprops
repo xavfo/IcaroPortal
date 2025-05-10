@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/com/iportal/ctrl/general
+END
+GeneralSearchAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/general/GeneralSearchAction.java
+END
+SearchCityForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/com/iportal/ctrl/general/SearchCityForm.java
+END
+SearchPortletForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/com/iportal/ctrl/general/SearchPortletForm.java
+END
+SearchAccessAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/general/SearchAccessAction.java
+END
+GeneralSearchForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/com/iportal/ctrl/general/GeneralSearchForm.java
+END
+SearchAccessForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/j2ee/icaro/!svn/ver/546/IcaroPortal/src/com/iportal/ctrl/general/SearchAccessForm.java
+END
+SearchCityAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/general/SearchCityAction.java
+END
+SearchPortletAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/ctrl/general/SearchPortletAction.java
+END

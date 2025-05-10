@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Mysql -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://192.168.0.9/icaro</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+
+        <property name="dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
+        <property name="show_sql">false</property>
+        <property name="hibernate.cache.use_query_cache">false</property>
+        <property name="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</property>
+        <property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+        <property name="hibernate.jdbc.batch_size">20</property>
+        <property name="hibernate.cache.use_second_level_cache">true</property>
+
+        <!-- pool properties -->
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">60</property>
+        <property name="hibernate.c3p0.idle_test_period">60</property>
+        <property name="hibernate.c3p0.max_statements">0</property>
+        <property name="hibernate.c3p0.acquire_increment">5</property>
+        <property name="hibernate.c3p0.timeout">0</property>
+
+        <!-- mapping files -->
+        <mapping class="com.iportal.cart.model.cart.CheckoutStep"/>
+        <mapping class="com.iportal.cart.model.cart.Itinerary"/>
+        <mapping class="com.iportal.cart.model.cart.Order"/>
+        <mapping class="com.iportal.cart.model.cart.OrderTransaction"/>
+        <mapping class="com.iportal.cart.model.cart.OrderStatus"/>
+        <mapping class="com.iportal.cart.model.cart.OrderStatusDetail"/>
+        <mapping class="com.iportal.cart.model.cart.Passenger"/>
+        <mapping class="com.iportal.cart.model.cart.PaymentStatus"/>
+        <mapping class="com.iportal.cart.model.cart.PaymentType"/>
+        <mapping class="com.iportal.cart.model.cart.TaxDetail"/>
+
+        <mapping class="com.iportal.cart.model.catalog.Brand"/>
+        <mapping class="com.iportal.cart.model.catalog.Category"/>
+        <mapping class="com.iportal.cart.model.catalog.Product"/>
+        <mapping class="com.iportal.cart.model.catalog.Seller"/>
+
+        <mapping class="com.iportal.cart.model.customer.Customer"/>
+        <mapping class="com.iportal.cart.model.customer.CustomerAddress"/>
+        <mapping class="com.iportal.cart.model.customer.IDType"/>
+        <mapping class="com.iportal.cart.model.customer.OrderCustomerType"/>
+
+        <mapping class="com.iportal.cart.model.tax.Tax"/>
+        <mapping class="com.iportal.cart.model.tax.TaxRate"/>
+        <mapping class="com.iportal.cart.model.tax.TaxType"/>
+
+        <mapping class="com.iportal.model.Access" />
+        <mapping class="com.iportal.model.AccessUrl" />
+        <mapping class="com.iportal.model.Catalogue" />
+        <mapping class="com.iportal.model.CatalogueType" />
+        <mapping class="com.iportal.model.City" />
+        <mapping class="com.iportal.model.Contact" />
+        <mapping class="com.iportal.model.Country"/>
+        <mapping class="com.iportal.model.DocumentDisplayMode"/>
+        <mapping class="com.iportal.model.DocumentType"/>
+        <mapping class="com.iportal.model.EventSubscriber"/>
+        <mapping class="com.iportal.model.Image" />
+        <mapping class="com.iportal.model.ImageCategory" />
+        <mapping class="com.iportal.model.ImageGallery" />
+        <mapping class="com.iportal.model.Language"/>
+        <mapping class="com.iportal.model.LinkType" />
+        <mapping class="com.iportal.model.news.News"/>
+        <mapping class="com.iportal.model.Occupation"/>
+        <mapping class="com.iportal.model.PageLog" />
+        <mapping class="com.iportal.model.State" />
+        <mapping class="com.iportal.model.Zone" />
+
+        <mapping class="com.iportal.model.bulletin.Bulletin" />
+        <mapping class="com.iportal.model.bulletin.Historic" />
+        <mapping class="com.iportal.model.bulletin.Subscriber" />
+        <mapping class="com.iportal.model.bulletin.SubscriberTopic" />
+        <mapping class="com.iportal.model.bulletin.Topic" />
+
+        <mapping class="com.iportal.model.container.DocumentContainer"/>
+        <mapping class="com.iportal.model.container.FaqContainer"/>
+        <mapping class="com.iportal.model.container.ImageContainer"/>
+        <mapping class="com.iportal.model.container.LinkContainer"/>
+
+        <mapping class="com.iportal.model.event.Event"/>
+        <mapping class="com.iportal.model.event.EventDate"/>
+
+        <mapping class="com.iportal.model.icaro.Airport"/>
+        <mapping class="com.iportal.model.icaro.fare.Flight"/>
+        <mapping class="com.iportal.model.icaro.fare.Frequency"/>
+        <mapping class="com.iportal.model.icaro.fare.PaxType"/>
+        <mapping class="com.iportal.model.icaro.fare.Route"/>
+        <mapping class="com.iportal.model.icaro.fare.TicketRate"/>
+        <mapping class="com.iportal.model.icaro.IcargoDocumentType"/>
+        <mapping class="com.iportal.model.icaro.office.Establishment"/>
+        <mapping class="com.iportal.model.icaro.office.Office"/>
+        <mapping class="com.iportal.model.icaro.office.OfficeType"/>
+
+        <mapping class="com.iportal.model.jobs.Area"/>
+        <mapping class="com.iportal.model.jobs.Position"/>
+        <mapping class="com.iportal.model.jobs.PositionRequest"/>
+        <mapping class="com.iportal.model.jobs.Requester"/>
+        <mapping class="com.iportal.model.jobs.RequesterWorkCity"/>
+
+        <mapping class="com.iportal.model.portal.AccessLevel"/>
+        <mapping class="com.iportal.model.portal.AccessMenu"/>
+        <mapping class="com.iportal.model.portal.Content" />
+        <mapping class="com.iportal.model.portal.DisplayMode"/>
+        <mapping class="com.iportal.model.portal.Layout"/>
+        <mapping class="com.iportal.model.portal.LayoutLanguage"/>
+        <mapping class="com.iportal.model.portal.Menu"/>
+        <mapping class="com.iportal.model.portal.MenuItem"/>
+        <mapping class="com.iportal.model.portal.MenuLanguage"/>
+        <mapping class="com.iportal.model.portal.PortalModule"/>
+        <mapping class="com.iportal.model.portal.RelatedContent"/>
+
+        <mapping class="com.iportal.model.system.SysAccessMode"/>
+        <mapping class="com.iportal.model.system.SysAudit"/>
+        <mapping class="com.iportal.model.system.SysLog"/>
+        <mapping class="com.iportal.model.system.SysModule"/>
+        <mapping class="com.iportal.model.system.SysParam"/>
+        <mapping class="com.iportal.model.system.SysProfile"/>
+        <mapping class="com.iportal.model.system.SysRole"/>
+        <mapping class="com.iportal.model.system.SysUser"/>
+     </session-factory>
+</hibernate-configuration>

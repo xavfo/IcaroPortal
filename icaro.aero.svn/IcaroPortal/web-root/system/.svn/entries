@@ -1,0 +1,178 @@
+9
+
+dir
+613
+http://yage.ec:81/svn/j2ee/icaro/IcaroPortal/web-root/system
+http://yage.ec:81/svn/j2ee/icaro
+
+
+
+2008-11-05T16:43:42.454843Z
+594
+burkhard
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+5c501523-6fc9-7f4f-9b2d-c353c6dfb7dd
+
+test
+dir
+
+event
+dir
+
+container
+dir
+
+home.jsp
+file
+
+
+
+
+2008-11-18T06:44:01.890625Z
+9125189586009ee7381a4b4d9cc7f137
+2007-06-25T18:33:37.870044Z
+9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2728
+
+admin
+dir
+
+common
+dir
+
+cart
+dir
+
+jobs
+dir
+
+service
+dir
+
+resetPassword.jsp
+file
+
+
+
+
+2008-11-18T06:44:01.921875Z
+2f9b996d159a97b83099460f473418dc
+2007-09-28T01:16:26.000607Z
+474
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5362
+
+portal
+dir
+
+index.jsp
+file
+
+
+
+
+2008-11-18T06:44:01.953125Z
+c31672fff7e53ac10dfc517493cbca1e
+2007-09-28T17:31:03.844504Z
+476
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9408
+
+catalogue
+dir
+
+mails
+dir
+
+report
+dir
+
+entity
+dir
+
+news
+dir
+
+layout
+dir
+
+bulletin
+dir
+

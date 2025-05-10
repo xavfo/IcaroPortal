@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/j2ee/icaro/!svn/ver/568/IcaroPortal/src/com/iportal/res
+END
+Database.properties
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/j2ee/icaro/!svn/ver/204/IcaroPortal/src/com/iportal/res/Database.properties
+END
+Application_en.properties
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/j2ee/icaro/!svn/ver/568/IcaroPortal/src/com/iportal/res/Application_en.properties
+END
+Messages.properties
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/j2ee/icaro/!svn/ver/566/IcaroPortal/src/com/iportal/res/Messages.properties
+END
+Messages_en.properties
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/j2ee/icaro/!svn/ver/566/IcaroPortal/src/com/iportal/res/Messages_en.properties
+END
+SystemMenu.properties
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/j2ee/icaro/!svn/ver/492/IcaroPortal/src/com/iportal/res/SystemMenu.properties
+END
+Application_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/j2ee/icaro/!svn/ver/568/IcaroPortal/src/com/iportal/res/Application_es.properties
+END
+SystemHelp.properties
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/j2ee/icaro/!svn/ver/474/IcaroPortal/src/com/iportal/res/SystemHelp.properties
+END
+Messages_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/j2ee/icaro/!svn/ver/514/IcaroPortal/src/com/iportal/res/Messages_es.properties
+END
+Application.properties
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/j2ee/icaro/!svn/ver/568/IcaroPortal/src/com/iportal/res/Application.properties
+END

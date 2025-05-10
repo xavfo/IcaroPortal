@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu>
+	<item id="0" text="INICIO" url="" />
+	<item id="0" text="Mi cuenta" url="http://www.google.com" />
+	<item id="0" text="Agencia de Viaje" url="http://www.google.com" />
+	<item id="0" text="Corporativo" url="http://www.google.com" />
+	<item id="0" text="Mapa del Sitio" url="http://www.google.com" />
+	<item id="0" text="Noticias" url="http://www.google.com" />
+</menu>

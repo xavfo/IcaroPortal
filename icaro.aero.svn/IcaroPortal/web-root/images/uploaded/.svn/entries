@@ -1,0 +1,52 @@
+9
+
+dir
+613
+http://yage.ec:81/svn/j2ee/icaro/IcaroPortal/web-root/images/uploaded
+http://yage.ec:81/svn/j2ee/icaro
+
+
+
+2008-11-12T19:01:19.770273Z
+608
+burkhard
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+5c501523-6fc9-7f4f-9b2d-c353c6dfb7dd
+
+paymenttype
+dir
+
+product
+dir
+
+access
+dir
+
+establishment
+dir
+
+brand
+dir
+
+seller
+dir
+
+office
+dir
+
+category
+dir
+

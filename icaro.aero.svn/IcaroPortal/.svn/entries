@@ -1,0 +1,36 @@
+9
+
+dir
+613
+http://yage.ec:81/svn/j2ee/icaro/IcaroPortal
+http://yage.ec:81/svn/j2ee/icaro
+
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+incomplete
+
+ant
+dir
+
+src
+dir
+
+web-root
+dir
+

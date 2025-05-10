@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/j2ee/icaro/!svn/ver/604/IcaroPortal/src/com/iportal/cart/model/cart
+END
+DeliveryInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/cart/model/cart/DeliveryInfo.java
+END
+OrderStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/cart/model/cart/OrderStatus.java
+END
+PaymentType.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/cart/model/cart/PaymentType.java
+END
+TaxDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/cart/model/cart/TaxDetail.java
+END
+CheckoutStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/j2ee/icaro/!svn/ver/451/IcaroPortal/src/com/iportal/cart/model/cart/CheckoutStep.java
+END
+OrderTransaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/j2ee/icaro/!svn/ver/604/IcaroPortal/src/com/iportal/cart/model/cart/OrderTransaction.java
+END
+PaymentStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/j2ee/icaro/!svn/ver/424/IcaroPortal/src/com/iportal/cart/model/cart/PaymentStatus.java
+END
+OrderStatusDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/j2ee/icaro/!svn/ver/284/IcaroPortal/src/com/iportal/cart/model/cart/OrderStatusDetail.java
+END
+Itinerary.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/j2ee/icaro/!svn/ver/404/IcaroPortal/src/com/iportal/cart/model/cart/Itinerary.java
+END
+StatusDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/cart/model/cart/StatusDetail.java
+END
+Passenger.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/j2ee/icaro/!svn/ver/513/IcaroPortal/src/com/iportal/cart/model/cart/Passenger.java
+END
+Order.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/j2ee/icaro/!svn/ver/604/IcaroPortal/src/com/iportal/cart/model/cart/Order.java
+END
+Payment.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/j2ee/icaro/!svn/ver/4/IcaroPortal/src/com/iportal/cart/model/cart/Payment.java
+END

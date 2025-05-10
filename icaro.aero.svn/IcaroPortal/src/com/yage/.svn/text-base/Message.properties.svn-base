@@ -1,0 +1,10 @@
+#
+# Copyright © Yage. All Rights Reserved.
+#
+# YAGE evolucion digital
+# Av. Brasil 951 y Mariano Echeverría
+# Quito-Ecuador
+# www.yage.com.ec
+#
+
+error.hibernate.010 = [010] Could not find a SessionFactory wih id {0}
